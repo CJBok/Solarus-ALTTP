@@ -5871,6 +5871,32 @@ tile{
 
 wall{
   layer = 0,
+  x = 472,
+  y = 360,
+  width = 40,
+  height = 72,
+  stops_hero = true,
+  stops_npcs = true,
+  stops_enemies = true,
+  stops_blocks = true,
+  stops_projectiles = true,
+}
+
+wall{
+  layer = 0,
+  x = 208,
+  y = 472,
+  width = 48,
+  height = 32,
+  stops_hero = true,
+  stops_npcs = true,
+  stops_enemies = true,
+  stops_blocks = true,
+  stops_projectiles = true,
+}
+
+wall{
+  layer = 0,
   x = 144,
   y = 176,
   width = 96,
@@ -6277,6 +6303,50 @@ dynamic_tile{
   width = 16,
   height = 16,
   enabled_at_start = true,
+}
+
+custom_entity{
+  layer = 0,
+  x = 248,
+  y = 501,
+  width = 16,
+  height = 16,
+  direction = 1,
+  sprite = "npc/shielded_green_soldier",
+  model = "turn_to_hero",
+}
+
+custom_entity{
+  layer = 0,
+  x = 216,
+  y = 501,
+  width = 16,
+  height = 16,
+  direction = 1,
+  sprite = "npc/shielded_green_soldier",
+  model = "turn_to_hero",
+}
+
+custom_entity{
+  layer = 0,
+  x = 488,
+  y = 397,
+  width = 16,
+  height = 16,
+  direction = 2,
+  sprite = "npc/shielded_green_soldier",
+  model = "turn_to_hero",
+}
+
+custom_entity{
+  layer = 0,
+  x = 488,
+  y = 429,
+  width = 16,
+  height = 16,
+  direction = 2,
+  sprite = "npc/shielded_green_soldier",
+  model = "turn_to_hero",
 }
 
 tile{

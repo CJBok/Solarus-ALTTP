@@ -148,6 +148,7 @@ sprite{ id = "npc/old_man", description = "Old man" }
 sprite{ id = "npc/pink_ball", description = "Pink ball" }
 sprite{ id = "npc/priest", description = "Priest" }
 sprite{ id = "npc/running_man", description = "Running man" }
+sprite{ id = "npc/shielded_green_soldier", description = "Shielded Soldier (Green)" }
 sprite{ id = "npc/soldier_blue", description = "Blue soldier" }
 sprite{ id = "npc/thief_green", description = "Green thief" }
 sprite{ id = "npc/thief_red", description = "Red thief" }
@@ -299,6 +300,7 @@ enemy{ id = "green_knight_soldier", description = "green_knight_soldier" }
 enemy{ id = "simple_green_soldier", description = "Simple Soldier (Green)" }
 
 entity{ id = "door_proximity_32", description = "Door Auto Open/Close when Hero in range if 32 pixels" }
+entity{ id = "turn_to_hero", description = "Face Hero" }
 
 language{ id = "en", description = "English" }
 

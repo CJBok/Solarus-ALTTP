@@ -3366,6 +3366,19 @@ tile{
   pattern = "grass.tree.roots.2",
 }
 
+wall{
+  layer = 0,
+  x = 136,
+  y = 464,
+  width = 64,
+  height = 48,
+  stops_hero = true,
+  stops_npcs = true,
+  stops_enemies = true,
+  stops_blocks = true,
+  stops_projectiles = true,
+}
+
 teletransporter{
   layer = 0,
   x = 512,
@@ -3886,6 +3899,28 @@ wall{
   stops_enemies = true,
   stops_blocks = true,
   stops_projectiles = true,
+}
+
+custom_entity{
+  layer = 0,
+  x = 184,
+  y = 493,
+  width = 16,
+  height = 16,
+  direction = 1,
+  sprite = "npc/shielded_green_soldier",
+  model = "turn_to_hero",
+}
+
+custom_entity{
+  layer = 0,
+  x = 152,
+  y = 493,
+  width = 16,
+  height = 16,
+  direction = 1,
+  sprite = "npc/shielded_green_soldier",
+  model = "turn_to_hero",
 }
 
 tile{
