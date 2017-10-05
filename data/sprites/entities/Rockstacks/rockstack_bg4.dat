@@ -1,0 +1,22 @@
+animation{
+  name = "on_ground",
+  src_image = "entities/Full Hyrule.entities.png",
+  directions = {
+    { x = 576, y = 368, frame_width = 32, frame_height = 32, origin_x = 16, origin_y = 29 },
+  },
+}
+animation{
+  name = "destroy",
+  src_image = "entities/Full Hyrule.entities.png",
+  frame_delay = 100,
+  directions = {
+    { x = 512, y = 496, frame_width = 48, frame_height = 48, origin_x = 24, origin_y = 45 },
+  },
+}
+animation{
+  name = "stopped",
+  src_image = "entities/Full Hyrule.entities.png",
+  directions = {
+    { x = 576, y = 368, frame_width = 32, frame_height = 32, origin_x = 16, origin_y = 29 },
+  },
+}

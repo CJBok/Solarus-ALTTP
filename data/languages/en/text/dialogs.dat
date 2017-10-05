@@ -1,0 +1,42 @@
+dialog{
+  id = "_treasure.lamp.1",
+  icon = "5",
+  text = [[
+You got the Lamp!
+Now you can light torches and
+see your way in darkness.
+]]
+}
+
+dialog{
+  id = "_treasure.rupee.1",
+  text = [[
+test
+]]
+}
+
+dialog{
+  id = "_treasure.rupee.2",
+  text = [[
+.
+]]
+}
+
+dialog{
+  id = "quest.beginning.uncle.dying",
+  text = [[
+Unnh... LINK, I didn't want
+you involved in this... I told
+you not to leave the house...
+Take my sword and shield and
+listen. You can focus power in
+the blade (hold attack button).
+...Then release it using the
+secret technique handed down
+by our people...
+LINK, you can do it!
+Save the princess...
+Zelda is your... ... ...
+]]
+}
+

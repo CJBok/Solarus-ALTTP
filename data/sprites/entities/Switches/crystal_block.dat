@@ -1,0 +1,36 @@
+animation{
+  name = "red_lowered",
+  src_image = "entities/miscellaneous.png",
+  frame_delay = 50,
+  frame_to_loop_on = 3,
+  directions = {
+    { x = 16, y = 40, frame_width = 16, frame_height = 16, origin_x = 0, origin_y = 0, num_frames = 4 },
+  },
+}
+animation{
+  name = "blue_lowered",
+  src_image = "entities/miscellaneous.png",
+  frame_delay = 50,
+  frame_to_loop_on = 3,
+  directions = {
+    { x = 16, y = 112, frame_width = 16, frame_height = 16, origin_x = 0, origin_y = 0, num_frames = 4 },
+  },
+}
+animation{
+  name = "blue_raised",
+  src_image = "entities/miscellaneous.png",
+  frame_delay = 50,
+  frame_to_loop_on = 3,
+  directions = {
+    { x = 16, y = 96, frame_width = 16, frame_height = 16, origin_x = 0, origin_y = 0, num_frames = 4 },
+  },
+}
+animation{
+  name = "red_raised",
+  src_image = "entities/miscellaneous.png",
+  frame_delay = 50,
+  frame_to_loop_on = 3,
+  directions = {
+    { x = 16, y = 24, frame_width = 16, frame_height = 16, origin_x = 0, origin_y = 0, num_frames = 4 },
+  },
+}
