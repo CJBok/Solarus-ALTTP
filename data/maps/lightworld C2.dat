@@ -2585,15 +2585,6 @@ tile{
 
 tile{
   layer = 0,
-  x = 448,
-  y = 600,
-  width = 128,
-  height = 16,
-  pattern = "19",
-}
-
-tile{
-  layer = 0,
   x = 576,
   y = 568,
   width = 176,
@@ -7247,15 +7238,6 @@ tile{
 
 tile{
   layer = 0,
-  x = 504,
-  y = 240,
-  width = 16,
-  height = 8,
-  pattern = "castle.entrance.top",
-}
-
-tile{
-  layer = 0,
   x = 488,
   y = 272,
   width = 48,
@@ -11810,24 +11792,6 @@ tile{
 
 tile{
   layer = 0,
-  x = 496,
-  y = 88,
-  width = 32,
-  height = 24,
-  pattern = "castle.door",
-}
-
-tile{
-  layer = 0,
-  x = 704,
-  y = 40,
-  width = 32,
-  height = 24,
-  pattern = "castle.door",
-}
-
-tile{
-  layer = 0,
   x = 384,
   y = 64,
   width = 16,
@@ -11950,15 +11914,6 @@ tile{
   width = 64,
   height = 8,
   pattern = "18",
-}
-
-tile{
-  layer = 0,
-  x = 288,
-  y = 40,
-  width = 32,
-  height = 24,
-  pattern = "castle.door",
 }
 
 tile{
@@ -15944,15 +15899,187 @@ teletransporter{
   destination = "_side",
 }
 
-dynamic_tile{
-  name = "proxy_door",
+custom_entity{
+  name = "door_proxy",
   layer = 0,
-  x = 496,
-  y = 248,
-  pattern = "castle.door",
+  x = 504,
+  y = 261,
   width = 32,
   height = 24,
-  enabled_at_start = true,
+  direction = 0,
+  sprite = "entities/Doors/Outside/door_castle01",
+}
+
+wall{
+  layer = 0,
+  x = 888,
+  y = 56,
+  width = 48,
+  height = 48,
+  stops_hero = true,
+  stops_npcs = true,
+  stops_enemies = true,
+  stops_blocks = true,
+  stops_projectiles = true,
+}
+
+wall{
+  layer = 0,
+  x = 632,
+  y = 312,
+  width = 48,
+  height = 48,
+  stops_hero = true,
+  stops_npcs = true,
+  stops_enemies = true,
+  stops_blocks = true,
+  stops_projectiles = true,
+}
+
+wall{
+  layer = 0,
+  x = 344,
+  y = 312,
+  width = 48,
+  height = 48,
+  stops_hero = true,
+  stops_npcs = true,
+  stops_enemies = true,
+  stops_blocks = true,
+  stops_projectiles = true,
+}
+
+wall{
+  layer = 0,
+  x = 120,
+  y = 56,
+  width = 48,
+  height = 48,
+  stops_hero = true,
+  stops_npcs = true,
+  stops_enemies = true,
+  stops_blocks = true,
+  stops_projectiles = true,
+}
+
+wall{
+  layer = 0,
+  x = -8,
+  y = 936,
+  width = 96,
+  height = 48,
+  stops_hero = true,
+  stops_npcs = true,
+  stops_enemies = true,
+  stops_blocks = true,
+  stops_projectiles = true,
+}
+
+wall{
+  layer = 0,
+  x = 184,
+  y = 1000,
+  width = 48,
+  height = 48,
+  stops_hero = true,
+  stops_npcs = true,
+  stops_enemies = true,
+  stops_blocks = true,
+  stops_projectiles = true,
+}
+
+wall{
+  layer = 0,
+  x = 208,
+  y = 952,
+  width = 432,
+  height = 48,
+  stops_hero = true,
+  stops_npcs = true,
+  stops_enemies = true,
+  stops_blocks = true,
+  stops_projectiles = true,
+}
+
+wall{
+  layer = 0,
+  x = 64,
+  y = 984,
+  width = 48,
+  height = 48,
+  stops_hero = true,
+  stops_npcs = true,
+  stops_enemies = true,
+  stops_blocks = true,
+  stops_projectiles = true,
+}
+
+wall{
+  layer = 0,
+  x = 616,
+  y = 1000,
+  width = 48,
+  height = 48,
+  stops_hero = true,
+  stops_npcs = true,
+  stops_enemies = true,
+  stops_blocks = true,
+  stops_projectiles = true,
+}
+
+wall{
+  layer = 0,
+  x = 840,
+  y = 888,
+  width = 48,
+  height = 48,
+  stops_hero = true,
+  stops_npcs = true,
+  stops_enemies = true,
+  stops_blocks = true,
+  stops_projectiles = true,
+}
+
+custom_entity{
+  name = "door_proxy_2",
+  layer = 0,
+  x = 504,
+  y = 101,
+  width = 32,
+  height = 24,
+  direction = 0,
+  sprite = "entities/Doors/Outside/door_castle01",
+}
+
+custom_entity{
+  name = "door_proxy_3",
+  layer = 0,
+  x = 712,
+  y = 53,
+  width = 32,
+  height = 24,
+  direction = 0,
+  sprite = "entities/Doors/Outside/door_castle01",
+}
+
+custom_entity{
+  name = "door_proxy_4",
+  layer = 0,
+  x = 296,
+  y = 53,
+  width = 32,
+  height = 24,
+  direction = 0,
+  sprite = "entities/Doors/Outside/door_castle01",
+}
+
+tile{
+  layer = 1,
+  x = 448,
+  y = 600,
+  width = 128,
+  height = 16,
+  pattern = "19",
 }
 
 tile{
@@ -16340,5 +16467,23 @@ tile{
   width = 48,
   height = 16,
   pattern = "tree.green.2",
+}
+
+tile{
+  layer = 1,
+  x = 496,
+  y = 240,
+  width = 16,
+  height = 8,
+  pattern = "castle.entrance.top",
+}
+
+tile{
+  layer = 1,
+  x = 512,
+  y = 240,
+  width = 16,
+  height = 8,
+  pattern = "castle.entrance.top",
 }
 

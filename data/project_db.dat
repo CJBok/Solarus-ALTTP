@@ -5,26 +5,6 @@ map{ id = "lightworld C3", description = "Light World Links House" }
 map{ id = "link_house", description = "Link's House" }
 map{ id = "testmap", description = "Test Map" }
 
-tileset{ id = "Absolute Dungeon 01", description = "Absolute Dungeon 01" }
-tileset{ id = "Absolute Dungeon 02", description = "Absolute Dungeon 02" }
-tileset{ id = "Absolute Dungeon 03", description = "Absolute Dungeon 03" }
-tileset{ id = "Absolute Dungeon 04", description = "Absolute Dungeon 04" }
-tileset{ id = "Absolute Dungeon 05", description = "Absolute Dungeon 05" }
-tileset{ id = "Absolute Dungeon 06", description = "Absolute Dungeon 06" }
-tileset{ id = "Absolute Dungeon 07", description = "Absolute Dungeon 07" }
-tileset{ id = "Absolute Dungeon 08", description = "Absolute Dungeon 08" }
-tileset{ id = "Absolute Dungeon 09", description = "Absolute Dungeon 09" }
-tileset{ id = "Absolute Dungeon 10", description = "Absolute Dungeon 10" }
-tileset{ id = "Absolute Dungeon 11", description = "Absolute Dungeon 11" }
-tileset{ id = "Absolute Dungeon 12", description = "Absolute Dungeon 12" }
-tileset{ id = "Absolute Dungeon 13", description = "Absolute Dungeon 13" }
-tileset{ id = "Absolute Dungeon 14", description = "Absolute Dungeon 14" }
-tileset{ id = "Absolute Dungeon 15", description = "Absolute Dungeon 15" }
-tileset{ id = "Absolute Dungeon 16", description = "Absolute Dungeon 16" }
-tileset{ id = "Absolute Dungeon 17", description = "Absolute Dungeon 17" }
-tileset{ id = "Absolute Dungeon 18", description = "Absolute Dungeon 18" }
-tileset{ id = "Absolute Dungeon 19", description = "Absolute Dungeon 19" }
-tileset{ id = "Absolute Dungeon 20", description = "Absolute Dungeon 20" }
 tileset{ id = "Full Hyrule", description = "Full Hyrule" }
 tileset{ id = "Outside_minimap", description = "Outside_minimap" }
 tileset{ id = "cave", description = "Cave" }
@@ -49,6 +29,7 @@ sprite{ id = "enemies/evil_tile4", description = "enemies/evil_tile4" }
 sprite{ id = "enemies/ganon", description = "enemies/ganon" }
 sprite{ id = "enemies/simple_green_soldier", description = "Enemy: Simple Soldier (Green)" }
 sprite{ id = "enemies/tentacle", description = "Enemy: Tentacle" }
+sprite{ id = "entities/Doors/Outside/door_castle01", description = "Castle 1" }
 sprite{ id = "entities/Doors/Outside/door_light01", description = "entities/Doors/Outside/door_light01" }
 sprite{ id = "entities/Doors/Outside/door_light02", description = "entities/Doors/Outside/door_light02" }
 sprite{ id = "entities/Doors/Outside/door_light03", description = "entities/Doors/Outside/door_light03" }

@@ -1,4 +1,4 @@
-local light_manager = {}
+local light_manager = ...
 require("scripts/multi_events")
 
 local map_meta=sol.main.get_metatable("map")
@@ -11,6 +11,34 @@ local dark_surfaces = {
   [2] = sol.surface.create("entities/dark2.png"),
   [3] = sol.surface.create("entities/dark3.png")
 }
+game_meta:register_event("on_started", function(game)
+  game.light = 0
+  game.get_light = function(map)
+    return game.light
+  end
+
+  game.set_light = function(game, light)
+    if light < 0 then light = 0 elseif light > 16 then light = 16 end
+    game.light = light
+  end
+
+  game.add_light = function(game, amount)
+    local light = game.light - amount
+    if light < 0 then light = 0 elseif light > 16 then light = 16 end
+    game.light = light
+  end
+  
+  game.ambientlight = {0,0,0,0}
+  game.set_ambient_light = function(game, ambientlight)
+    if ambientlight == nil or ambientlight == "" then
+      game.ambientlight = {0,0,255,48}
+    elseif ambientlight == "day" then
+      game.ambientlight = {0,0,0,0}
+    elseif ambientlight == "night" then
+      game.ambientlight = {0,0,255,48}
+    end
+  end
+end)
 
 
 game_meta:register_event("on_map_changed", function(game)
@@ -108,5 +136,3 @@ game_meta:register_event("on_map_changed", function(game)
     end
   end
 end)
-
-return light_manager

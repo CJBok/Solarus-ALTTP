@@ -3888,14 +3888,6 @@ wall{
   stops_projectiles = true,
 }
 
-enemy{
-  layer = 0,
-  x = 136,
-  y = 445,
-  direction = 0,
-  breed = "",
-}
-
 tile{
   layer = 1,
   x = -56,
