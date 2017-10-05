@@ -314,6 +314,7 @@ item{ id = "rupee", description = "Rupees (x1 / x5 / x20 / x50 / x100 / x300)" }
 item{ id = "shield", description = "Shield" }
 item{ id = "sword", description = "sword" }
 
+enemy{ id = "green_knight_soldier", description = "green_knight_soldier" }
 enemy{ id = "simple_green_soldier", description = "Simple Soldier (Green)" }
 
 entity{ id = "door_proximity_32", description = "Door Auto Open/Close when Hero in range if 32 pixels" }

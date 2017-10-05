@@ -6247,17 +6247,6 @@ wall{
   stops_projectiles = true,
 }
 
-custom_entity{
-  layer = 0,
-  x = 192,
-  y = 269,
-  width = 16,
-  height = 16,
-  direction = 3,
-  sprite = "entities/doors",
-  model = "door_proximity_32",
-}
-
 teletransporter{
   layer = 0,
   x = -16,
@@ -6277,6 +6266,17 @@ custom_entity{
   width = 16,
   height = 16,
   direction = 0,
+}
+
+dynamic_tile{
+  name = "door_proxy",
+  layer = 0,
+  x = 184,
+  y = 256,
+  pattern = "house.door",
+  width = 16,
+  height = 16,
+  enabled_at_start = true,
 }
 
 tile{

@@ -13155,9 +13155,9 @@ destructible{
 
 teletransporter{
   layer = 0,
-  x = 16,
+  x = 624,
   y = 1024,
-  width = 1008,
+  width = 400,
   height = 16,
   transition = "scrolling",
   destination_map = "lightworld C3",
@@ -15931,6 +15931,28 @@ custom_entity{
   width = 16,
   height = 16,
   direction = 0,
+}
+
+teletransporter{
+  layer = 0,
+  x = -48,
+  y = 1024,
+  width = 400,
+  height = 16,
+  transition = "scrolling",
+  destination_map = "lightworld B3",
+  destination = "_side",
+}
+
+dynamic_tile{
+  name = "proxy_door",
+  layer = 0,
+  x = 496,
+  y = 248,
+  pattern = "castle.door",
+  width = 32,
+  height = 24,
+  enabled_at_start = true,
 }
 
 tile{

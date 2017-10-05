@@ -1,4 +1,8 @@
 local light_manager = {}
+require("scripts/multi_events")
+
+local map_meta=sol.main.get_metatable("map")
+local game_meta=sol.main.get_metatable("game")
 
 -- Dark overlay for each hero direction.
 local dark_surfaces = {
@@ -8,7 +12,16 @@ local dark_surfaces = {
   [3] = sol.surface.create("entities/dark3.png")
 }
 
-function light_manager.enable_light_features(map)
+
+game_meta:register_event("on_map_changed", function(game)
+  local map = game:get_map()
+  for ent in map:get_entities("settings") do
+    local lightlevel = split(split(ent:get_name(), "settings:")[1],"-")[1]
+    local ambientlevel = split(split(ent:get_name(), "settings:")[1],"-")[2]
+    game:set_light(tonumber(lightlevel))
+    game:set_ambient_light(ambientlevel)
+  end
+
 
   local rainsprite1 = sol.sprite.create("entities/rain")
   local rainsprite2 = sol.sprite.create("entities/rain")
@@ -24,7 +37,6 @@ function light_manager.enable_light_features(map)
     rainposx[i] = math.random(2048)
     rainposy[i] = math.random(2048)
   end
-
 
   map:get_game().raintimer = 0
   map:get_game().on_update = function(game)
@@ -94,11 +106,7 @@ function light_manager.enable_light_features(map)
         map:draw_visual(rainsprite2, rainposx[i] + camera_x / 1.5, rainposy[i] + camera_y / 1.5)
       end
     end
-
-
-    
-
   end
-end
+end)
 
 return light_manager
