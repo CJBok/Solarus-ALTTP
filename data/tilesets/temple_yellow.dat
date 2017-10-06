@@ -80,6 +80,38 @@ tile_pattern{
 }
 
 tile_pattern{
+  id = "17",
+  ground = "traversable",
+  default_layer = 1,
+  x = 80,
+  y = 256,
+  width = 16,
+  height = 16,
+}
+
+tile_pattern{
+  id = "18",
+  ground = "wall",
+  default_layer = 0,
+  x = 240,
+  y = 312,
+  width = 16,
+  height = 24,
+  repeat_mode = "none",
+}
+
+tile_pattern{
+  id = "19",
+  ground = "wall",
+  default_layer = 2,
+  x = 240,
+  y = 304,
+  width = 16,
+  height = 8,
+  repeat_mode = "none",
+}
+
+tile_pattern{
   id = "2",
   ground = "wall",
   default_layer = 1,
@@ -87,6 +119,38 @@ tile_pattern{
   y = 320,
   width = 8,
   height = 8,
+}
+
+tile_pattern{
+  id = "20",
+  ground = "traversable",
+  default_layer = 1,
+  x = 80,
+  y = 272,
+  width = 16,
+  height = 16,
+}
+
+tile_pattern{
+  id = "21",
+  ground = "wall",
+  default_layer = 0,
+  x = 176,
+  y = 240,
+  width = 16,
+  height = 24,
+  repeat_mode = "horizontal",
+}
+
+tile_pattern{
+  id = "22",
+  ground = "traversable",
+  default_layer = 0,
+  x = 176,
+  y = 264,
+  width = 16,
+  height = 8,
+  repeat_mode = "horizontal",
 }
 
 tile_pattern{
@@ -238,7 +302,7 @@ tile_pattern{
 
 tile_pattern{
   id = "barrier_diag.1",
-  ground = "wall_bottom_left",
+  ground = "wall",
   default_layer = 1,
   x = 200,
   y = 0,
@@ -248,7 +312,7 @@ tile_pattern{
 
 tile_pattern{
   id = "barrier_diag.2",
-  ground = "wall_top_right",
+  ground = "wall_top_left",
   default_layer = 1,
   x = 200,
   y = 16,
@@ -2107,26 +2171,6 @@ tile_pattern{
 }
 
 tile_pattern{
-  id = "pillar.bottom",
-  ground = "wall",
-  default_layer = 1,
-  x = 240,
-  y = 320,
-  width = 16,
-  height = 16,
-}
-
-tile_pattern{
-  id = "pillar.top",
-  ground = "wall",
-  default_layer = 2,
-  x = 240,
-  y = 304,
-  width = 16,
-  height = 16,
-}
-
-tile_pattern{
   id = "spikes",
   ground = "prickles",
   default_layer = 1,
@@ -2960,7 +3004,7 @@ tile_pattern{
 
 tile_pattern{
   id = "wall_diag.1",
-  ground = "wall",
+  ground = "wall_top_right",
   default_layer = 1,
   x = 136,
   y = 0,
@@ -3000,7 +3044,7 @@ tile_pattern{
 
 tile_pattern{
   id = "wall_diag.border.1",
-  ground = "wall_top_left",
+  ground = "wall",
   default_layer = 1,
   x = 152,
   y = 0,
@@ -3020,7 +3064,7 @@ tile_pattern{
 
 tile_pattern{
   id = "wall_diag.border.3",
-  ground = "wall_bottom_left",
+  ground = "wall",
   default_layer = 1,
   x = 152,
   y = 16,
@@ -3030,7 +3074,7 @@ tile_pattern{
 
 tile_pattern{
   id = "wall_diag.border.4",
-  ground = "wall_bottom_right",
+  ground = "wall_top_left",
   default_layer = 1,
   x = 168,
   y = 16,
@@ -3452,7 +3496,7 @@ tile_pattern{
 
 tile_pattern{
   id = "wall_low_diag.3",
-  ground = "wall",
+  ground = "wall_bottom_right",
   default_layer = 0,
   x = 136,
   y = 48,
@@ -3472,7 +3516,7 @@ tile_pattern{
 
 tile_pattern{
   id = "wall_low_diag.border.1",
-  ground = "wall_top_left",
+  ground = "wall_bottom_left",
   default_layer = 0,
   x = 168,
   y = 32,
@@ -3482,7 +3526,7 @@ tile_pattern{
 
 tile_pattern{
   id = "wall_low_diag.border.2",
-  ground = "wall_top_right",
+  ground = "wall",
   default_layer = 0,
   x = 184,
   y = 32,
@@ -3492,7 +3536,7 @@ tile_pattern{
 
 tile_pattern{
   id = "wall_low_diag.border.3",
-  ground = "wall_bottom_left",
+  ground = "wall_bottom_right",
   default_layer = 0,
   x = 168,
   y = 48,
@@ -3502,7 +3546,7 @@ tile_pattern{
 
 tile_pattern{
   id = "wall_low_diag.border.4",
-  ground = "wall_bottom_right",
+  ground = "wall",
   default_layer = 0,
   x = 184,
   y = 48,
@@ -3522,7 +3566,7 @@ tile_pattern{
 
 tile_pattern{
   id = "wall_low_diag.bottom.2",
-  ground = "wall",
+  ground = "wall_bottom_left",
   default_layer = 0,
   x = 200,
   y = 32,
@@ -3548,17 +3592,6 @@ tile_pattern{
   y = 48,
   width = 16,
   height = 16,
-}
-
-tile_pattern{
-  id = "wall_pillar.1",
-  ground = "wall",
-  default_layer = 1,
-  x = 176,
-  y = 240,
-  width = 16,
-  height = 32,
-  repeat_mode = "none",
 }
 
 tile_pattern{

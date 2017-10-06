@@ -1,9 +1,12 @@
 local game_manager = {}
 
 local initial_game = require("scripts/initial_game")
-local light_manager = require("scripts/map/light_manager")
+
 local map_doors = require("scripts/map/doors")
+local map_light_manager = require("scripts/map/light_manager")
+
 local hero_falling = require("scripts/hero/falling")
+--local hero_mouse_movement = require("scripts/hero/mouse_movement")
 
 
 -- Starts the game from the given savegame file,

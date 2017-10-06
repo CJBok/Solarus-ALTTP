@@ -1,4 +1,5 @@
-map{ id = "dungeon_castle_B1", description = "Castle Dungeon B1" }
+map{ id = "dungeon castle 1F", description = "Castle Dungeon 1F" }
+map{ id = "dungeon castle B1", description = "Castle Dungeon B1" }
 map{ id = "lightworld B3", description = "Light World B3" }
 map{ id = "lightworld C2", description = "Light World Castle" }
 map{ id = "lightworld C3", description = "Light World Links House" }

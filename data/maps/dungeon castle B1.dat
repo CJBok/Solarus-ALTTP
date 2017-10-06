@@ -888,7 +888,7 @@ teletransporter{
   y = 208,
   width = 16,
   height = 16,
-  destination_map = "dungeon_castle_B1",
+  destination_map = "dungeon castle B1",
   destination = "hallway2",
 }
 
@@ -914,7 +914,7 @@ teletransporter{
   y = 288,
   width = 16,
   height = 16,
-  destination_map = "dungeon_castle_B1",
+  destination_map = "dungeon castle B1",
   destination = "hallway1",
 }
 

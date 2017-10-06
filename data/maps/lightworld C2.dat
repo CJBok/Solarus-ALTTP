@@ -12816,6 +12816,27 @@ tile{
   pattern = "castle.door",
 }
 
+custom_entity{
+  name = "door_proxy",
+  layer = 0,
+  x = 504,
+  y = 261,
+  width = 32,
+  height = 24,
+  direction = 0,
+  sprite = "entities/Doors/Outside/door_castle01",
+}
+
+teletransporter{
+  layer = 0,
+  x = 504,
+  y = 256,
+  width = 16,
+  height = 16,
+  destination_map = "dungeon castle 1F",
+  destination = "start",
+}
+
 wall{
   layer = 0,
   x = 8,
@@ -13562,7 +13583,7 @@ teletransporter{
   y = 160,
   width = 16,
   height = 16,
-  destination_map = "dungeon_castle_B1",
+  destination_map = "dungeon castle B1",
   destination = "start",
 }
 
@@ -15076,7 +15097,7 @@ teletransporter{
   y = 216,
   width = 16,
   height = 16,
-  destination_map = "dungeon_castle_B1",
+  destination_map = "dungeon castle B1",
   destination = "from_castle_garden",
 }
 
@@ -15886,8 +15907,8 @@ destructible{
 destination{
   name = "start",
   layer = 0,
-  x = 936,
-  y = 173,
+  x = 512,
+  y = 333,
   direction = 1,
 }
 
@@ -15928,17 +15949,6 @@ teletransporter{
   transition = "scrolling",
   destination_map = "lightworld B3",
   destination = "_side",
-}
-
-custom_entity{
-  name = "door_proxy",
-  layer = 0,
-  x = 504,
-  y = 261,
-  width = 32,
-  height = 24,
-  direction = 0,
-  sprite = "entities/Doors/Outside/door_castle01",
 }
 
 wall{
@@ -16083,28 +16093,6 @@ custom_entity{
 }
 
 custom_entity{
-  name = "door_proxy_3",
-  layer = 0,
-  x = 712,
-  y = 53,
-  width = 32,
-  height = 24,
-  direction = 0,
-  sprite = "entities/Doors/Outside/door_castle01",
-}
-
-custom_entity{
-  name = "door_proxy_4",
-  layer = 0,
-  x = 296,
-  y = 53,
-  width = 32,
-  height = 24,
-  direction = 0,
-  sprite = "entities/Doors/Outside/door_castle01",
-}
-
-custom_entity{
   layer = 0,
   x = 520,
   y = 669,
@@ -16135,6 +16123,36 @@ custom_entity{
   direction = 0,
   sprite = "npc/shielded_green_soldier",
   model = "turn_to_hero",
+}
+
+custom_entity{
+  name = "door_proxy_3",
+  layer = 0,
+  x = 296,
+  y = 53,
+  width = 32,
+  height = 24,
+  direction = 0,
+  sprite = "entities/Doors/Outside/door_castle01",
+}
+
+custom_entity{
+  name = "door_proxy_4",
+  layer = 0,
+  x = 712,
+  y = 53,
+  width = 32,
+  height = 24,
+  direction = 0,
+  sprite = "entities/Doors/Outside/door_castle01",
+}
+
+destination{
+  name = "from_castle_f1",
+  layer = 0,
+  x = 512,
+  y = 285,
+  direction = 3,
 }
 
 tile{
