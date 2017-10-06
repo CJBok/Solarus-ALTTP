@@ -3923,6 +3923,56 @@ custom_entity{
   model = "turn_to_hero",
 }
 
+jumper{
+  layer = 0,
+  x = 480,
+  y = 344,
+  width = 32,
+  height = 8,
+  direction = 6,
+  jump_length = 56,
+}
+
+jumper{
+  layer = 0,
+  x = 376,
+  y = 288,
+  width = 32,
+  height = 32,
+  direction = 3,
+  jump_length = 40,
+}
+
+jumper{
+  layer = 0,
+  x = 376,
+  y = 320,
+  width = 32,
+  height = 32,
+  direction = 5,
+  jump_length = 48,
+}
+
+jumper{
+  layer = 0,
+  x = 416,
+  y = 240,
+  width = 56,
+  height = 56,
+  direction = 3,
+  jump_length = 40,
+}
+
+jumper{
+  layer = 0,
+  x = 464,
+  y = 240,
+  width = 48,
+  height = 8,
+  direction = 2,
+  jump_length = 48,
+}
+
 tile{
   layer = 1,
   x = -56,

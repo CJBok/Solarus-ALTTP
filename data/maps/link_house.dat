@@ -482,6 +482,7 @@ chest{
   x = 232,
   y = 157,
   treasure_name = "lamp",
+  treasure_savegame_variable = "linkhouse_chest1",
   sprite = "entities/chest",
 }
 
@@ -499,7 +500,7 @@ destination{
   name = "links_house_entrance",
   layer = 0,
   x = 160,
-  y = 181,
+  y = 197,
   direction = 1,
 }
 
@@ -524,9 +525,9 @@ destination{
 destructible{
   layer = 0,
   x = 80,
-  y = 69,
+  y = 101,
   treasure_name = "rupee",
-  treasure_savegame_variable = "linkhouse_vase",
+  treasure_savegame_variable = "linkhouse_vase1",
   sprite = "entities/vase",
   destruction_sound = "stone",
   weight = 1,
@@ -537,7 +538,7 @@ destructible{
   x = 80,
   y = 85,
   treasure_name = "rupee",
-  treasure_savegame_variable = "linkhouse_vase",
+  treasure_savegame_variable = "linkhouse_vase2",
   sprite = "entities/vase",
   destruction_sound = "stone",
   weight = 1,
@@ -546,9 +547,9 @@ destructible{
 destructible{
   layer = 0,
   x = 80,
-  y = 101,
+  y = 69,
   treasure_name = "rupee",
-  treasure_savegame_variable = "linkhouse_vase",
+  treasure_savegame_variable = "linkhouse_vase3",
   sprite = "entities/vase",
   destruction_sound = "stone",
   weight = 1,

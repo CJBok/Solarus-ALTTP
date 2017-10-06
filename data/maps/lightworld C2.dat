@@ -16148,11 +16148,47 @@ custom_entity{
 }
 
 destination{
-  name = "from_castle_f1",
+  name = "from_castle_f1_entrance",
   layer = 0,
   x = 512,
-  y = 285,
+  y = 277,
   direction = 3,
+}
+
+jumper{
+  layer = 0,
+  x = 288,
+  y = 160,
+  width = 32,
+  height = 8,
+  direction = 6,
+  jump_length = 48,
+}
+
+destination{
+  name = "from_castle_f1_top_left",
+  layer = 0,
+  x = 304,
+  y = 69,
+  direction = 3,
+}
+
+destination{
+  name = "from_castle_f1_top_right",
+  layer = 0,
+  x = 720,
+  y = 69,
+  direction = 3,
+}
+
+teletransporter{
+  layer = 0,
+  x = 296,
+  y = 48,
+  width = 16,
+  height = 16,
+  destination_map = "dungeon castle 1F",
+  destination = "entrance_top_left",
 }
 
 tile{

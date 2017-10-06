@@ -5,7 +5,7 @@ local enemy = ...
 -- Unlike the normal green soldier, he cannot see or follow the hero.
 
 enemy:set_life(2)
-enemy:set_damage(2)
+enemy:set_damage(1)
 enemy:set_size(16, 16)
 enemy:set_origin(8, 13)
 
