@@ -3891,7 +3891,7 @@ teletransporter{
   width = 16,
   height = 16,
   destination_map = "lightworld C2",
-  destination = "from_castle_f1_entrance",
+  destination = "door_from_castle_f1_entrance",
 }
 
 wall{
@@ -7430,7 +7430,7 @@ teletransporter{
   width = 16,
   height = 16,
   destination_map = "lightworld C2",
-  destination = "from_castle_f1_top_left",
+  destination = "door_from_castle_f1_top_left",
 }
 
 jumper{
@@ -7504,7 +7504,7 @@ teletransporter{
   width = 16,
   height = 16,
   destination_map = "lightworld C2",
-  destination = "from_castle_f1_top_right",
+  destination = "door_from_castle_f1_top_right",
 }
 
 tile{

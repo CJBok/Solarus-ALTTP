@@ -473,7 +473,7 @@ tile{
   x = 152,
   y = 200,
   width = 16,
-  height = 32,
+  height = 48,
   pattern = "floor.1",
 }
 
@@ -493,14 +493,14 @@ teletransporter{
   width = 16,
   height = 16,
   destination_map = "lightworld C3",
-  destination = "link_house",
+  destination = "door_link_house",
 }
 
 destination{
-  name = "links_house_entrance",
+  name = "door_links_house_entrance",
   layer = 0,
   x = 160,
-  y = 197,
+  y = 205,
   direction = 1,
 }
 

@@ -5682,191 +5682,11 @@ tile{
 
 tile{
   layer = 0,
-  x = 152,
-  y = 184,
-  width = 80,
-  height = 64,
-  pattern = "house.roof_blue",
-}
-
-tile{
-  layer = 0,
-  x = 152,
-  y = 224,
-  width = 8,
-  height = 24,
-  pattern = "house.roof_blue.corner.3b",
-}
-
-tile{
-  layer = 0,
-  x = 144,
-  y = 232,
-  width = 8,
-  height = 24,
-  pattern = "house.roof_blue.corner.3",
-}
-
-tile{
-  layer = 0,
-  x = 144,
-  y = 176,
-  width = 24,
-  height = 8,
-  pattern = "house.roof_blue.corner.1",
-}
-
-tile{
-  layer = 0,
-  x = 216,
-  y = 176,
-  width = 24,
-  height = 8,
-  pattern = "house.roof_blue.corner.2",
-}
-
-tile{
-  layer = 0,
-  x = 224,
-  y = 224,
-  width = 8,
-  height = 24,
-  pattern = "house.roof_blue.corner.4b",
-}
-
-tile{
-  layer = 0,
-  x = 232,
-  y = 232,
-  width = 8,
-  height = 24,
-  pattern = "house.roof_blue.corner.4",
-}
-
-tile{
-  layer = 0,
-  x = 160,
-  y = 224,
-  width = 8,
-  height = 8,
-  pattern = "house.roof_blue.top.corner.3",
-}
-
-tile{
-  layer = 0,
-  x = 216,
-  y = 224,
-  width = 8,
-  height = 8,
-  pattern = "house.roof_blue.top.corner.4",
-}
-
-tile{
-  layer = 0,
-  x = 168,
-  y = 224,
-  width = 48,
-  height = 8,
-  pattern = "house.roof_blue.top.2",
-}
-
-tile{
-  layer = 0,
-  x = 144,
-  y = 184,
-  width = 8,
-  height = 48,
-  pattern = "house.roof_blue.3",
-}
-
-tile{
-  layer = 0,
-  x = 232,
-  y = 184,
-  width = 8,
-  height = 48,
-  pattern = "house.roof_blue.4",
-}
-
-tile{
-  layer = 0,
-  x = 168,
-  y = 176,
-  width = 48,
-  height = 8,
-  pattern = "house.roof_blue.1",
-}
-
-tile{
-  layer = 0,
-  x = 160,
-  y = 184,
-  width = 8,
-  height = 40,
-  pattern = "house.roof_blue.top.3",
-}
-
-tile{
-  layer = 0,
-  x = 216,
-  y = 184,
-  width = 8,
-  height = 40,
-  pattern = "house.roof_blue.top.4",
-}
-
-tile{
-  layer = 0,
-  x = 168,
-  y = 184,
-  width = 48,
-  height = 40,
-  pattern = "house.roof_blue.top",
-}
-
-tile{
-  layer = 0,
-  x = 168,
-  y = 184,
-  width = 8,
-  height = 8,
-  pattern = "house.roof.circle",
-}
-
-tile{
-  layer = 0,
-  x = 208,
-  y = 184,
-  width = 8,
-  height = 8,
-  pattern = "house.roof.circle",
-}
-
-tile{
-  layer = 0,
-  x = 152,
-  y = 248,
-  width = 80,
-  height = 8,
-  pattern = "house.roof_red.2",
-}
-
-tile{
-  layer = 0,
-  x = 168,
+  x = 184,
   y = 216,
-  width = 8,
-  height = 8,
-  pattern = "house.roof.circle",
-}
-
-tile{
-  layer = 0,
-  x = 208,
-  y = 216,
-  width = 8,
-  height = 8,
-  pattern = "house.roof.circle",
+  width = 16,
+  height = 40,
+  pattern = "grass.shadow",
 }
 
 dynamic_tile{
@@ -5910,7 +5730,7 @@ wall{
   layer = 0,
   x = 144,
   y = 176,
-  width = 96,
+  width = 40,
   height = 80,
   stops_hero = true,
   stops_npcs = true,
@@ -5929,21 +5749,21 @@ destructible{
 }
 
 destination{
-  name = "link_house",
+  name = "door_link_house",
   layer = 0,
   x = 192,
-  y = 277,
+  y = 269,
   direction = 3,
 }
 
 teletransporter{
   layer = 0,
   x = 184,
-  y = 256,
+  y = 240,
   width = 16,
   height = 16,
   destination_map = "link_house",
-  destination = "links_house_entrance",
+  destination = "door_links_house_entrance",
 }
 
 jumper{
@@ -6409,6 +6229,41 @@ jumper{
   jump_length = 48,
 }
 
+wall{
+  layer = 0,
+  x = 184,
+  y = 176,
+  width = 16,
+  height = 40,
+  stops_hero = true,
+  stops_npcs = true,
+  stops_enemies = true,
+  stops_blocks = true,
+  stops_projectiles = true,
+}
+
+wall{
+  layer = 0,
+  x = 200,
+  y = 176,
+  width = 40,
+  height = 80,
+  stops_hero = true,
+  stops_npcs = true,
+  stops_enemies = true,
+  stops_blocks = true,
+  stops_projectiles = true,
+}
+
+tile{
+  layer = 1,
+  x = 160,
+  y = 232,
+  width = 64,
+  height = 16,
+  pattern = "house.roof_blue",
+}
+
 tile{
   layer = 1,
   x = -40,
@@ -6425,15 +6280,6 @@ tile{
   width = 192,
   height = 40,
   pattern = "tree.green.1",
-}
-
-tile{
-  layer = 1,
-  x = 176,
-  y = 240,
-  width = 32,
-  height = 16,
-  pattern = "house.entrance.top",
 }
 
 tile{
@@ -6524,6 +6370,213 @@ tile{
   width = 48,
   height = 40,
   pattern = "tree.green.1",
+}
+
+tile{
+  layer = 1,
+  x = 168,
+  y = 224,
+  width = 48,
+  height = 8,
+  pattern = "house.roof_blue.top.2",
+}
+
+tile{
+  layer = 1,
+  x = 168,
+  y = 184,
+  width = 48,
+  height = 40,
+  pattern = "house.roof_blue.top",
+}
+
+tile{
+  layer = 1,
+  x = 168,
+  y = 184,
+  width = 8,
+  height = 8,
+  pattern = "house.roof.circle",
+}
+
+tile{
+  layer = 1,
+  x = 208,
+  y = 184,
+  width = 8,
+  height = 8,
+  pattern = "house.roof.circle",
+}
+
+tile{
+  layer = 1,
+  x = 168,
+  y = 216,
+  width = 8,
+  height = 8,
+  pattern = "house.roof.circle",
+}
+
+tile{
+  layer = 1,
+  x = 208,
+  y = 216,
+  width = 8,
+  height = 8,
+  pattern = "house.roof.circle",
+}
+
+tile{
+  layer = 1,
+  x = 144,
+  y = 232,
+  width = 8,
+  height = 24,
+  pattern = "house.roof_blue.corner.3",
+}
+
+tile{
+  layer = 1,
+  x = 144,
+  y = 176,
+  width = 24,
+  height = 8,
+  pattern = "house.roof_blue.corner.1",
+}
+
+tile{
+  layer = 1,
+  x = 216,
+  y = 176,
+  width = 24,
+  height = 8,
+  pattern = "house.roof_blue.corner.2",
+}
+
+tile{
+  layer = 1,
+  x = 232,
+  y = 232,
+  width = 8,
+  height = 24,
+  pattern = "house.roof_blue.corner.4",
+}
+
+tile{
+  layer = 1,
+  x = 144,
+  y = 184,
+  width = 8,
+  height = 48,
+  pattern = "house.roof_blue.3",
+}
+
+tile{
+  layer = 1,
+  x = 232,
+  y = 184,
+  width = 8,
+  height = 48,
+  pattern = "house.roof_blue.4",
+}
+
+tile{
+  layer = 1,
+  x = 168,
+  y = 176,
+  width = 48,
+  height = 8,
+  pattern = "house.roof_blue.1",
+}
+
+tile{
+  layer = 1,
+  x = 152,
+  y = 248,
+  width = 80,
+  height = 8,
+  pattern = "house.roof_red.2",
+}
+
+tile{
+  layer = 1,
+  x = 152,
+  y = 184,
+  width = 8,
+  height = 40,
+  pattern = "house.roof_blue",
+}
+
+tile{
+  layer = 1,
+  x = 224,
+  y = 184,
+  width = 8,
+  height = 40,
+  pattern = "house.roof_blue",
+}
+
+tile{
+  layer = 1,
+  x = 152,
+  y = 224,
+  width = 8,
+  height = 24,
+  pattern = "house.roof_blue.corner.3b",
+}
+
+tile{
+  layer = 1,
+  x = 224,
+  y = 224,
+  width = 8,
+  height = 24,
+  pattern = "house.roof_blue.corner.4b",
+}
+
+tile{
+  layer = 1,
+  x = 160,
+  y = 224,
+  width = 8,
+  height = 8,
+  pattern = "house.roof_blue.top.corner.3",
+}
+
+tile{
+  layer = 1,
+  x = 216,
+  y = 224,
+  width = 8,
+  height = 8,
+  pattern = "house.roof_blue.top.corner.4",
+}
+
+tile{
+  layer = 1,
+  x = 160,
+  y = 184,
+  width = 8,
+  height = 40,
+  pattern = "house.roof_blue.top.3",
+}
+
+tile{
+  layer = 1,
+  x = 216,
+  y = 184,
+  width = 8,
+  height = 40,
+  pattern = "house.roof_blue.top.4",
+}
+
+tile{
+  layer = 1,
+  x = 176,
+  y = 240,
+  width = 32,
+  height = 16,
+  pattern = "house.entrance.top",
 }
 
 teletransporter{

@@ -882,6 +882,18 @@ tile{
   pattern = "door.1.support.1",
 }
 
+wall{
+  layer = 0,
+  x = 104,
+  y = 304,
+  width = 16,
+  height = 16,
+  stops_npcs = true,
+  stops_enemies = true,
+  stops_blocks = true,
+  stops_projectiles = true,
+}
+
 teletransporter{
   layer = 0,
   x = 104,
@@ -889,11 +901,11 @@ teletransporter{
   width = 16,
   height = 16,
   destination_map = "dungeon castle B1",
-  destination = "hallway2",
+  destination = "door_hallway2",
 }
 
 destination{
-  name = "hallway2",
+  name = "door_hallway2",
   layer = 0,
   x = 112,
   y = 317,
@@ -901,7 +913,7 @@ destination{
 }
 
 destination{
-  name = "hallway1",
+  name = "door_hallway1",
   layer = 0,
   x = 112,
   y = 205,
@@ -915,7 +927,7 @@ teletransporter{
   width = 16,
   height = 16,
   destination_map = "dungeon castle B1",
-  destination = "hallway1",
+  destination = "door_hallway1",
 }
 
 stairs{
@@ -987,7 +999,7 @@ npc{
 
 enemy{
   layer = 0,
-  x = 184,
+  x = 232,
   y = 341,
   direction = 3,
   breed = "simple_green_soldier",
@@ -995,22 +1007,10 @@ enemy{
 
 enemy{
   layer = 0,
-  x = 272,
-  y = 341,
+  x = 368,
+  y = 405,
   direction = 3,
   breed = "simple_green_soldier",
-}
-
-wall{
-  layer = 0,
-  x = 104,
-  y = 304,
-  width = 16,
-  height = 16,
-  stops_npcs = true,
-  stops_enemies = true,
-  stops_blocks = true,
-  stops_projectiles = true,
 }
 
 wall{
@@ -1033,6 +1033,14 @@ custom_entity{
   width = 16,
   height = 16,
   direction = 0,
+}
+
+destination{
+  name = "start",
+  layer = 0,
+  x = 112,
+  y = 157,
+  direction = 1,
 }
 
 tile{
@@ -1576,7 +1584,7 @@ tile{
 }
 
 destination{
-  name = "start",
+  name = "from_hole",
   layer = 1,
   x = 408,
   y = 173,

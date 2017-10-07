@@ -13620,7 +13620,7 @@ teletransporter{
   width = 16,
   height = 16,
   destination_map = "dungeon castle B1",
-  destination = "start",
+  destination = "from_hole",
 }
 
 wall{
@@ -15943,8 +15943,8 @@ destructible{
 destination{
   name = "start",
   layer = 0,
-  x = 512,
-  y = 181,
+  x = 936,
+  y = 173,
   direction = 1,
 }
 
@@ -16184,10 +16184,10 @@ custom_entity{
 }
 
 destination{
-  name = "from_castle_f1_entrance",
+  name = "door_from_castle_f1_entrance",
   layer = 0,
   x = 512,
-  y = 261,
+  y = 269,
   direction = 3,
 }
 
@@ -16202,18 +16202,18 @@ jumper{
 }
 
 destination{
-  name = "from_castle_f1_top_left",
+  name = "door_from_castle_f1_top_left",
   layer = 0,
   x = 304,
-  y = 53,
+  y = 61,
   direction = 3,
 }
 
 destination{
-  name = "from_castle_f1_top_right",
+  name = "door_from_castle_f1_top_right",
   layer = 0,
   x = 720,
-  y = 53,
+  y = 61,
   direction = 3,
 }
 
