@@ -82,7 +82,7 @@ tile_pattern{
 tile_pattern{
   id = "17",
   ground = "traversable",
-  default_layer = 1,
+  default_layer = 0,
   x = 80,
   y = 256,
   width = 16,
@@ -195,6 +195,28 @@ tile_pattern{
   width = 16,
   height = 16,
   repeat_mode = "none",
+}
+
+tile_pattern{
+  id = "27",
+  ground = "wall",
+  default_layer = 0,
+  x = { 32, 48, 64, 48 },
+  y = { 264, 264, 264, 264 },
+  width = 16,
+  height = 8,
+  repeat_mode = "horizontal",
+}
+
+tile_pattern{
+  id = "28",
+  ground = "wall",
+  default_layer = 1,
+  x = { 32, 48, 64 },
+  y = { 256, 256, 256 },
+  width = 16,
+  height = 8,
+  repeat_mode = "horizontal",
 }
 
 tile_pattern{
@@ -1588,7 +1610,7 @@ tile_pattern{
 tile_pattern{
   id = "floor_border.2",
   ground = "traversable",
-  default_layer = 1,
+  default_layer = 0,
   x = 16,
   y = 232,
   width = 8,
@@ -1888,7 +1910,7 @@ tile_pattern{
 tile_pattern{
   id = "floor_small.2",
   ground = "traversable",
-  default_layer = 1,
+  default_layer = 0,
   x = 24,
   y = 232,
   width = 8,
@@ -2756,7 +2778,7 @@ tile_pattern{
 tile_pattern{
   id = "torch_big.bottom",
   ground = "wall",
-  default_layer = 1,
+  default_layer = 0,
   x = 16,
   y = 240,
   width = 16,
@@ -2765,20 +2787,9 @@ tile_pattern{
 }
 
 tile_pattern{
-  id = "torch_big.top",
-  ground = "wall",
-  default_layer = 2,
-  x = { 32, 48, 64, 48 },
-  y = { 256, 256, 256, 256 },
-  width = 16,
-  height = 16,
-  repeat_mode = "none",
-}
-
-tile_pattern{
   id = "torch_off",
   ground = "wall",
-  default_layer = 1,
+  default_layer = 0,
   x = 0,
   y = 240,
   width = 16,

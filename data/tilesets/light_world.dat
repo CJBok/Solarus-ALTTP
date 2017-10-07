@@ -1130,6 +1130,28 @@ tile_pattern{
 }
 
 tile_pattern{
+  id = "193",
+  ground = "wall",
+  default_layer = 0,
+  x = 352,
+  y = 136,
+  width = 8,
+  height = 8,
+  repeat_mode = "horizontal",
+}
+
+tile_pattern{
+  id = "194",
+  ground = "wall",
+  default_layer = 0,
+  x = 360,
+  y = 136,
+  width = 8,
+  height = 8,
+  repeat_mode = "horizontal",
+}
+
+tile_pattern{
   id = "2",
   ground = "wall",
   default_layer = 0,
