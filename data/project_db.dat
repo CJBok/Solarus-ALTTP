@@ -35,6 +35,10 @@ sprite{ id = "entities/Doors/Outside/door_light01", description = "entities/Door
 sprite{ id = "entities/Doors/Outside/door_light02", description = "entities/Doors/Outside/door_light02" }
 sprite{ id = "entities/Doors/Outside/door_light03", description = "entities/Doors/Outside/door_light03" }
 sprite{ id = "entities/Doors/Outside/door_light04", description = "entities/Doors/Outside/door_light04" }
+sprite{ id = "entities/Electron/electric_left", description = "Electric Left (Electric Defense)" }
+sprite{ id = "entities/Electron/electric_pole", description = "Electric  Pole (Electric Defense)" }
+sprite{ id = "entities/Electron/electric_right", description = "Electric Right (Electric Defence)" }
+sprite{ id = "entities/Electron/electron", description = "Electron (Electric Defense)" }
 sprite{ id = "entities/Stones/stone_lg_dark01", description = "entities/Stones/stone_lg_dark01" }
 sprite{ id = "entities/Stones/stone_lg_dark02", description = "entities/Stones/stone_lg_dark02" }
 sprite{ id = "entities/Stones/stone_lg_dark03", description = "entities/Stones/stone_lg_dark03" }
@@ -71,6 +75,7 @@ sprite{ id = "entities/door_very_weak_wall", description = "Door (very weak wall
 sprite{ id = "entities/door_weak_block", description = "Door (weak block)" }
 sprite{ id = "entities/door_weak_wall", description = "Door (weak wall)" }
 sprite{ id = "entities/doors", description = "Outside Doors" }
+sprite{ id = "entities/electron/electron", description = "Electron (Electric Defence)" }
 sprite{ id = "entities/explosion", description = "Explosion" }
 sprite{ id = "entities/fire", description = "Fire" }
 sprite{ id = "entities/grass", description = "Grass" }

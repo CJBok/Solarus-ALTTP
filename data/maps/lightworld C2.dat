@@ -12807,6 +12807,51 @@ tile{
   pattern = "castle.top.floor",
 }
 
+tile{
+  layer = 0,
+  x = 504,
+  y = 128,
+  width = 16,
+  height = 16,
+  pattern = "197",
+}
+
+tile{
+  layer = 0,
+  x = 504,
+  y = 144,
+  width = 16,
+  height = 16,
+  pattern = "199",
+}
+
+tile{
+  layer = 0,
+  x = 504,
+  y = 160,
+  width = 16,
+  height = 16,
+  pattern = "198",
+}
+
+tile{
+  layer = 0,
+  x = 520,
+  y = 144,
+  width = 16,
+  height = 16,
+  pattern = "196",
+}
+
+tile{
+  layer = 0,
+  x = 488,
+  y = 144,
+  width = 16,
+  height = 16,
+  pattern = "195",
+}
+
 custom_entity{
   name = "door_proxy",
   layer = 0,
@@ -12830,8 +12875,8 @@ teletransporter{
 
 wall{
   layer = 0,
-  x = 8,
-  y = 280,
+  x = 64,
+  y = 264,
   width = 32,
   height = 64,
   stops_hero = true,
@@ -15899,7 +15944,7 @@ destination{
   name = "start",
   layer = 0,
   x = 512,
-  y = 333,
+  y = 181,
   direction = 1,
 }
 
@@ -16190,6 +16235,17 @@ teletransporter{
   height = 16,
   destination_map = "dungeon castle 1F",
   destination = "entrance_top_right",
+}
+
+custom_entity{
+  layer = 0,
+  x = 736,
+  y = 605,
+  width = 16,
+  height = 16,
+  direction = 3,
+  sprite = "npc/shielded_green_soldier",
+  model = "turn_to_hero",
 }
 
 tile{
@@ -16676,5 +16732,68 @@ tile{
   width = 16,
   height = 8,
   pattern = "193",
+}
+
+npc{
+  layer = 1,
+  x = 536,
+  y = 125,
+  direction = 3,
+  subtype = 1,
+  sprite = "entities/Electron/electric_right",
+}
+
+npc{
+  layer = 1,
+  x = 520,
+  y = 125,
+  direction = 3,
+  subtype = 1,
+  sprite = "entities/Electron/electric_left",
+}
+
+npc{
+  layer = 1,
+  x = 504,
+  y = 125,
+  direction = 3,
+  subtype = 1,
+  sprite = "entities/Electron/electric_right",
+}
+
+npc{
+  layer = 1,
+  x = 488,
+  y = 125,
+  direction = 3,
+  subtype = 1,
+  sprite = "entities/Electron/electric_left",
+}
+
+npc{
+  layer = 2,
+  x = 512,
+  y = 125,
+  direction = 3,
+  subtype = 1,
+  sprite = "entities/electron/electron",
+}
+
+npc{
+  layer = 2,
+  x = 544,
+  y = 125,
+  direction = 3,
+  subtype = 1,
+  sprite = "entities/Electron/electric_pole",
+}
+
+npc{
+  layer = 2,
+  x = 480,
+  y = 125,
+  direction = 3,
+  subtype = 1,
+  sprite = "entities/Electron/electric_pole",
 }
 
