@@ -1,8 +1,9 @@
-map{ id = "dungeon castle 1F", description = "Castle Dungeon 1F" }
-map{ id = "dungeon castle B1", description = "Castle Dungeon B1" }
-map{ id = "lightworld B3", description = "Light World B3" }
-map{ id = "lightworld C2", description = "Light World Castle" }
-map{ id = "lightworld C3", description = "Light World Links House" }
+map{ id = "dungeon_castle_1f", description = "Castle Dungeon 1F" }
+map{ id = "dungeon_castle_b1", description = "Castle Dungeon B1" }
+map{ id = "dungeon_castle_secret_b1", description = "Castle Dungeon Secret B1" }
+map{ id = "lightworld_b3", description = "Light World B3" }
+map{ id = "lightworld_c2", description = "Light World Castle" }
+map{ id = "lightworld_c3", description = "Light World Links House" }
 map{ id = "link_house", description = "Link's House" }
 map{ id = "testmap", description = "Test Map" }
 
@@ -22,6 +23,8 @@ tileset{ id = "temple_blue", description = "Temple (blue)" }
 tileset{ id = "temple_green", description = "Temple (green)" }
 tileset{ id = "temple_yellow", description = "Temple (yellow)" }
 
+sprite{ id = "enemies/blue_knight_soldier", description = "enemies/blue_knight_soldier" }
+sprite{ id = "enemies/blue_knight_soldier_sword", description = "enemies/blue_knight_soldier_sword" }
 sprite{ id = "enemies/enemy_killed", description = "Enemy killed" }
 sprite{ id = "enemies/evil_tile1", description = "enemies/evil_tile1" }
 sprite{ id = "enemies/evil_tile2", description = "enemies/evil_tile2" }
@@ -29,7 +32,13 @@ sprite{ id = "enemies/evil_tile3", description = "enemies/evil_tile3" }
 sprite{ id = "enemies/evil_tile4", description = "enemies/evil_tile4" }
 sprite{ id = "enemies/ganon", description = "enemies/ganon" }
 sprite{ id = "enemies/simple_green_soldier", description = "Enemy: Simple Soldier (Green)" }
+sprite{ id = "enemies/sword_soldier_blue", description = "Soldier Sword Blue" }
+sprite{ id = "enemies/sword_soldier_blue_weapon", description = "Soldier Sword Blue Weapon" }
+sprite{ id = "enemies/sword_soldier_green", description = "Soldier Sword Green" }
+sprite{ id = "enemies/sword_soldier_green_weapon", description = "Soldier Sword Green Weapon" }
 sprite{ id = "enemies/tentacle", description = "Enemy: Tentacle" }
+sprite{ id = "entities/Doors/Inside/double_door_key_wood", description = "Double Door Wood Key" }
+sprite{ id = "entities/Doors/Inside/enemy_door_blue", description = "Enemy Door Blue" }
 sprite{ id = "entities/Doors/Outside/door_castle01", description = "Castle 1" }
 sprite{ id = "entities/Doors/Outside/door_light01", description = "entities/Doors/Outside/door_light01" }
 sprite{ id = "entities/Doors/Outside/door_light02", description = "entities/Doors/Outside/door_light02" }
@@ -295,16 +304,22 @@ sound{ id = "world_warp", description = "world_warp" }
 sound{ id = "wrong", description = "wrong" }
 sound{ id = "zora", description = "zora" }
 
+item{ id = "boomerang", description = "Boomerang" }
 item{ id = "lamp", description = "Lamp" }
 item{ id = "magic_bar", description = "magic_bar" }
 item{ id = "magic_flask", description = "magic_flask" }
 item{ id = "rupee", description = "Rupees (x1 / x5 / x20 / x50 / x100 / x300)" }
 item{ id = "shield", description = "Shield" }
+item{ id = "small_key", description = "Small Key" }
 item{ id = "sword", description = "sword" }
 
+enemy{ id = "blue_knight_soldier", description = "Blue Soldier" }
 enemy{ id = "green_knight_soldier", description = "green_knight_soldier" }
 enemy{ id = "simple_green_soldier", description = "Simple Soldier (Green)" }
+enemy{ id = "sword_soldier_blue", description = "Soldier Sword Blue" }
+enemy{ id = "sword_soldier_green", description = "Soldier Sword Green" }
 
+entity{ id = "door_close_trap", description = "Close Trap Doors" }
 entity{ id = "door_proximity_32", description = "Door Auto Open/Close when Hero in range if 32 pixels" }
 entity{ id = "turn_to_hero", description = "Face Hero" }
 

@@ -492,7 +492,7 @@ teletransporter{
   y = 200,
   width = 16,
   height = 16,
-  destination_map = "lightworld C3",
+  destination_map = "lightworld_c3",
   destination = "door_link_house",
 }
 

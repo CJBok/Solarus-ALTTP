@@ -3386,7 +3386,7 @@ teletransporter{
   width = 16,
   height = 512,
   transition = "scrolling",
-  destination_map = "lightworld C3",
+  destination_map = "lightworld_c3",
   destination = "_side",
 }
 
@@ -4655,7 +4655,7 @@ teletransporter{
   width = 128,
   height = 16,
   transition = "scrolling",
-  destination_map = "lightworld C2",
+  destination_map = "lightworld_c2",
   destination = "_side",
 }
 

@@ -1,4 +1,13 @@
 dialog{
+  id = "_small_key_required",
+  icon = "72",
+  skip = "all",
+  text = [[
+Locked!
+]]
+}
+
+dialog{
   id = "_treasure.lamp.1",
   icon = "5",
   text = [[

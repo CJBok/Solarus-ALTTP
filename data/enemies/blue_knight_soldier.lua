@@ -11,3 +11,7 @@ enemy:set_properties({
   play_hero_seen_sound = true
 })
 
+--[[function enemy:on_created()
+  --self:set_enabled(false)
+end--]]
+

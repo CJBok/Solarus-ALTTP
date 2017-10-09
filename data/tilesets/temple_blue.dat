@@ -11,6 +11,61 @@ tile_pattern{
 }
 
 tile_pattern{
+  id = "10",
+  ground = "wall",
+  default_layer = 0,
+  x = 152,
+  y = 56,
+  width = 16,
+  height = 16,
+  repeat_mode = "none",
+}
+
+tile_pattern{
+  id = "11",
+  ground = "wall",
+  default_layer = 0,
+  x = 152,
+  y = 72,
+  width = 16,
+  height = 16,
+  repeat_mode = "none",
+}
+
+tile_pattern{
+  id = "12",
+  ground = "wall",
+  default_layer = 0,
+  x = 136,
+  y = 72,
+  width = 16,
+  height = 16,
+  repeat_mode = "none",
+}
+
+tile_pattern{
+  id = "13",
+  ground = "wall",
+  default_layer = 1,
+  x = 80,
+  y = 256,
+  width = 16,
+  height = 8,
+  repeat_mode = "horizontal",
+}
+
+tile_pattern{
+  id = "14",
+  ground = "wall",
+  default_layer = 0,
+  x = 80,
+  y = 264,
+  width = 16,
+  height = 16,
+  repeat_mode = "horizontal",
+}
+
+tile_pattern{
   id = "2",
   ground = "wall",
   default_layer = 2,
@@ -84,6 +139,17 @@ tile_pattern{
   y = 0,
   width = 16,
   height = 16,
+}
+
+tile_pattern{
+  id = "9",
+  ground = "wall",
+  default_layer = 0,
+  x = 136,
+  y = 56,
+  width = 16,
+  height = 16,
+  repeat_mode = "none",
 }
 
 tile_pattern{
@@ -3381,16 +3447,6 @@ tile_pattern{
 }
 
 tile_pattern{
-  id = "wall_low_diag.3",
-  ground = "wall",
-  default_layer = 0,
-  x = 136,
-  y = 48,
-  width = 16,
-  height = 16,
-}
-
-tile_pattern{
   id = "wall_low_diag.4",
   ground = "wall",
   default_layer = 0,
@@ -3456,16 +3512,6 @@ tile_pattern{
   default_layer = 0,
   x = 200,
   y = 32,
-  width = 16,
-  height = 16,
-}
-
-tile_pattern{
-  id = "wall_low_diag.bottom.3",
-  ground = "wall",
-  default_layer = 0,
-  x = 152,
-  y = 48,
   width = 16,
   height = 16,
 }

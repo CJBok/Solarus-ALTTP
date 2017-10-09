@@ -12869,8 +12869,8 @@ teletransporter{
   y = 232,
   width = 16,
   height = 16,
-  destination_map = "dungeon castle 1F",
-  destination = "start",
+  destination_map = "dungeon_castle_1f",
+  destination = "entrance",
 }
 
 wall{
@@ -13203,7 +13203,7 @@ teletransporter{
   width = 400,
   height = 16,
   transition = "scrolling",
-  destination_map = "lightworld C3",
+  destination_map = "lightworld_c3",
   destination = "_side",
 }
 
@@ -13619,7 +13619,7 @@ teletransporter{
   y = 160,
   width = 16,
   height = 16,
-  destination_map = "dungeon castle B1",
+  destination_map = "dungeon_castle_secret_b1",
   destination = "from_hole",
 }
 
@@ -15133,7 +15133,7 @@ teletransporter{
   y = 216,
   width = 16,
   height = 16,
-  destination_map = "dungeon castle B1",
+  destination_map = "dungeon_castle_secret_b1",
   destination = "from_castle_garden",
 }
 
@@ -15983,7 +15983,7 @@ teletransporter{
   width = 400,
   height = 16,
   transition = "scrolling",
-  destination_map = "lightworld B3",
+  destination_map = "lightworld_b3",
   destination = "_side",
 }
 
@@ -16223,7 +16223,7 @@ teletransporter{
   y = 24,
   width = 16,
   height = 16,
-  destination_map = "dungeon castle 1F",
+  destination_map = "dungeon_castle_1f",
   destination = "entrance_top_left",
 }
 
@@ -16233,7 +16233,7 @@ teletransporter{
   y = 24,
   width = 16,
   height = 16,
-  destination_map = "dungeon castle 1F",
+  destination_map = "dungeon_castle_1f",
   destination = "entrance_top_right",
 }
 

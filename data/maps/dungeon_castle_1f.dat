@@ -3853,7 +3853,7 @@ tile{
 }
 
 destination{
-  name = "start",
+  name = "entrance",
   layer = 0,
   x = 600,
   y = 989,
@@ -3890,7 +3890,7 @@ teletransporter{
   y = 992,
   width = 16,
   height = 16,
-  destination_map = "lightworld C2",
+  destination_map = "lightworld_c2",
   destination = "door_from_castle_f1_entrance",
 }
 
@@ -4126,6 +4126,40 @@ npc{
   direction = 3,
   subtype = 1,
   sprite = "entities/statue",
+}
+
+teletransporter{
+  layer = 0,
+  x = 592,
+  y = 104,
+  width = 16,
+  height = 16,
+  destination_map = "dungeon_castle_b1",
+  destination = "from_f1",
+}
+
+destination{
+  name = "from_b1",
+  layer = 0,
+  x = 600,
+  y = 117,
+  direction = 3,
+}
+
+stairs{
+  layer = 0,
+  x = 592,
+  y = 104,
+  direction = 1,
+  subtype = 1,
+}
+
+destination{
+  name = "start",
+  layer = 0,
+  x = 600,
+  y = 165,
+  direction = 1,
 }
 
 tile{
@@ -7416,20 +7450,11 @@ destination{
 
 teletransporter{
   layer = 1,
-  x = 160,
-  y = 968,
-  width = 16,
-  height = 16,
-  destination_map = "dungeon castle 1F",
-}
-
-teletransporter{
-  layer = 1,
   x = 208,
   y = 1008,
   width = 16,
   height = 16,
-  destination_map = "lightworld C2",
+  destination_map = "lightworld_c2",
   destination = "door_from_castle_f1_top_left",
 }
 
@@ -7503,7 +7528,7 @@ teletransporter{
   y = 1008,
   width = 16,
   height = 16,
-  destination_map = "lightworld C2",
+  destination_map = "lightworld_c2",
   destination = "door_from_castle_f1_top_right",
 }
 
@@ -7940,8 +7965,8 @@ separator{
 custom_entity{
   name = "settings:0-day",
   layer = 2,
-  x = 96,
-  y = -243,
+  x = 8,
+  y = 13,
   width = 16,
   height = 16,
   direction = 0,

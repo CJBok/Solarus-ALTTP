@@ -9,6 +9,9 @@ local map_wakup_enemies = require("scripts/map/wakeup_enemies")
 local hero_transition_animations = require("scripts/hero/transition_animations")
 
 
+--sol.main.load_file("scripts/hero/equipment")(game)
+
+
 -- Starts the game from the given savegame file,
 -- initializing it if necessary.
 function game_manager:start_game(file_name)

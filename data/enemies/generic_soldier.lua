@@ -64,6 +64,8 @@ function enemy:on_created()
 
   self:set_invincible_sprite(sword_sprite)
   self:set_attack_consequence_sprite(sword_sprite, "sword", "custom")
+  --self:set_enabled(false)
+  --self:set_visible(true)
 end
 
 function enemy:on_restarted()

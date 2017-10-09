@@ -14,6 +14,8 @@ map:register_event("on_started", function(map,destination)
       entity:set_enabled(false)
     end
   end
+
+  map:set_doors_open("trap1", true)
 end)
 
 map:register_event("on_update", function(map)

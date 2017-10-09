@@ -8,7 +8,6 @@ function item:on_created()
 end
 
 function item:on_obtaining(variant, savegame_variable)
-
   self:get_game():add_small_key()
 end
 
