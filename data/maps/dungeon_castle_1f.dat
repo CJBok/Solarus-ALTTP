@@ -4134,7 +4134,7 @@ teletransporter{
   y = 104,
   width = 16,
   height = 16,
-  destination_map = "dungeon_castle_b1",
+  destination_map = "Castle_Dungeon/B1/C1",
   destination = "from_f1",
 }
 

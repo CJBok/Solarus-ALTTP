@@ -1,3 +1,9 @@
+map{ id = "Castle_Dungeon/B1/A1", description = "Castle Dungeon A1" }
+map{ id = "Castle_Dungeon/B1/A2", description = "Castle Dungeon A2" }
+map{ id = "Castle_Dungeon/B1/A3", description = "Castle Dungeon A3" }
+map{ id = "Castle_Dungeon/B1/B2", description = "Castle Dungeon B2" }
+map{ id = "Castle_Dungeon/B1/C1", description = "Castle Dungeon C1" }
+map{ id = "Castle_Dungeon/B1/C3", description = "Castle Dungeon C3" }
 map{ id = "dungeon_castle_1f", description = "Castle Dungeon 1F" }
 map{ id = "dungeon_castle_b1", description = "Castle Dungeon B1" }
 map{ id = "dungeon_castle_secret_b1", description = "Castle Dungeon Secret B1" }
@@ -38,12 +44,9 @@ sprite{ id = "enemies/sword_soldier_green", description = "Soldier Sword Green" 
 sprite{ id = "enemies/sword_soldier_green_weapon", description = "Soldier Sword Green Weapon" }
 sprite{ id = "enemies/tentacle", description = "Enemy: Tentacle" }
 sprite{ id = "entities/Doors/Inside/double_door_key_wood", description = "Double Door Wood Key" }
-sprite{ id = "entities/Doors/Inside/enemy_door_blue", description = "Enemy Door Blue" }
+sprite{ id = "entities/Doors/Inside/trapdoor_blue", description = "Trapdoor Blue" }
 sprite{ id = "entities/Doors/Outside/door_castle01", description = "Castle 1" }
 sprite{ id = "entities/Doors/Outside/door_light01", description = "entities/Doors/Outside/door_light01" }
-sprite{ id = "entities/Doors/Outside/door_light02", description = "entities/Doors/Outside/door_light02" }
-sprite{ id = "entities/Doors/Outside/door_light03", description = "entities/Doors/Outside/door_light03" }
-sprite{ id = "entities/Doors/Outside/door_light04", description = "entities/Doors/Outside/door_light04" }
 sprite{ id = "entities/Electron/electric_left", description = "Electric Left (Electric Defense)" }
 sprite{ id = "entities/Electron/electric_pole", description = "Electric  Pole (Electric Defense)" }
 sprite{ id = "entities/Electron/electric_right", description = "Electric Right (Electric Defence)" }

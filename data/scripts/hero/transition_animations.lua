@@ -20,10 +20,13 @@ destinations_meta:register_event("on_activated", function(destination)
   local x,y,l=hero:get_position()
   local dx,dy,dl=destination:get_position()
   local ground=game:get_value("tp_ground")
-  if ground=="hole" then
+
+  if ground == "hole" then
+
     --Falling from the ceiling
     hero:set_visible(false)
     hero:freeze()
+
     --disabling teletransoprters to avoid
     local disabled_teletransporters={}
     for t in map:get_entities_by_type("teletransporter") do
@@ -33,28 +36,30 @@ destinations_meta:register_event("on_activated", function(destination)
       end
     end
     --Creating a "stunt actor" moving vertically from the ceiling
-    local falling_hero=map:create_custom_entity({
-      name="falling_link",
-      x=x,
-      y=math.max(y-100,24),
-      direction=0,
-      layer=map:get_max_layer(),
-      sprite=hero:get_tunic_sprite_id(),
-      width=0,
-      height=0,
+    local falling_hero = map:create_custom_entity({
+      name = "falling_link",
+      x = x,
+      y = math.max(y - 100, 24),
+      direction = 0,
+      layer = map:get_max_layer(),
+      sprite = hero:get_tunic_sprite_id(),
+      width = 0,
+      height = 0,
     })
+
+    print(map:get_max_layer())
     falling_hero:get_sprite():set_animation("dropping_from_ceiling")
  
     --Creating a reception platform (prevents the hero from falling into consecutive holes during the animation)
-    local platform=map:create_custom_entity({
-      name="platform",
-      direction=0,
-      layer=map:get_max_layer(),
-      x=x,
-      y=y,
-      width=0,
-      height=0,
-      sprite="entities/shadow",
+    local platform = map:create_custom_entity({
+      name = "platform",
+      direction = 0,
+      layer = map:get_max_layer(),
+      x = x,
+      y = y,
+      width = 0,
+      height = 0,
+      sprite = "entities/shadow",
     })
     platform:bring_to_front()
     platform:get_sprite():set_animation("big")
@@ -108,15 +113,15 @@ destinations_meta:register_event("on_activated", function(destination)
     end
 
     --Creating a "stunt actor"
-    local walking_hero=map:create_custom_entity({
+    local walking_hero = map:create_custom_entity({
       name="walking_link",
-      x=x+offsetx,
-      y=y+offsety,
-      direction=hero:get_direction(),
-      layer=dl,
-      sprite=hero:get_tunic_sprite_id(),
-      width=0,
-      height=0,
+      x = x + offsetx,
+      y = y + offsety,
+      direction = hero:get_direction(),
+      layer = dl,
+      sprite = hero:get_tunic_sprite_id(),
+      width = 0,
+      height = 0,
     })
     walking_hero:get_sprite():set_animation("walking")
 

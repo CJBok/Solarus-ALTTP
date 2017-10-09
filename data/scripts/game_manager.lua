@@ -2,14 +2,7 @@ local game_manager = {}
 
 local initial_game = require("scripts/initial_game")
 
-local map_doors = require("scripts/map/doors")
-local map_light_manager = require("scripts/map/light_manager")
-local map_wakup_enemies = require("scripts/map/wakeup_enemies")
 
-local hero_transition_animations = require("scripts/hero/transition_animations")
-
-
---sol.main.load_file("scripts/hero/equipment")(game)
 
 
 -- Starts the game from the given savegame file,

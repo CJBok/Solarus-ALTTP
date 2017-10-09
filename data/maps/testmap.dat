@@ -8,3 +8,29 @@ properties{
   tileset = "temple_blue",
 }
 
+tile{
+  layer = 0,
+  x = 0,
+  y = 0,
+  width = 336,
+  height = 272,
+  pattern = "floor.2",
+}
+
+destination{
+  name = "start",
+  layer = 0,
+  x = 88,
+  y = 109,
+  direction = 1,
+}
+
+door{
+  name = "door_b1",
+  layer = 0,
+  x = 80,
+  y = 64,
+  direction = 1,
+  sprite = "entities/Doors/Inside/trapdoor_blue",
+}
+

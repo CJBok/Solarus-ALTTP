@@ -14,7 +14,7 @@ destinations_meta:register_event("on_activated", function(destination)
 end)
 
 
-teletransporter_meta:register_event("on_activated", function(teletransporter, test)
+teletransporter_meta:register_event("on_activated", function(teletransporter)
   local map = teletransporter:get_map()
   local entities = map:get_entities_in_region(teletransporter)
   for ent in entities do
