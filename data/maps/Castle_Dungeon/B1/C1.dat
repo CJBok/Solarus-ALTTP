@@ -1178,9 +1178,10 @@ jumper{
 }
 
 enemy{
+  name = "patrol1",
   layer = 1,
-  x = 256,
-  y = 205,
+  x = 280,
+  y = 109,
   direction = 3,
   breed = "sword_soldier_blue",
   treasure_name = "small_key",
