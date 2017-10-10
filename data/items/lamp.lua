@@ -73,6 +73,7 @@ function item:on_obtained(variant, savegame_variable)
   if not magic_bar:has_variant() then
     magic_bar:set_variant(1)
   end
+  self:get_game():set_magic(0)
 end
 
 -- Called when the current map changes.

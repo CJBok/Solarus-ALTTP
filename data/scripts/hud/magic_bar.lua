@@ -60,7 +60,7 @@ function magic_bar:check()
 
       -- Play the magic bar sound.
       if (magic - self.magic_displayed) % 10 == 1 then
-	sol.audio.play_sound("magic_bar")
+	      sol.audio.play_sound("magic_bar")
       end
     end
   end
@@ -84,7 +84,8 @@ function magic_bar:rebuild_surface()
   self.container_sprite:draw(self.surface)
 
   -- Current magic.
-  self.magic_bar_img:draw_region(46, 24, 2 + self.magic_displayed, 8, self.surface)
+  local offset = self.magic_displayed / self.max_magic_displayed * 32
+  self.magic_bar_img:draw_region(16, 11, 16, 0 + offset, self.surface, 0, 11 + (32 - offset))
 end
 
 function magic_bar:set_dst_position(x, y)

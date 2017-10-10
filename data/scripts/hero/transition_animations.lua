@@ -12,14 +12,18 @@ teletransporter_meta:register_event("on_activated", function(teletransporter, te
 end)
  
 --the actual trigger
-destinations_meta:register_event("on_activated", function(destination)
---map_meta:register_event("on_started", function(map, destination)
-  local game=destination:get_game()
-  local hero=game:get_hero()
-  local map=game:get_map()
-  local x,y,l=hero:get_position()
-  local dx,dy,dl=destination:get_position()
-  local ground=game:get_value("tp_ground")
+--destinations_meta:register_event("on_activated", function(destination)
+map_meta:register_event("on_started", function(map, destination)
+
+  if destination == nil then return end
+
+  local game = destination:get_game()
+  local hero = game:get_hero()
+  local map = game:get_map()
+  local x, y, l = hero:get_position()
+  local dx, dy, dl = destination:get_position()
+  local ground = game:get_value("tp_ground")
+  local direction = hero:get_direction()
 
   if ground == "hole" then
 
@@ -37,7 +41,7 @@ destinations_meta:register_event("on_activated", function(destination)
     end
     --Creating a "stunt actor" moving vertically from the ceiling
     local falling_hero = map:create_custom_entity({
-      name = "falling_link",
+      --name = "falling_link",
       x = x,
       y = math.max(y - 100, 24),
       direction = 0,
@@ -52,7 +56,7 @@ destinations_meta:register_event("on_activated", function(destination)
  
     --Creating a reception platform (prevents the hero from falling into consecutive holes during the animation)
     local platform = map:create_custom_entity({
-      name = "platform",
+      --name = "platform",
       direction = 0,
       layer = map:get_max_layer(),
       x = x,
@@ -81,12 +85,11 @@ destinations_meta:register_event("on_activated", function(destination)
       end
     end)
   else
-    local direction = hero:get_direction()
     if not destination:get_name():find("^door_") then
       return
     end
 
-    --Waling animation towards destination
+    --Walking animation towards destination
     hero:set_visible(false)
     hero:freeze()
 
@@ -103,13 +106,13 @@ destinations_meta:register_event("on_activated", function(destination)
     local offsetx = 0 
     local offsety = 0
     if direction == 0 then
-      offsetx = -32
+      offsetx = -48
     elseif direction == 1 then
-      offsety = 32
+      offsety = 48
     elseif direction == 2 then
-      offsetx = 32
+      offsetx = 48
     elseif direction == 3 then
-      offsety = -32
+      offsety = -48
     end
 
     --Creating a "stunt actor"
@@ -117,7 +120,7 @@ destinations_meta:register_event("on_activated", function(destination)
       name="walking_link",
       x = x + offsetx,
       y = y + offsety,
-      direction = hero:get_direction(),
+      direction = direction,
       layer = dl,
       sprite = hero:get_tunic_sprite_id(),
       width = 0,
@@ -128,7 +131,7 @@ destinations_meta:register_event("on_activated", function(destination)
     --Creating the actual movement for the stunt actor
     local movement=sol.movement.create("target")
     movement:set_target(x,y)
-    movement:set_speed(hero:get_walking_speed() / 2)
+    movement:set_speed(hero:get_walking_speed())
     movement:start(walking_hero, function()
       --Movement is now complete, restoring the disabled teletransoprters and getting rid of the temporary entities
       walking_hero:remove()

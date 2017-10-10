@@ -1,3 +1,0 @@
-local map = ...
-local game = map:get_game()
-local hero = map:get_hero()

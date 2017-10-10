@@ -4,14 +4,13 @@ map{ id = "Castle_Dungeon/B1/A3", description = "Castle Dungeon A3" }
 map{ id = "Castle_Dungeon/B1/B2", description = "Castle Dungeon B2" }
 map{ id = "Castle_Dungeon/B1/C1", description = "Castle Dungeon C1" }
 map{ id = "Castle_Dungeon/B1/C3", description = "Castle Dungeon C3" }
+map{ id = "Castle_Dungeon/B1/full_map", description = "Castle Dungeon B1" }
 map{ id = "dungeon_castle_1f", description = "Castle Dungeon 1F" }
-map{ id = "dungeon_castle_b1", description = "Castle Dungeon B1" }
 map{ id = "dungeon_castle_secret_b1", description = "Castle Dungeon Secret B1" }
 map{ id = "lightworld_b3", description = "Light World B3" }
 map{ id = "lightworld_c2", description = "Light World Castle" }
 map{ id = "lightworld_c3", description = "Light World Links House" }
 map{ id = "link_house", description = "Link's House" }
-map{ id = "testmap", description = "Test Map" }
 
 tileset{ id = "Full Hyrule", description = "Full Hyrule" }
 tileset{ id = "Outside_minimap", description = "Outside_minimap" }
@@ -29,8 +28,6 @@ tileset{ id = "temple_blue", description = "Temple (blue)" }
 tileset{ id = "temple_green", description = "Temple (green)" }
 tileset{ id = "temple_yellow", description = "Temple (yellow)" }
 
-sprite{ id = "enemies/blue_knight_soldier", description = "enemies/blue_knight_soldier" }
-sprite{ id = "enemies/blue_knight_soldier_sword", description = "enemies/blue_knight_soldier_sword" }
 sprite{ id = "enemies/enemy_killed", description = "Enemy killed" }
 sprite{ id = "enemies/evil_tile1", description = "enemies/evil_tile1" }
 sprite{ id = "enemies/evil_tile2", description = "enemies/evil_tile2" }

@@ -43,7 +43,7 @@ local function create_dialog_box(game)
     first = true,                -- Whether this is the first dialog of a sequence.
     style = nil,                 -- "box" or "empty".
     position = "bottom",         -- "auto", "top", "bottom" or an x,y table.
-    skip_mode = nil,             -- "none", "current", "all" or "unchanged".
+    skip_mode = "current",             -- "none", "current", "all" or "unchanged".
     info = nil,                  -- Parameter passed to start_dialog().
     skipped = false,             -- Whether the player skipped the dialog.
     choices = {},                -- Whether there is a choice on each line. If yes,

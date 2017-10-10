@@ -28,7 +28,7 @@ function arrows_builder:new(game, config)
       y = height + y
     end
 
-    arrow_icon_img:draw(dst_surface, x + 4, y)
+    arrow_icon_img:draw_region(0, 0, 16, 8, dst_surface, x + 4, y)
     digits_text:draw(dst_surface, x + 4, y + 8)
   end
 

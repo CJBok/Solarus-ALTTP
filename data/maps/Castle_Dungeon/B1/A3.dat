@@ -7,6 +7,7 @@ properties{
   max_layer = 2,
   world = "dungeon_castle",
   tileset = "temple_blue",
+  music = "castle",
 }
 
 tile{
@@ -693,6 +694,15 @@ tile{
   pattern = "wall_low.2",
 }
 
+tile{
+  layer = 0,
+  x = 120,
+  y = 0,
+  width = 16,
+  height = 64,
+  pattern = "floor_low.15",
+}
+
 stairs{
   layer = 0,
   x = 280,
@@ -732,11 +742,19 @@ destination{
 teletransporter{
   layer = 0,
   x = 120,
-  y = 64,
+  y = 48,
   width = 16,
   height = 16,
   destination_map = "Castle_Dungeon/B1/A2",
   destination = "door_from_a3",
+}
+
+destination{
+  name = "door_from_a2",
+  layer = 0,
+  x = 128,
+  y = 77,
+  direction = 3,
 }
 
 tile{

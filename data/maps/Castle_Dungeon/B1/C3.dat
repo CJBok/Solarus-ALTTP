@@ -7,6 +7,7 @@ properties{
   max_layer = 2,
   world = "dungeon_castle",
   tileset = "temple_blue",
+  music = "castle",
 }
 
 tile{
