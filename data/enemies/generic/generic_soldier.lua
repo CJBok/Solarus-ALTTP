@@ -23,16 +23,13 @@ local enemy = ...
 -- and sword_sprite.
 
 local properties = {}
-local going_hero = false
-local seeing_hero = false
-local being_pushed = false
 local interrupted = false
 local main_sprite = nil
 local sword_sprite = nil
 local state = "idle"
+local attacking = false
 
 function enemy:set_properties(prop)
-
   properties = prop
   -- Set default values.
   if properties.life == nil then
@@ -56,8 +53,8 @@ function enemy:set_properties(prop)
 
 end
 
-function enemy:on_created()
 
+function enemy:on_created()
   self:set_life(properties.life)
   self:set_damage(properties.damage)
   self:set_hurt_style(properties.hurt_style)
@@ -85,13 +82,6 @@ end
 
 
 function enemy:on_update()
-
-  self:check_state()
-
-end
-
-function enemy:check_state()
-
   local movement = enemy:get_movement()
   local animation = enemy:get_sprite():get_animation()
   if movement ~= nil and (animation == "walking" or animation == "running") then
@@ -111,8 +101,7 @@ function enemy:check_state()
     interrupted = true
     
     sol.timer.start(self, 300, function()
-      print("timer")
-      sol.audio.play_sound("hero_seen")
+      
       state = "attack"
     end)
   end
@@ -126,12 +115,10 @@ function enemy:check_state()
       state = "attack"
     end)
   end
-
 end
 
 
 function enemy:patrol_movement()
-  print("patrol")
   state = "patrolling"
   self:set_animation("walking")
   local movement = sol.movement.create("path")
@@ -143,7 +130,10 @@ end
 
 
 function enemy:attack_hero_movement()
-  print("attack")
+  if not attacking then
+    sol.audio.play_sound("hero_seen")
+  end
+  attacking = true
   state = "attacking"
   self:set_animation("running")
   local movement = sol.movement.create("target")
@@ -156,7 +146,6 @@ end
 
 
 function enemy:random_movement()
-  print("random")
   state = "random"
   self:set_animation("walking")
   local movement = sol.movement.create("random_path")
@@ -177,6 +166,7 @@ end
 
 
 function enemy:searching()
+  attacking = false
   state = "searching"
   self:stop_movement()
   self:set_animation("idle")
@@ -191,6 +181,7 @@ function enemy:on_hurt()
   state = "hurt"
 end
 
+
 function enemy:on_dying()
   self:stop_movement()
   state = "died"
@@ -198,7 +189,6 @@ end
 
 
 function enemy:on_custom_attack_received(attack, sprite)
-  print("hurt")
   if attack == "sword" and sprite == sword_sprite then
     state = "tapped"
     self:set_animation("idle")
@@ -223,138 +213,8 @@ function enemy:set_direction(direction)
   main_sprite:set_direction(direction)
 end
 
+
 function enemy:set_animation(animation)
   sword_sprite:set_animation(animation)
   main_sprite:set_animation(animation)
 end
-
---[[
-function enemy:restarted()
-  main_sprite:set_animation("walking")
-  sword_sprite:set_animation("walking")
-  if not being_pushed then
-    if going_hero then
-      self:go_hero()
-    else
-      self:go_random()
-      self:check_hero()
-    end
-  end
-end
-
-function enemy:check_hero()
-
-  local hero = self:get_map():get_entity("hero")
-  local _, _, layer = self:get_position()
-  local _, _, hero_layer = hero:get_position()
-  local near_hero = layer == hero_layer and self:get_distance(hero) < 100
-  local facing_hero = main_sprite:get_direction() == self:get_direction4_to(hero)
-
-  if facing_hero and near_hero and not going_hero then
-    self:go_hero(false)
-  elseif not near_hero and going_hero then
-    self:go_random()
-  end
-
-  if not seeing_hero then
-    sol.timer.stop_all(self)
-    sol.timer.start(self, 1000, function() self:check_hero() end)
-  end
-
-end
-
-function enemy:on_movement_changed(movement)
-
-  if not being_pushed then
-    local direction4 = movement:get_direction4()
-    main_sprite:set_direction(direction4)
-    sword_sprite:set_direction(direction4)
-  end
-end
-
-function enemy:on_movement_finished(movement)
-
-  if being_pushed then
-    self:go_hero()
-  end
-end
-
-function enemy:on_obstacle_reached(movement)
-
-  if being_pushed then
-    self:go_hero()
-  end
-end
-
-function enemy:on_custom_attack_received(attack, sprite)
-
-  if attack == "sword" and sprite == sword_sprite then
-    sol.audio.play_sound("sword_tapping")
-    being_pushed = true
-    local x, y = self:get_position()
-    local angle = self:get_angle(self:get_map():get_entity("hero")) + math.pi
-    local movement = sol.movement.create("straight")
-    movement:set_speed(128)
-    movement:set_angle(angle)
-    movement:set_max_distance(26)
-    movement:set_smooth(true)
-    movement:start(self)
-  end
-end
-
-function enemy:go_random()
-  local movement = sol.movement.create("random_path")
-  movement:set_speed(properties.normal_speed)
-  movement:start(self)
-  being_pushed = false
-  going_hero = false
-end
-
-function enemy:go_hero(provoked)
-  
-  if not provoked then
-    main_sprite:set_animation("idle")
-    sword_sprite:set_animation("idle")
-    self:stop_movement()
-
-    seeing_hero = true
-
-    sol.timer.start(self, 500, function() 
-      sol.audio.play_sound("hero_seen")
-      main_sprite:set_animation("running")
-      sword_sprite:set_animation("running")
-      local movement = sol.movement.create("target")
-      movement:set_speed(properties.faster_speed)
-      movement:start(self)
-      being_pushed = false
-      seeing_hero = false
-      going_hero = true
-        
-    end)
-    return
-  end
-
-  main_sprite:set_animation("running")
-  sword_sprite:set_animation("running")
-  local movement = sol.movement.create("target")
-  movement:set_speed(properties.faster_speed)
-  movement:start(self)
-  being_pushed = false
-  going_hero = true
-end
-
-function enemy:on_update()
-  self:can_see_hero()
-  print(self:get_game():get_degree(self, self:get_map():get_entity("hero")))
-end
-
-function enemy:can_see_hero()
-  local hero = self:get_map():get_entity("hero")
-  local dir = main_sprite:get_direction()
-  local degree = self:get_game():get_degree(self, hero)
-  print(dir, degree)
-  print(dir == self:get_direction4_to(hero))
-  return false
-end
-
---]]
