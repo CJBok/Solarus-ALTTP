@@ -1,6 +1,8 @@
 local enemy = ...
+local generic_soldier = require("enemies/generic/generic_soldier")
 
-sol.main.load_file("enemies/generic_soldier")(enemy)
+generic_soldier:initialize(enemy)
+
 enemy:set_properties({
   main_sprite = "enemies/" .. enemy:get_breed(),
   sword_sprite = "enemies/" .. enemy:get_breed() .. "_weapon",

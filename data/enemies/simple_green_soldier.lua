@@ -21,10 +21,6 @@ function sprite:on_animation_finished(animation)
   end
 end
 
-function enemy:on_created()
-  self:set_enabled(false)
-end
-
 -- The enemy was stopped for some reason and should restart.
 function enemy:on_restarted()
 

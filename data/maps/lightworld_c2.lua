@@ -14,3 +14,8 @@ end
 function bush_dungeon:on_exploded()
   sol.audio.play_sound("secret")
 end
+
+function sensor_blockade:on_activated()
+    print()
+    blockade:set_enabled(false)
+end

@@ -517,9 +517,9 @@ custom_entity{
 destination{
   name = "start",
   layer = 0,
-  x = 232,
-  y = 173,
-  direction = 1,
+  x = 128,
+  y = 77,
+  direction = 0,
 }
 
 destructible{
@@ -537,7 +537,7 @@ destructible{
   layer = 0,
   x = 80,
   y = 85,
-  treasure_name = "magic_flask",
+  treasure_name = "rupee",
   treasure_savegame_variable = "linkhouse_vase2",
   sprite = "entities/vase",
   destruction_sound = "stone",
@@ -548,7 +548,7 @@ destructible{
   layer = 0,
   x = 80,
   y = 69,
-  treasure_name = "magic_flask",
+  treasure_name = "rupee",
   treasure_savegame_variable = "linkhouse_vase3",
   sprite = "entities/vase",
   destruction_sound = "stone",

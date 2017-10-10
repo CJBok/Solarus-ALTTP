@@ -12852,6 +12852,19 @@ tile{
   pattern = "195",
 }
 
+wall{
+  name = "blockade",
+  layer = 0,
+  x = 456,
+  y = 304,
+  width = 112,
+  height = 256,
+  stops_npcs = true,
+  stops_enemies = true,
+  stops_blocks = true,
+  stops_projectiles = true,
+}
+
 custom_entity{
   name = "door_proxy",
   layer = 0,
@@ -15943,8 +15956,8 @@ destructible{
 destination{
   name = "start",
   layer = 0,
-  x = 936,
-  y = 173,
+  x = 712,
+  y = 269,
   direction = 1,
 }
 
@@ -16246,6 +16259,39 @@ custom_entity{
   direction = 3,
   sprite = "npc/shielded_green_soldier",
   model = "turn_to_hero",
+}
+
+enemy{
+  layer = 0,
+  x = 480,
+  y = 325,
+  direction = 0,
+  breed = "simple_green_soldier",
+}
+
+enemy{
+  layer = 0,
+  x = 544,
+  y = 525,
+  direction = 0,
+  breed = "simple_green_soldier",
+}
+
+enemy{
+  layer = 0,
+  x = 512,
+  y = 429,
+  direction = 0,
+  breed = "sword_soldier_green",
+}
+
+sensor{
+  name = "sensor_blockade",
+  layer = 0,
+  x = 712,
+  y = 285,
+  width = 32,
+  height = 16,
 }
 
 tile{

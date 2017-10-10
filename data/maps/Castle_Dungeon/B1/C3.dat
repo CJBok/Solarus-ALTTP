@@ -704,6 +704,33 @@ teletransporter{
   destination = "_side",
 }
 
+enemy{
+  name = "blue_soldier_1",
+  layer = 0,
+  x = 152,
+  y = 93,
+  direction = 3,
+  breed = "sword_soldier_blue",
+}
+
+enemy{
+  name = "blue_soldier_2",
+  layer = 0,
+  x = 264,
+  y = 173,
+  direction = 3,
+  breed = "sword_soldier_blue",
+}
+
+enemy{
+  name = "blue_soldier_3",
+  layer = 0,
+  x = 328,
+  y = 301,
+  direction = 3,
+  breed = "sword_soldier_blue",
+}
+
 tile{
   layer = 1,
   x = -8,

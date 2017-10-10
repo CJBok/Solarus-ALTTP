@@ -4162,6 +4162,178 @@ destination{
   direction = 1,
 }
 
+enemy{
+  layer = 0,
+  x = 560,
+  y = 829,
+  direction = 0,
+  breed = "simple_green_soldier",
+}
+
+enemy{
+  layer = 0,
+  x = 640,
+  y = 829,
+  direction = 0,
+  breed = "simple_green_soldier",
+}
+
+enemy{
+  layer = 0,
+  x = 600,
+  y = 773,
+  direction = 0,
+  breed = "sword_soldier_green",
+}
+
+enemy{
+  layer = 0,
+  x = 1016,
+  y = 749,
+  direction = 0,
+  breed = "sword_soldier_green",
+}
+
+enemy{
+  layer = 0,
+  x = 1112,
+  y = 781,
+  direction = 0,
+  breed = "sword_soldier_green",
+}
+
+enemy{
+  layer = 0,
+  x = 984,
+  y = 213,
+  direction = 0,
+  breed = "sword_soldier_green",
+}
+
+enemy{
+  layer = 0,
+  x = 944,
+  y = 157,
+  direction = 0,
+  breed = "simple_green_soldier",
+}
+
+enemy{
+  layer = 0,
+  x = 976,
+  y = 277,
+  direction = 0,
+  breed = "simple_green_soldier",
+}
+
+enemy{
+  layer = 0,
+  x = 216,
+  y = 237,
+  direction = 0,
+  breed = "sword_soldier_green",
+}
+
+enemy{
+  layer = 0,
+  x = 208,
+  y = 181,
+  direction = 0,
+  breed = "simple_green_soldier",
+}
+
+enemy{
+  layer = 0,
+  x = 208,
+  y = 317,
+  direction = 0,
+  breed = "simple_green_soldier",
+}
+
+wall{
+  layer = 0,
+  x = 792,
+  y = 784,
+  width = 128,
+  height = 16,
+  stops_npcs = true,
+  stops_enemies = true,
+  stops_blocks = true,
+  stops_projectiles = true,
+}
+
+wall{
+  layer = 0,
+  x = 280,
+  y = 784,
+  width = 128,
+  height = 16,
+  stops_npcs = true,
+  stops_enemies = true,
+  stops_blocks = true,
+  stops_projectiles = true,
+}
+
+wall{
+  layer = 0,
+  x = 208,
+  y = 464,
+  width = 16,
+  height = 144,
+  stops_npcs = true,
+  stops_enemies = true,
+  stops_blocks = true,
+  stops_projectiles = true,
+}
+
+wall{
+  layer = 0,
+  x = 976,
+  y = 464,
+  width = 16,
+  height = 144,
+  stops_npcs = true,
+  stops_enemies = true,
+  stops_blocks = true,
+  stops_projectiles = true,
+}
+
+wall{
+  layer = 0,
+  x = 592,
+  y = 976,
+  width = 16,
+  height = 96,
+  stops_npcs = true,
+  stops_enemies = true,
+  stops_blocks = true,
+  stops_projectiles = true,
+}
+
+wall{
+  layer = 0,
+  x = 280,
+  y = 144,
+  width = 128,
+  height = 16,
+  stops_npcs = true,
+  stops_enemies = true,
+  stops_blocks = true,
+  stops_projectiles = true,
+}
+
+wall{
+  layer = 0,
+  x = 792,
+  y = 144,
+  width = 128,
+  height = 16,
+  stops_npcs = true,
+  stops_enemies = true,
+  stops_blocks = true,
+  stops_projectiles = true,
+}
+
 tile{
   layer = 1,
   x = 896,
@@ -7530,6 +7702,70 @@ teletransporter{
   height = 16,
   destination_map = "lightworld_c2",
   destination = "door_from_castle_f1_top_right",
+}
+
+enemy{
+  layer = 1,
+  x = 1056,
+  y = 701,
+  direction = 0,
+  breed = "sword_soldier_blue",
+}
+
+enemy{
+  layer = 1,
+  x = 144,
+  y = 693,
+  direction = 0,
+  breed = "sword_soldier_blue",
+}
+
+wall{
+  layer = 1,
+  x = 1104,
+  y = 488,
+  width = 16,
+  height = 96,
+  stops_npcs = true,
+  stops_enemies = true,
+  stops_blocks = true,
+  stops_projectiles = true,
+}
+
+wall{
+  layer = 1,
+  x = 976,
+  y = 1000,
+  width = 16,
+  height = 56,
+  stops_npcs = true,
+  stops_enemies = true,
+  stops_blocks = true,
+  stops_projectiles = true,
+}
+
+wall{
+  layer = 1,
+  x = 208,
+  y = 1000,
+  width = 16,
+  height = 56,
+  stops_npcs = true,
+  stops_enemies = true,
+  stops_blocks = true,
+  stops_projectiles = true,
+}
+
+wall{
+  layer = 1,
+  x = 304,
+  y = 656,
+  width = 80,
+  height = 16,
+  stops_npcs = true,
+  stops_enemies = true,
+  stops_blocks = true,
+  stops_projectiles = true,
 }
 
 tile{

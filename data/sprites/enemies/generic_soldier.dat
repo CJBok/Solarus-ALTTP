@@ -1,0 +1,10 @@
+animation{
+  name = "idle",
+  src_image = "enemies/sword_soldier_green.png",
+  directions = {
+    { x = 40, y = 40, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 8 },
+    { x = 40, y = 40, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 8 },
+    { x = 40, y = 40, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 8 },
+    { x = 40, y = 40, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 8 },
+  },
+}

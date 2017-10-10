@@ -34,6 +34,7 @@ sprite{ id = "enemies/evil_tile2", description = "enemies/evil_tile2" }
 sprite{ id = "enemies/evil_tile3", description = "enemies/evil_tile3" }
 sprite{ id = "enemies/evil_tile4", description = "enemies/evil_tile4" }
 sprite{ id = "enemies/ganon", description = "enemies/ganon" }
+sprite{ id = "enemies/generic_soldier", description = "Generic Soldier Hit Box" }
 sprite{ id = "enemies/simple_green_soldier", description = "Enemy: Simple Soldier (Green)" }
 sprite{ id = "enemies/sword_soldier_blue", description = "Soldier Sword Blue" }
 sprite{ id = "enemies/sword_soldier_blue_weapon", description = "Soldier Sword Blue Weapon" }
