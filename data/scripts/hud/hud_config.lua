@@ -15,51 +15,58 @@ local hud_config = {
   -- Magic meter.
   {
     menu_script = "scripts/hud/magic_bar",
-    x = 20,
+    x = 10,
     y = 8,
   },
 
   -- Hearts meter.
   {
     menu_script = "scripts/hud/hearts",
-    x = 140,
+    x = 130,
     y = 0,
   },
 
   -- Rupee counter.
   {
     menu_script = "scripts/hud/rupees",
-    x = 40,
+    x = 30,
     y = 10,
   },
 
   -- Bomb counter.
   {
     menu_script = "scripts/hud/bombs",
-    x = 70,
+    x = 55,
     y = 10,
   },
 
   -- Arrow counter.
   {
     menu_script = "scripts/hud/arrows",
-    x = 100,
+    x = 80,
+    y = 10,
+  },
+
+  -- Small Keys counter.
+  {
+    menu_script = "scripts/hud/keys",
+    x = 95,
     y = 10,
   },
 
   -- Item assigned to slot 1.
   {
     menu_script = "scripts/hud/item",
-    x = 280,
-    y = 15,
+    x = 225,
+    y = 10,
     slot = 1,  -- Item slot (1 or 2).
   },
 
 -- Item assigned to slot 1.
   {
     menu_script = "scripts/hud/item",
-    x = 280,
-    y = 40,
+    x = 225,
+    y = 35,
     slot = 2,  -- Item slot (1 or 2).
   },
 

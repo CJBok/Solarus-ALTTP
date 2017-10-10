@@ -5,6 +5,7 @@ map{ id = "Castle_Dungeon/B1/B2", description = "Castle Dungeon B2" }
 map{ id = "Castle_Dungeon/B1/C1", description = "Castle Dungeon C1" }
 map{ id = "Castle_Dungeon/B1/C3", description = "Castle Dungeon C3" }
 map{ id = "Castle_Dungeon/B1/full_map", description = "Castle Dungeon B1" }
+map{ id = "Castle_Dungeon/F2/A1", description = "Castle Dungeon Throneroom" }
 map{ id = "dungeon_castle_1f", description = "Castle Dungeon 1F" }
 map{ id = "dungeon_castle_secret_b1", description = "Castle Dungeon Secret B1" }
 map{ id = "lightworld_b3", description = "Light World B3" }
