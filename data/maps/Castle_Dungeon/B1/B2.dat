@@ -314,7 +314,7 @@ enemy{
   y = 141,
   direction = 0,
   breed = "sword_soldier_blue",
-  savegame_variable = "castle_dungeon_enemy2",
+  savegame_variable = "castle_dungeon_b1_b2_soldier",
   treasure_name = "small_key",
   treasure_savegame_variable = "castle_dungeon_key2",
 }

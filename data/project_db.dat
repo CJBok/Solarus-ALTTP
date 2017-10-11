@@ -5,6 +5,8 @@ map{ id = "Castle_Dungeon/B1/B2", description = "Castle Dungeon B2" }
 map{ id = "Castle_Dungeon/B1/C1", description = "Castle Dungeon C1" }
 map{ id = "Castle_Dungeon/B1/C3", description = "Castle Dungeon C3" }
 map{ id = "Castle_Dungeon/B1/full_map", description = "Castle Dungeon B1" }
+map{ id = "Castle_Dungeon/B2/A1", description = "Castle Dungeon B2 A1" }
+map{ id = "Castle_Dungeon/B3/A1", description = "Castle Dungeon B3 A1" }
 map{ id = "Castle_Dungeon/F2/A1", description = "Castle Dungeon Throneroom" }
 map{ id = "dungeon_castle_1f", description = "Castle Dungeon 1F" }
 map{ id = "dungeon_castle_secret_b1", description = "Castle Dungeon Secret B1" }
@@ -29,6 +31,8 @@ tileset{ id = "temple_blue", description = "Temple (blue)" }
 tileset{ id = "temple_green", description = "Temple (green)" }
 tileset{ id = "temple_yellow", description = "Temple (yellow)" }
 
+sprite{ id = "enemies/chain_and_ball", description = "enemies/chain_and_ball" }
+sprite{ id = "enemies/chain_soldier_gray", description = "Soldier Chain Gray" }
 sprite{ id = "enemies/enemy_killed", description = "Enemy killed" }
 sprite{ id = "enemies/evil_tile1", description = "enemies/evil_tile1" }
 sprite{ id = "enemies/evil_tile2", description = "enemies/evil_tile2" }
@@ -36,6 +40,7 @@ sprite{ id = "enemies/evil_tile3", description = "enemies/evil_tile3" }
 sprite{ id = "enemies/evil_tile4", description = "enemies/evil_tile4" }
 sprite{ id = "enemies/ganon", description = "enemies/ganon" }
 sprite{ id = "enemies/generic_soldier", description = "Generic Soldier Hit Box" }
+sprite{ id = "enemies/red_knight_soldier", description = "enemies/red_knight_soldier" }
 sprite{ id = "enemies/simple_green_soldier", description = "Enemy: Simple Soldier (Green)" }
 sprite{ id = "enemies/sword_soldier_blue", description = "Soldier Sword Blue" }
 sprite{ id = "enemies/sword_soldier_blue_weapon", description = "Soldier Sword Blue Weapon" }
@@ -307,6 +312,7 @@ sound{ id = "wrong", description = "wrong" }
 sound{ id = "zora", description = "zora" }
 
 item{ id = "boomerang", description = "Boomerang" }
+item{ id = "heart", description = "heart" }
 item{ id = "lamp", description = "Lamp" }
 item{ id = "magic_bar", description = "magic_bar" }
 item{ id = "magic_flask", description = "magic_flask" }
@@ -316,7 +322,10 @@ item{ id = "small_key", description = "Small Key" }
 item{ id = "sword", description = "sword" }
 
 enemy{ id = "blue_knight_soldier", description = "Blue Soldier" }
+enemy{ id = "chain_and_ball", description = "chain_and_ball" }
+enemy{ id = "chain_soldier_gray", description = "Soldier Chain Gray" }
 enemy{ id = "green_knight_soldier", description = "green_knight_soldier" }
+enemy{ id = "red_knight_soldier", description = "red_knight_soldier" }
 enemy{ id = "simple_green_soldier", description = "Simple Soldier (Green)" }
 enemy{ id = "sword_soldier_blue", description = "Soldier Sword Blue" }
 enemy{ id = "sword_soldier_green", description = "Soldier Sword Green" }

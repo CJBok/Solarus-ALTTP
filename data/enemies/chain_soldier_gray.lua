@@ -4,7 +4,7 @@ local generic_soldier = require("enemies/generic/generic_soldier")
 
 generic_soldier:initialize(enemy)
 enemy:set_properties({
-  main_sprite = "enemies/red_knight_soldier",
+  main_sprite = "enemies/chain_soldier_gray",
   sword_sprite = nil,--"enemies/red_knight_soldier_sword",
   life = 4,
   damage = 2,

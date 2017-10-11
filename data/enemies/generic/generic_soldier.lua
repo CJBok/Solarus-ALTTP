@@ -38,14 +38,16 @@ function generic_soldier:initialize(enemy)
     self:set_life(properties.life)
     self:set_damage(properties.damage)
     self:set_hurt_style(properties.hurt_style)
-    sword_sprite = self:create_sprite(properties.sword_sprite)
+    
     main_sprite = self:create_sprite(properties.main_sprite)
     self:set_size(16, 16)
     self:set_origin(8, 13)
 
-    self:set_invincible_sprite(sword_sprite)
-    self:set_attack_consequence_sprite(sword_sprite, "sword", "custom")
-
+    if properties.sword_sprite ~= nil then
+      sword_sprite = self:create_sprite(properties.sword_sprite)
+      self:set_invincible_sprite(sword_sprite)
+      self:set_attack_consequence_sprite(sword_sprite, "sword", "custom")
+    end
     properties.path = enemy:get_game():get_patrol(enemy)
   end
 
@@ -111,12 +113,16 @@ function generic_soldier:initialize(enemy)
 
 
   function enemy:attack_hero_movement()
-    if not attacking then
+    if not attacking and properties.play_hero_seen_sound then
       sol.audio.play_sound("hero_seen")
     end
     attacking = true
     state = "attacking"
-    self:set_animation("running")
+    if properties.faster_speed > properties.normal_speed then
+      self:set_animation("running")
+    else
+      self:set_animation("walking")
+    end
     local movement = sol.movement.create("target")
     movement:set_speed(properties.faster_speed)
     movement:start(self)
@@ -189,14 +195,20 @@ function generic_soldier:initialize(enemy)
 
 
   function enemy:set_direction(direction)
-    sword_sprite:set_direction(direction)
     main_sprite:set_direction(direction)
+    if sword_sprite ~= nil then
+      sword_sprite:set_direction(direction)
+    end
   end
 
 
   function enemy:set_animation(animation)
-    sword_sprite:set_animation(animation)
     main_sprite:set_animation(animation)
+
+    if sword_sprite ~= nil then
+      sword_sprite:set_animation(animation)
+    end
+
   end
 
   function enemy:on_attacking_hero(hero, enemy_sprite)

@@ -304,7 +304,7 @@ enemy{
   y = 133,
   direction = 0,
   breed = "sword_soldier_green",
-  savegame_variable = "test1",
+  savegame_variable = "castle_dungeon_b1_a2_soldier",
 }
 
 teletransporter{
@@ -604,16 +604,44 @@ tile{
   pattern = "door_top.closed.4",
 }
 
+tile{
+  layer = 1,
+  x = 120,
+  y = 8,
+  width = 16,
+  height = 32,
+  pattern = "floor.2",
+}
+
 door{
   layer = 1,
   x = 120,
   y = 40,
   direction = 1,
   sprite = "entities/Doors/Inside/double_door_key_wood",
+  savegame_variable = "castle_dungeon_b1_a2_door",
   opening_method = "interaction_if_savegame_variable",
   opening_condition = "dungeon_castle_small_keys",
   opening_condition_consumed = true,
   cannot_open_dialog = "_small_key_required",
+}
+
+teletransporter{
+  layer = 1,
+  x = 120,
+  y = 24,
+  width = 16,
+  height = 16,
+  destination_map = "Castle_Dungeon/B1/A1",
+  destination = "door_from_a2",
+}
+
+destination{
+  name = "door_from_a1",
+  layer = 1,
+  x = 128,
+  y = 53,
+  direction = 3,
 }
 
 tile{
