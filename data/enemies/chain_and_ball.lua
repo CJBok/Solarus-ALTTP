@@ -5,7 +5,7 @@ local enemy = ...
 -- the chain is a sprite that automatically fits the space between the other enemy and the ball.
 -- They usually disappear when the enemy is killed.
 
-local nb_links = 10
+local nb_links = 5
 local link_sprite = nil
 local link_xy = {
   {x = 0, y = 0},
@@ -21,11 +21,12 @@ local link_xy = {
 }
 local center_enemy = nil          -- The enemy this chain and ball is attached to.
 local center_xy = {x = 0, y = 0}  -- Center point of the circles, relative to the center enemy if any.
+local immobilized = false
 
 function enemy:on_created()
 
   self:set_life(1)
-  self:set_damage(3)
+  self:set_damage(2)
   self:create_sprite("enemies/chain_and_ball")
   self:set_size(16, 16)
   self:set_origin(8, 8)
@@ -54,6 +55,8 @@ end
 
 function enemy:on_pre_draw()
 
+  --if immobilized then return end
+
   for i = 1, nb_links do
     self:get_map():draw_visual(link_sprite, link_xy[i].x, link_xy[i].y)
   end
@@ -77,10 +80,10 @@ end
 
 function enemy:on_restarted()
 
-  if center_enemy ~= nil then
+  if center_enemy ~= nil and not immobilized then
     local m = sol.movement.create("circle")
     m:set_center(center_enemy, center_xy.x, center_xy.y)
-    m:set_radius(56)
+    m:set_radius(40)
     m:set_radius_speed(50)
     m:set_max_rotations(4)
     m:set_loop_delay(2000)
@@ -88,5 +91,16 @@ function enemy:on_restarted()
     m:set_ignore_obstacles(true)
     m:start(self)
   end
+
+function enemy:on_update()
+  if center_enemy == nil then return end
+    
+  if center_enemy:get_life() <= 0 then
+    self:remove()
+  end
+
+end
+
+
 end
 

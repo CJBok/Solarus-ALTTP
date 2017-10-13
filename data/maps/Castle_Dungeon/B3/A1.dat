@@ -847,22 +847,14 @@ tile{
   pattern = "15",
 }
 
-tile{
-  layer = 1,
-  x = 352,
-  y = 112,
-  width = 16,
-  height = 16,
-  pattern = "8",
-}
-
 enemy{
-  name = "red",
+  name = "chain_soldier",
   layer = 1,
   x = 424,
-  y = 173,
+  y = 181,
   direction = 2,
   breed = "chain_soldier_gray",
+  treasure_name = "boss_key",
 }
 
 stairs{
@@ -932,7 +924,7 @@ destructible{
 
 enemy{
   layer = 1,
-  x = 112,
+  x = 104,
   y = 173,
   direction = 3,
   breed = "sword_soldier_green",
@@ -942,9 +934,30 @@ enemy{
   name = "chain",
   layer = 1,
   x = 424,
-  y = 157,
+  y = 165,
   direction = 0,
   breed = "chain_and_ball",
+}
+
+custom_entity{
+  layer = 1,
+  x = -16,
+  y = 149,
+  width = 16,
+  height = 16,
+  direction = 3,
+  sprite = "npc/zelda",
+  model = "follow_hero",
+}
+
+door{
+  layer = 1,
+  x = 352,
+  y = 112,
+  direction = 3,
+  sprite = "entities/Doors/Inside/cell_door",
+  opening_method = "interaction_if_savegame_variable",
+  opening_condition = "dungeon_Castle_Dungeon_boss_key",
 }
 
 tile{

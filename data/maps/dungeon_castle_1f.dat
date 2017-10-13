@@ -7746,7 +7746,7 @@ teletransporter{
   y = 568,
   width = 16,
   height = 16,
-  destination_map = "Castle_Dungeon/F2/A1",
+  destination_map = "Castle_Dungeon/F2/A2",
   destination = "from_f1",
 }
 

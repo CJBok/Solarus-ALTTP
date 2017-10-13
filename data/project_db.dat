@@ -7,7 +7,8 @@ map{ id = "Castle_Dungeon/B1/C3", description = "Castle Dungeon C3" }
 map{ id = "Castle_Dungeon/B1/full_map", description = "Castle Dungeon B1" }
 map{ id = "Castle_Dungeon/B2/A1", description = "Castle Dungeon B2 A1" }
 map{ id = "Castle_Dungeon/B3/A1", description = "Castle Dungeon B3 A1" }
-map{ id = "Castle_Dungeon/F2/A1", description = "Castle Dungeon Throneroom" }
+map{ id = "Castle_Dungeon/F2/A1", description = "Castle Dungeon F2 A1" }
+map{ id = "Castle_Dungeon/F2/A2", description = "Castle Dungeon Throneroom" }
 map{ id = "dungeon_castle_1f", description = "Castle Dungeon 1F" }
 map{ id = "dungeon_castle_secret_b1", description = "Castle Dungeon Secret B1" }
 map{ id = "lightworld_b3", description = "Light World B3" }
@@ -47,6 +48,7 @@ sprite{ id = "enemies/sword_soldier_blue_weapon", description = "Soldier Sword B
 sprite{ id = "enemies/sword_soldier_green", description = "Soldier Sword Green" }
 sprite{ id = "enemies/sword_soldier_green_weapon", description = "Soldier Sword Green Weapon" }
 sprite{ id = "enemies/tentacle", description = "Enemy: Tentacle" }
+sprite{ id = "entities/Doors/Inside/cell_door", description = "Cell Door" }
 sprite{ id = "entities/Doors/Inside/double_door_key_wood", description = "Double Door Wood Key" }
 sprite{ id = "entities/Doors/Inside/trapdoor_blue", description = "Trapdoor Blue" }
 sprite{ id = "entities/Doors/Outside/door_castle01", description = "Castle 1" }
@@ -55,6 +57,7 @@ sprite{ id = "entities/Electron/electric_left", description = "Electric Left (El
 sprite{ id = "entities/Electron/electric_pole", description = "Electric  Pole (Electric Defense)" }
 sprite{ id = "entities/Electron/electric_right", description = "Electric Right (Electric Defence)" }
 sprite{ id = "entities/Electron/electron", description = "Electron (Electric Defense)" }
+sprite{ id = "entities/Quest/ornament", description = "Castle Ornament" }
 sprite{ id = "entities/Stones/stone_lg_dark01", description = "entities/Stones/stone_lg_dark01" }
 sprite{ id = "entities/Stones/stone_lg_dark02", description = "entities/Stones/stone_lg_dark02" }
 sprite{ id = "entities/Stones/stone_lg_dark03", description = "entities/Stones/stone_lg_dark03" }
@@ -312,6 +315,7 @@ sound{ id = "wrong", description = "wrong" }
 sound{ id = "zora", description = "zora" }
 
 item{ id = "boomerang", description = "Boomerang" }
+item{ id = "boss_key", description = "boss_key" }
 item{ id = "heart", description = "heart" }
 item{ id = "lamp", description = "Lamp" }
 item{ id = "magic_bar", description = "magic_bar" }
@@ -332,6 +336,7 @@ enemy{ id = "sword_soldier_green", description = "Soldier Sword Green" }
 
 entity{ id = "door_close_trap", description = "Close Trap Doors" }
 entity{ id = "door_proximity_32", description = "Door Auto Open/Close when Hero in range if 32 pixels" }
+entity{ id = "follow_hero", description = "Follow Hero" }
 entity{ id = "turn_to_hero", description = "Face Hero" }
 
 language{ id = "en", description = "English" }

@@ -18,3 +18,8 @@ function item:on_using()
   self:set_finished()
 end
 
+-- Called when the player obtains the Boomerang.
+function item:on_obtained(variant, savegame_variable)
+  self:get_game():set_item_assigned(1, self:get_game():get_item("boomerang"))
+end
+

@@ -259,11 +259,21 @@ stairs{
   subtype = 1,
 }
 
+teletransporter{
+  layer = 1,
+  x = 80,
+  y = 40,
+  width = 16,
+  height = 16,
+  destination_map = "Castle_Dungeon/B3/A1",
+  destination = "from_b2_a1",
+}
+
 destination{
   name = "from_b3_a1",
   layer = 1,
-  x = 72,
-  y = 69,
+  x = 88,
+  y = 53,
   direction = 3,
 }
 

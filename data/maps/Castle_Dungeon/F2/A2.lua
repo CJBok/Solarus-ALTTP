@@ -1,4 +1,4 @@
--- Lua script of map Castle_Dungeon/B3/A1.
+-- Lua script of map Castle_Dungeon/F2/A1.
 -- This script is executed every time the hero enters this map.
 
 -- Feel free to modify the code below.
@@ -9,8 +9,3 @@
 
 local map = ...
 local game = map:get_game()
-
--- Event called at initialization time, as soon as this map is loaded.
-function map:on_started()
-  chain:set_center_enemy(chain_soldier)
-end

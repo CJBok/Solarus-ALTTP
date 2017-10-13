@@ -312,8 +312,8 @@ teletransporter{
   y = 80,
   width = 16,
   height = 16,
-  destination_map = "Castle_Dungeon/B3/A1",
-  destination = "from_b2_a1",
+  destination_map = "Castle_Dungeon/B2/A1",
+  destination = "from_b1_a1",
 }
 
 stairs{

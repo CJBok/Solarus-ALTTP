@@ -5910,24 +5910,6 @@ destructible{
 
 destructible{
   layer = 0,
-  x = 120,
-  y = 301,
-  sprite = "entities/bush_green",
-  destruction_sound = "bush",
-  can_be_cut = true,
-}
-
-destructible{
-  layer = 0,
-  x = 136,
-  y = 301,
-  sprite = "entities/bush_green",
-  destruction_sound = "bush",
-  can_be_cut = true,
-}
-
-destructible{
-  layer = 0,
   x = 56,
   y = 285,
   sprite = "entities/bush_green",
@@ -6253,6 +6235,24 @@ wall{
   stops_enemies = true,
   stops_blocks = true,
   stops_projectiles = true,
+}
+
+destructible{
+  layer = 0,
+  x = 136,
+  y = 301,
+  sprite = "entities/bush_green",
+  destruction_sound = "bush",
+  can_be_cut = true,
+}
+
+destructible{
+  layer = 0,
+  x = 120,
+  y = 301,
+  sprite = "entities/bush_green",
+  destruction_sound = "bush",
+  can_be_cut = true,
 }
 
 tile{

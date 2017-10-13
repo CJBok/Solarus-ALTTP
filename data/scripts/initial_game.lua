@@ -12,9 +12,9 @@ function initial_game:initialize_new_savegame(game)
   --game:set_starting_location("dungeon_castle_secret_b1", "start")
   --game:set_starting_location("lightworld_c2", "start")
   --game:set_starting_location("lightworld_c3", "link_house")
-  game:set_starting_location("Castle_Dungeon/B3/A1")
+  --game:set_starting_location("Castle_Dungeon/F2/A1")
 
-  --game:set_starting_location("link_house", "start")
+  game:set_starting_location("link_house", "start")
 
   game:set_max_life(6)
   game:set_life(game:get_max_life())

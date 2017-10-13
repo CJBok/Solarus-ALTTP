@@ -83,7 +83,7 @@ game_meta:register_event("on_map_changed", function(game)
 
     dst_surface:fill_color(game.ambientlight, 0, 0, 1024, 1024)
 
-    if game:get_light() > 9 and has_lamp_equiped then
+    if game:get_light() == 16 then
       local black = {0, 0, 0,  math.min(16 * game.light, 255)}
       -- Dark room.
       local screen_width, screen_height = dst_surface:get_size()

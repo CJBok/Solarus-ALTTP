@@ -1,4 +1,4 @@
-background_color{ 104, 184, 104 }
+background_color{ 74, 154, 74 }
 tile_pattern{
   id = "1",
   ground = "wall",
