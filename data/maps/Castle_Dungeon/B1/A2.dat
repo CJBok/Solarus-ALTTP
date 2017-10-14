@@ -621,7 +621,7 @@ door{
   sprite = "entities/Doors/Inside/double_door_key_wood",
   savegame_variable = "castle_dungeon_b1_a2_door",
   opening_method = "interaction_if_savegame_variable",
-  opening_condition = "dungeon_castle_small_keys",
+  opening_condition = "Castle_Dungeon_small_keys",
   opening_condition_consumed = true,
   cannot_open_dialog = "_small_key_required",
 }

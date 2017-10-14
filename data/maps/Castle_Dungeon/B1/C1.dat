@@ -1134,7 +1134,7 @@ door{
   direction = 3,
   sprite = "entities/Doors/Inside/double_door_key_wood",
   opening_method = "interaction_if_savegame_variable",
-  opening_condition = "dungeon_castle_small_keys",
+  opening_condition = "Castle_Dungeon_small_keys",
   opening_condition_consumed = true,
   cannot_open_dialog = "_small_key_required",
 }
@@ -1194,7 +1194,7 @@ enemy{
   direction = 3,
   breed = "sword_soldier_blue",
   treasure_name = "small_key",
-  treasure_savegame_variable = "dungeon_castle_b1_small_keys_1",
+  treasure_savegame_variable = "Castle_Dungeon_b1_c1_small_keys_1",
 }
 
 tile{

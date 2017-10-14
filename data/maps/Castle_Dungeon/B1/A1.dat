@@ -737,3 +737,13 @@ custom_entity{
   direction = 0,
 }
 
+teletransporter{
+  layer = 2,
+  x = 120,
+  y = 240,
+  width = 16,
+  height = 16,
+  destination_map = "Castle_Dungeon/B1/A2",
+  destination = "door_from_a1",
+}
+

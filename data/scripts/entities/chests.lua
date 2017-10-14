@@ -6,6 +6,11 @@ local chest_meta=sol.main.get_metatable("chest")
 
 chest_meta:register_event("on_opened", function (chest, treasure_item, treasure_variant, treasure_savegame_variable)
 
+  if treasure_item == nil then 
+    chest:get_game():get_hero():unfreeze()
+    return
+  end
+
   local map = chest:get_map()
   local game = map:get_game()
   local hero = map:get_hero()
