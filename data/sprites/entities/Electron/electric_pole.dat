@@ -6,7 +6,7 @@ animation{
   directions = {
     { x = 32, y = 32, frame_width = 16, frame_height = 24, origin_x = 8, origin_y = 25, num_frames = 2 },
     { x = 32, y = 32, frame_width = 16, frame_height = 24, origin_x = 8, origin_y = 25, num_frames = 2 },
-    { x = 32, y = 32, frame_width = 16, frame_height = 24, origin_x = 8, origin_y = 25, num_frames = 2 },
-    { x = 32, y = 32, frame_width = 16, frame_height = 24, origin_x = 8, origin_y = 25, num_frames = 2 },
+    { x = 32, y = 64, frame_width = 16, frame_height = 24, origin_x = 8, origin_y = 25, num_frames = 2 },
+    { x = 32, y = 64, frame_width = 16, frame_height = 24, origin_x = 8, origin_y = 25, num_frames = 2 },
   },
 }

@@ -12888,8 +12888,8 @@ teletransporter{
 
 wall{
   layer = 0,
-  x = 64,
-  y = 264,
+  x = 8,
+  y = 280,
   width = 32,
   height = 64,
   stops_hero = true,
@@ -16829,7 +16829,7 @@ npc{
   layer = 2,
   x = 544,
   y = 125,
-  direction = 3,
+  direction = 0,
   subtype = 1,
   sprite = "entities/Electron/electric_pole",
 }

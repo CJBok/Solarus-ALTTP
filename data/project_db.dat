@@ -9,6 +9,8 @@ map{ id = "Castle_Dungeon/B2/A1", description = "Castle Dungeon B2 A1" }
 map{ id = "Castle_Dungeon/B3/A1", description = "Castle Dungeon B3 A1" }
 map{ id = "Castle_Dungeon/F2/A1", description = "Castle Dungeon F2 A1" }
 map{ id = "Castle_Dungeon/F2/A2", description = "Castle Dungeon Throneroom" }
+map{ id = "HiddenPassage_Dungeon/B1/B4", description = "Hidden Passage B1 B4" }
+map{ id = "HiddenPassage_Dungeon/F1/A1", description = "Hidden Passage F1 A1" }
 map{ id = "dungeon_castle_1f", description = "Castle Dungeon 1F" }
 map{ id = "dungeon_castle_secret_b1", description = "Castle Dungeon Secret B1" }
 map{ id = "lightworld_b3", description = "Light World B3" }
@@ -314,8 +316,14 @@ sound{ id = "world_warp", description = "world_warp" }
 sound{ id = "wrong", description = "wrong" }
 sound{ id = "zora", description = "zora" }
 
+item{ id = "arrow", description = "arrow" }
+item{ id = "bomb", description = "bomb" }
+item{ id = "bomb_bag", description = "bomb_bag" }
+item{ id = "bombs_counter", description = "bombs_counter" }
 item{ id = "boomerang", description = "Boomerang" }
 item{ id = "boss_key", description = "boss_key" }
+item{ id = "bow", description = "bow" }
+item{ id = "fairy", description = "fairy" }
 item{ id = "heart", description = "heart" }
 item{ id = "lamp", description = "Lamp" }
 item{ id = "magic_bar", description = "magic_bar" }

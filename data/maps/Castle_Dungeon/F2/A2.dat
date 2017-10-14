@@ -1671,6 +1671,15 @@ tile{
   pattern = "door.1.support.2",
 }
 
+tile{
+  layer = 1,
+  x = 200,
+  y = 8,
+  width = 16,
+  height = 48,
+  pattern = "floor.19",
+}
+
 dynamic_tile{
   layer = 1,
   x = 80,
@@ -1781,6 +1790,33 @@ custom_entity{
   sprite = "entities/Quest/ornament",
 }
 
+destination{
+  name = "door_from_f2_a1",
+  layer = 1,
+  x = 208,
+  y = 77,
+  direction = 3,
+}
+
+teletransporter{
+  layer = 1,
+  x = 200,
+  y = 40,
+  width = 16,
+  height = 16,
+  destination_map = "Castle_Dungeon/F2/A1",
+  destination = "door_from_f2_a2",
+}
+
+tile{
+  layer = 2,
+  x = 192,
+  y = 48,
+  width = 32,
+  height = 8,
+  pattern = "door_cache.1",
+}
+
 tile{
   layer = 2,
   x = 0,
@@ -1887,5 +1923,15 @@ tile{
   width = 32,
   height = 8,
   pattern = "door_top.1",
+}
+
+custom_entity{
+  name = "settings:0-day",
+  layer = 2,
+  x = 8,
+  y = 13,
+  width = 16,
+  height = 16,
+  direction = 0,
 }
 

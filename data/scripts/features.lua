@@ -9,7 +9,10 @@ require("scripts/menus/alttp_dialog_box")
 
 require("scripts/hud/hud")
 
-require("scripts/map/doors")
+require("scripts/entities/chests")
+require("scripts/entities/doors")
+require("scripts/entities/loottable")
+
 require("scripts/map/light_manager")
 require("scripts/map/wakeup_enemies")
 

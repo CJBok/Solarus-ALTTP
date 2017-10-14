@@ -638,6 +638,15 @@ tile{
   pattern = "door_stairs.spiral_down.1",
 }
 
+tile{
+  layer = 1,
+  x = 248,
+  y = 504,
+  width = 16,
+  height = 32,
+  pattern = "floor.18",
+}
+
 npc{
   name = "torch",
   layer = 1,
@@ -701,34 +710,6 @@ destination{
   direction = 1,
 }
 
-chest{
-  layer = 1,
-  x = 256,
-  y = 437,
-  treasure_name = "lamp",
-  sprite = "entities/chest",
-}
-
-destructible{
-  layer = 1,
-  x = 272,
-  y = 437,
-  treasure_name = "magic_flask",
-  sprite = "entities/vase",
-  destruction_sound = "stone",
-  weight = 1,
-}
-
-destructible{
-  layer = 1,
-  x = 288,
-  y = 437,
-  treasure_name = "magic_flask",
-  sprite = "entities/vase",
-  destruction_sound = "stone",
-  weight = 1,
-}
-
 npc{
   name = "torch_4",
   layer = 1,
@@ -749,6 +730,51 @@ npc{
   subtype = 0,
   sprite = "entities/torch",
   behavior = "item#lamp",
+}
+
+teletransporter{
+  layer = 1,
+  x = 248,
+  y = 496,
+  width = 16,
+  height = 16,
+  destination_map = "Castle_Dungeon/F2/A2",
+  destination = "door_from_f2_a1",
+}
+
+stairs{
+  layer = 1,
+  x = 424,
+  y = 40,
+  direction = 1,
+  subtype = 1,
+}
+
+destination{
+  name = "from_hiddenpassage_f1_a1",
+  layer = 1,
+  x = 432,
+  y = 53,
+  direction = 3,
+}
+
+teletransporter{
+  layer = 1,
+  x = 424,
+  y = 40,
+  width = 16,
+  height = 16,
+  destination_map = "HiddenPassage_Dungeon/F1/A1",
+  destination = "from_castle_f2_a1",
+}
+
+tile{
+  layer = 2,
+  x = 240,
+  y = 504,
+  width = 32,
+  height = 8,
+  pattern = "door_cache.2",
 }
 
 tile{
