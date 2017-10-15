@@ -9,20 +9,20 @@ local initial_game = require("scripts/initial_game")
 -- This function is called when Solarus starts.
 function sol.main:on_started()
 
-  --game_manager:start_game("savetest.dat")
+  game_manager:start_game("savetest.dat")
 
   -- Setting a language is useful to display text and dialogs.
   sol.language.set_language("en")
 
-  local solarus_logo = require("scripts/menus/solarus_logo")
+  --local solarus_logo = require("scripts/menus/solarus_logo")
 
   -- Show the Solarus logo initially.
-  sol.menu.start(self, solarus_logo)
+  --sol.menu.start(self, solarus_logo)
 
   -- Start the game when the Solarus logo menu is finished.
-  solarus_logo.on_finished = function()
-    game_manager:start_game("savetest.dat")
-  end
+ -- solarus_logo.on_finished = function()
+   -- game_manager:start_game("savetest.dat")
+ -- end
 
 end
 

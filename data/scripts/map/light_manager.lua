@@ -12,6 +12,7 @@ local dark_surfaces = {
   [3] = sol.surface.create("entities/dark3.png")
 }
 game_meta:register_event("on_started", function(game)
+  game.raintimer = 0
   game.light = 0
   game.get_light = function(map)
     return game.light
@@ -28,26 +29,70 @@ game_meta:register_event("on_started", function(game)
     game.light = light
   end
   
-  game.ambientlight = {0,0,0,0}
-  game.set_ambient_light = function(game, ambientlight)
-    if ambientlight == nil or ambientlight == "" then
-      game.ambientlight = {0,0,255,48}
-    elseif ambientlight == "day" then
-      game.ambientlight = {0,0,0,0}
-    elseif ambientlight == "night" then
-      game.ambientlight = {0,0,255,48}
+  game.time_of_day = "day"
+  game.set_time_of_day = function(game, time_of_day)
+    if time_of_day == nil or ambientlight == "" then
+      game.time_of_day = "day"
+    else
+      game.time_of_day = time_of_day
     end
   end
+
+  game.weather = "sunny"  
+  game.set_weather = function(game, weather)
+    if weather == nil then
+      game.weather = "sunny"
+    elseif weather == "sunny" then
+      game.weather = "sunny"
+    elseif weather == "raining" then
+      game.weather = "raining"
+    else
+      game.weather = "sunny"
+    end
+  end
+
+  game.environment = "outside"
+  game.set_environment = function(game, environment)
+    if environment == nil then
+      game.environment = "outside"
+    elseif environment == "outside" then
+      game.environment = "outside"
+    elseif environment == "inside" then
+      game.environment = "inside"
+    else
+      game.environment = "outside"
+    end
+  end
+
+end)
+
+game_meta:register_event("on_update", function(game)
+
+  if game.weather ~= "raining" or game.environment ~= "outside" then
+    return
+  end
+
+  if game.raintimer == 0 then
+    game.raintimer = 150
+    sol.audio.play_sound("water_fill")
+  end
+  game.raintimer = game.raintimer - 1
 end)
 
 
 game_meta:register_event("on_map_changed", function(game)
+
+  game:set_weather("raining")
+  game:set_time_of_day("night")
+
   local map = game:get_map()
   for ent in map:get_entities("settings") do
-    local lightlevel = split(split(ent:get_name(), "settings:")[1],"-")[1]
-    local ambientlevel = split(split(ent:get_name(), "settings:")[1],"-")[2]
+    local settings = split(split(ent:get_name(), ":")[2], "-")
+    local lightlevel  = settings[1]
+    local environment = settings[2]
+
     game:set_light(tonumber(lightlevel))
-    game:set_ambient_light(ambientlevel)
+    game:set_environment(environment)
   end
 
 
@@ -66,22 +111,12 @@ game_meta:register_event("on_map_changed", function(game)
     rainposy[i] = math.random(2048)
   end
 
-  map:get_game().raintimer = 0
-  map:get_game().on_update = function(game)
-    if(game.raintimer <= 0 and map:get_id():find("^lightworld")) then
-      game.raintimer = 150
-      sol.audio.play_sound("water_fill")
-    end
-    game.raintimer = game.raintimer - 1
-  end
 
   map.on_draw = function(map, dst_surface)
 
     local game = map:get_game()
     local has_lamp_equiped = (game:get_item_assigned(1) ~= nil and game:get_item_assigned(1):get_name() == "lamp")
     local camera_x, camera_y = map:get_camera():get_bounding_box()
-
-    dst_surface:fill_color(game.ambientlight, 0, 0, 1024, 1024)
 
     if game:get_light() == 16 then
       local black = {0, 0, 0,  math.min(16 * game.light, 255)}
@@ -121,17 +156,27 @@ game_meta:register_event("on_map_changed", function(game)
       dst_surface:fill_color({0, 0, 0, math.min(16 * game.light, 255)}, 0, 0, 1024, 1024)
     end
 
-    if map:get_id():find("^lightworld") then
-      if (math.random(100) == 1) then
-        dst_surface:fill_color({255, 255, 255, 128}, 0, 0, 1024, 1024)
-      end
-    
-      for i = 1, 1024 do
-        map:draw_visual(rainsprite1, rainposx[i] + camera_x / 1.5, rainposy[i] + camera_y / 1.5)
+    if game.environment == "outside" then
+      if game.time_of_day == "day" then
+        dst_surface:fill_color( {0,0,0,0}     , 0, 0, 1024, 1024)
+      elseif game.time_of_day == "night" then
+        dst_surface:fill_color( {0,0,255,48}  , 0, 0, 1024, 1024)
+      else 
+        dst_surface:fill_color( {0,0,0,0}     , 0, 0, 1024, 1024)
       end
 
-      for i = 1024, 4096 do
-        map:draw_visual(rainsprite2, rainposx[i] + camera_x / 1.5, rainposy[i] + camera_y / 1.5)
+      if game.weather == "raining" then
+        if (math.random(100) == 1) then
+          dst_surface:fill_color({255, 255, 255, 128}, 0, 0, 1024, 1024)
+        end
+      
+        for i = 1, 1024 do
+          map:draw_visual(rainsprite1, rainposx[i] + camera_x / 1.5, rainposy[i] + camera_y / 1.5)
+        end
+
+        for i = 1024, 4096 do
+          map:draw_visual(rainsprite2, rainposx[i] + camera_x / 1.5, rainposy[i] + camera_y / 1.5)
+        end
       end
     end
   end

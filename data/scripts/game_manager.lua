@@ -17,6 +17,7 @@ function game_manager:start_game(file_name)
 
   sol.main.game = game
   game:start()
+  
 end
 
 

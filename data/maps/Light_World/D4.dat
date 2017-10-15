@@ -1,10 +1,11 @@
 properties{
-  x = 0,
-  y = 0,
+  x = 1536,
+  y = 1536,
   width = 1024,
   height = 1024,
   min_layer = 0,
   max_layer = 2,
+  world = "Light World",
   tileset = "light_world",
   music = "same",
 }
@@ -12852,6 +12853,96 @@ tile{
   pattern = "195",
 }
 
+tile{
+  layer = 0,
+  x = 120,
+  y = 56,
+  width = 48,
+  height = 48,
+  pattern = "tree.green.1",
+}
+
+tile{
+  layer = 0,
+  x = 888,
+  y = 56,
+  width = 48,
+  height = 48,
+  pattern = "tree.green.1",
+}
+
+tile{
+  layer = 0,
+  x = 344,
+  y = 312,
+  width = 48,
+  height = 48,
+  pattern = "tree.green.1",
+}
+
+tile{
+  layer = 0,
+  x = 632,
+  y = 312,
+  width = 48,
+  height = 48,
+  pattern = "tree.green.1",
+}
+
+tile{
+  layer = 0,
+  x = 184,
+  y = 1000,
+  width = 480,
+  height = 48,
+  pattern = "tree.green.1",
+}
+
+tile{
+  layer = 0,
+  x = 208,
+  y = 952,
+  width = 432,
+  height = 48,
+  pattern = "tree.green.1",
+}
+
+tile{
+  layer = 0,
+  x = -32,
+  y = 888,
+  width = 48,
+  height = 48,
+  pattern = "tree.green.1",
+}
+
+tile{
+  layer = 0,
+  x = -8,
+  y = 936,
+  width = 96,
+  height = 48,
+  pattern = "tree.green.1",
+}
+
+tile{
+  layer = 0,
+  x = -32,
+  y = 984,
+  width = 144,
+  height = 48,
+  pattern = "tree.green.1",
+}
+
+tile{
+  layer = 0,
+  x = 840,
+  y = 888,
+  width = 48,
+  height = 48,
+  pattern = "tree.green.1",
+}
+
 wall{
   name = "blockade",
   layer = 0,
@@ -13216,7 +13307,7 @@ teletransporter{
   width = 400,
   height = 16,
   transition = "scrolling",
-  destination_map = "lightworld_c3",
+  destination_map = "Light_World/E6",
   destination = "_side",
 }
 
@@ -13634,32 +13725,6 @@ teletransporter{
   height = 16,
   destination_map = "dungeon_castle_secret_b1",
   destination = "from_hole",
-}
-
-wall{
-  layer = 0,
-  x = 888,
-  y = 80,
-  width = 40,
-  height = 16,
-  stops_hero = true,
-  stops_npcs = true,
-  stops_enemies = true,
-  stops_blocks = true,
-  stops_projectiles = true,
-}
-
-wall{
-  layer = 0,
-  x = 880,
-  y = 64,
-  width = 56,
-  height = 16,
-  stops_hero = true,
-  stops_npcs = true,
-  stops_enemies = true,
-  stops_blocks = true,
-  stops_projectiles = true,
 }
 
 destructible{
@@ -15980,157 +16045,6 @@ destructible{
 }
 
 custom_entity{
-  name = "settings:8-night",
-  layer = 0,
-  x = -56,
-  y = -51,
-  width = 16,
-  height = 16,
-  direction = 0,
-}
-
-teletransporter{
-  layer = 0,
-  x = -48,
-  y = 1024,
-  width = 400,
-  height = 16,
-  transition = "scrolling",
-  destination_map = "lightworld_b3",
-  destination = "_side",
-}
-
-wall{
-  layer = 0,
-  x = 888,
-  y = 56,
-  width = 48,
-  height = 48,
-  stops_hero = true,
-  stops_npcs = true,
-  stops_enemies = true,
-  stops_blocks = true,
-  stops_projectiles = true,
-}
-
-wall{
-  layer = 0,
-  x = 632,
-  y = 312,
-  width = 48,
-  height = 48,
-  stops_hero = true,
-  stops_npcs = true,
-  stops_enemies = true,
-  stops_blocks = true,
-  stops_projectiles = true,
-}
-
-wall{
-  layer = 0,
-  x = 344,
-  y = 312,
-  width = 48,
-  height = 48,
-  stops_hero = true,
-  stops_npcs = true,
-  stops_enemies = true,
-  stops_blocks = true,
-  stops_projectiles = true,
-}
-
-wall{
-  layer = 0,
-  x = 120,
-  y = 56,
-  width = 48,
-  height = 48,
-  stops_hero = true,
-  stops_npcs = true,
-  stops_enemies = true,
-  stops_blocks = true,
-  stops_projectiles = true,
-}
-
-wall{
-  layer = 0,
-  x = -8,
-  y = 936,
-  width = 96,
-  height = 48,
-  stops_hero = true,
-  stops_npcs = true,
-  stops_enemies = true,
-  stops_blocks = true,
-  stops_projectiles = true,
-}
-
-wall{
-  layer = 0,
-  x = 184,
-  y = 1000,
-  width = 48,
-  height = 48,
-  stops_hero = true,
-  stops_npcs = true,
-  stops_enemies = true,
-  stops_blocks = true,
-  stops_projectiles = true,
-}
-
-wall{
-  layer = 0,
-  x = 208,
-  y = 952,
-  width = 432,
-  height = 48,
-  stops_hero = true,
-  stops_npcs = true,
-  stops_enemies = true,
-  stops_blocks = true,
-  stops_projectiles = true,
-}
-
-wall{
-  layer = 0,
-  x = 64,
-  y = 984,
-  width = 48,
-  height = 48,
-  stops_hero = true,
-  stops_npcs = true,
-  stops_enemies = true,
-  stops_blocks = true,
-  stops_projectiles = true,
-}
-
-wall{
-  layer = 0,
-  x = 616,
-  y = 1000,
-  width = 48,
-  height = 48,
-  stops_hero = true,
-  stops_npcs = true,
-  stops_enemies = true,
-  stops_blocks = true,
-  stops_projectiles = true,
-}
-
-wall{
-  layer = 0,
-  x = 840,
-  y = 888,
-  width = 48,
-  height = 48,
-  stops_hero = true,
-  stops_npcs = true,
-  stops_enemies = true,
-  stops_blocks = true,
-  stops_projectiles = true,
-}
-
-custom_entity{
   name = "door_proxy_2",
   layer = 0,
   x = 504,
@@ -16317,17 +16231,8 @@ tile{
   x = 208,
   y = 944,
   width = 432,
-  height = 16,
+  height = 8,
   pattern = "tree.green.2",
-}
-
-tile{
-  layer = 1,
-  x = 208,
-  y = 960,
-  width = 432,
-  height = 40,
-  pattern = "tree.green.1",
 }
 
 tile{
@@ -16344,17 +16249,8 @@ tile{
   x = 184,
   y = 992,
   width = 480,
-  height = 16,
+  height = 8,
   pattern = "tree.green.2",
-}
-
-tile{
-  layer = 1,
-  x = 184,
-  y = 1008,
-  width = 480,
-  height = 40,
-  pattern = "tree.green.1",
 }
 
 tile{
@@ -16364,15 +16260,6 @@ tile{
   width = 8,
   height = 40,
   pattern = "tree.green.4",
-}
-
-tile{
-  layer = 1,
-  x = 840,
-  y = 896,
-  width = 48,
-  height = 40,
-  pattern = "tree.green.1",
 }
 
 tile{
@@ -16389,7 +16276,7 @@ tile{
   x = 840,
   y = 880,
   width = 48,
-  height = 16,
+  height = 8,
   pattern = "tree.green.2",
 }
 
@@ -16441,18 +16328,9 @@ tile{
 tile{
   layer = 1,
   x = 888,
-  y = 64,
-  width = 48,
-  height = 40,
-  pattern = "tree.green.1",
-}
-
-tile{
-  layer = 1,
-  x = 888,
   y = 48,
   width = 48,
-  height = 16,
+  height = 8,
   pattern = "tree.green.2",
 }
 
@@ -16476,15 +16354,6 @@ tile{
 
 tile{
   layer = 1,
-  x = 632,
-  y = 320,
-  width = 48,
-  height = 40,
-  pattern = "tree.green.1",
-}
-
-tile{
-  layer = 1,
   x = 680,
   y = 312,
   width = 8,
@@ -16497,7 +16366,7 @@ tile{
   x = 632,
   y = 304,
   width = 48,
-  height = 16,
+  height = 8,
   pattern = "tree.green.2",
 }
 
@@ -16508,15 +16377,6 @@ tile{
   width = 8,
   height = 40,
   pattern = "tree.green.3",
-}
-
-tile{
-  layer = 1,
-  x = 344,
-  y = 320,
-  width = 48,
-  height = 40,
-  pattern = "tree.green.1",
 }
 
 tile{
@@ -16533,7 +16393,7 @@ tile{
   x = 344,
   y = 304,
   width = 48,
-  height = 16,
+  height = 8,
   pattern = "tree.green.2",
 }
 
@@ -16549,18 +16409,9 @@ tile{
 tile{
   layer = 1,
   x = -32,
-  y = 896,
-  width = 48,
-  height = 40,
-  pattern = "tree.green.1",
-}
-
-tile{
-  layer = 1,
-  x = -32,
   y = 880,
   width = 48,
-  height = 16,
+  height = 8,
   pattern = "tree.green.2",
 }
 
@@ -16587,7 +16438,7 @@ tile{
   x = -8,
   y = 928,
   width = 96,
-  height = 16,
+  height = 8,
   pattern = "tree.green.2",
 }
 
@@ -16602,29 +16453,11 @@ tile{
 
 tile{
   layer = 1,
-  x = -8,
-  y = 944,
-  width = 96,
-  height = 40,
-  pattern = "tree.green.1",
-}
-
-tile{
-  layer = 1,
   x = -32,
   y = 976,
   width = 144,
-  height = 16,
+  height = 8,
   pattern = "tree.green.2",
-}
-
-tile{
-  layer = 1,
-  x = -32,
-  y = 992,
-  width = 144,
-  height = 40,
-  pattern = "tree.green.1",
 }
 
 tile{
@@ -16665,15 +16498,6 @@ tile{
 
 tile{
   layer = 1,
-  x = 120,
-  y = 64,
-  width = 48,
-  height = 40,
-  pattern = "tree.green.1",
-}
-
-tile{
-  layer = 1,
   x = 168,
   y = 56,
   width = 8,
@@ -16686,7 +16510,7 @@ tile{
   x = 120,
   y = 48,
   width = 48,
-  height = 16,
+  height = 8,
   pattern = "tree.green.2",
 }
 
@@ -16841,5 +16665,26 @@ npc{
   direction = 3,
   subtype = 1,
   sprite = "entities/Electron/electric_pole",
+}
+
+custom_entity{
+  name = "settings:8-outside",
+  layer = 2,
+  x = -56,
+  y = -51,
+  width = 16,
+  height = 16,
+  direction = 0,
+}
+
+teletransporter{
+  layer = 2,
+  x = -48,
+  y = 1024,
+  width = 400,
+  height = 16,
+  transition = "scrolling",
+  destination_map = "Light_World/D6",
+  destination = "_side",
 }
 

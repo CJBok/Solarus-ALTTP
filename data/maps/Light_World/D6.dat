@@ -1,12 +1,31 @@
 properties{
-  x = 0,
-  y = 1024,
+  x = 1536,
+  y = 2560,
   width = 512,
   height = 512,
   min_layer = 0,
   max_layer = 2,
+  world = "Light World",
   tileset = "light_world",
   music = "same",
+}
+
+tile{
+  layer = 0,
+  x = 160,
+  y = 184,
+  width = 48,
+  height = 8,
+  pattern = "grass.tree.roots.2",
+}
+
+tile{
+  layer = 0,
+  x = 160,
+  y = 168,
+  width = 48,
+  height = 16,
+  pattern = "grass.tree.roots.1",
 }
 
 tile{
@@ -3366,6 +3385,213 @@ tile{
   pattern = "grass.tree.roots.2",
 }
 
+tile{
+  layer = 0,
+  x = -56,
+  y = 104,
+  width = 144,
+  height = 48,
+  pattern = "tree.green.1",
+}
+
+tile{
+  layer = 0,
+  x = 208,
+  y = 24,
+  width = 336,
+  height = 48,
+  pattern = "tree.green.1",
+}
+
+tile{
+  layer = 0,
+  x = 184,
+  y = 168,
+  width = 144,
+  height = 48,
+  pattern = "tree.green.1",
+}
+
+tile{
+  layer = 0,
+  x = 160,
+  y = 120,
+  width = 144,
+  height = 48,
+  pattern = "tree.green.1",
+}
+
+tile{
+  layer = 0,
+  x = 424,
+  y = 72,
+  width = 96,
+  height = 48,
+  pattern = "tree.green.1",
+}
+
+tile{
+  layer = 0,
+  x = 448,
+  y = 120,
+  width = 96,
+  height = 48,
+  pattern = "tree.green.1",
+}
+
+tile{
+  layer = 0,
+  x = 344,
+  y = 184,
+  width = 48,
+  height = 48,
+  pattern = "tree.green.1",
+}
+
+tile{
+  layer = 0,
+  x = 328,
+  y = 72,
+  width = 48,
+  height = 48,
+  pattern = "tree.green.1",
+}
+
+tile{
+  layer = 0,
+  x = 112,
+  y = 312,
+  width = 144,
+  height = 48,
+  pattern = "tree.green.1",
+}
+
+tile{
+  layer = 0,
+  x = 160,
+  y = 216,
+  width = 144,
+  height = 48,
+  pattern = "tree.green.1",
+}
+
+tile{
+  layer = 0,
+  x = 136,
+  y = 264,
+  width = 96,
+  height = 48,
+  pattern = "tree.green.1",
+}
+
+tile{
+  layer = 0,
+  x = -32,
+  y = 152,
+  width = 144,
+  height = 48,
+  pattern = "tree.green.1",
+}
+
+tile{
+  layer = 0,
+  x = -8,
+  y = 200,
+  width = 96,
+  height = 48,
+  pattern = "tree.green.1",
+}
+
+tile{
+  layer = 0,
+  x = -32,
+  y = 248,
+  width = 96,
+  height = 48,
+  pattern = "tree.green.1",
+}
+
+tile{
+  layer = 0,
+  x = -8,
+  y = 296,
+  width = 96,
+  height = 48,
+  pattern = "tree.green.1",
+}
+
+tile{
+  layer = 0,
+  x = -32,
+  y = 344,
+  width = 96,
+  height = 48,
+  pattern = "tree.green.1",
+}
+
+tile{
+  layer = 0,
+  x = -56,
+  y = 392,
+  width = 96,
+  height = 48,
+  pattern = "tree.green.1",
+}
+
+tile{
+  layer = 0,
+  x = -32,
+  y = 440,
+  width = 144,
+  height = 48,
+  pattern = "tree.green.1",
+}
+
+tile{
+  layer = 0,
+  x = -8,
+  y = 488,
+  width = 144,
+  height = 48,
+  pattern = "tree.green.1",
+}
+
+tile{
+  layer = 0,
+  x = 184,
+  y = -24,
+  width = 336,
+  height = 48,
+  pattern = "tree.green.1",
+}
+
+tile{
+  layer = 0,
+  x = -32,
+  y = -40,
+  width = 144,
+  height = 48,
+  pattern = "tree.green.1",
+}
+
+tile{
+  layer = 0,
+  x = -8,
+  y = 8,
+  width = 96,
+  height = 48,
+  pattern = "tree.green.1",
+}
+
+tile{
+  layer = 0,
+  x = -32,
+  y = 56,
+  width = 96,
+  height = 48,
+  pattern = "tree.green.1",
+}
+
 wall{
   layer = 0,
   x = 136,
@@ -3379,17 +3605,6 @@ wall{
   stops_projectiles = true,
 }
 
-teletransporter{
-  layer = 0,
-  x = 512,
-  y = 0,
-  width = 16,
-  height = 512,
-  transition = "scrolling",
-  destination_map = "lightworld_c3",
-  destination = "_side",
-}
-
 destructible{
   layer = 0,
   x = 120,
@@ -3496,409 +3711,6 @@ destructible{
   sprite = "entities/bush_green",
   destruction_sound = "bush",
   can_be_cut = true,
-}
-
-wall{
-  layer = 0,
-  x = 72,
-  y = 24,
-  width = 16,
-  height = 32,
-  stops_hero = true,
-  stops_npcs = true,
-  stops_enemies = true,
-  stops_blocks = true,
-  stops_projectiles = true,
-}
-
-wall{
-  layer = 0,
-  x = 40,
-  y = 104,
-  width = 48,
-  height = 48,
-  stops_hero = true,
-  stops_npcs = true,
-  stops_enemies = true,
-  stops_blocks = true,
-  stops_projectiles = true,
-}
-
-wall{
-  layer = 0,
-  x = 16,
-  y = 56,
-  width = 48,
-  height = 48,
-  stops_hero = true,
-  stops_npcs = true,
-  stops_enemies = true,
-  stops_blocks = true,
-  stops_projectiles = true,
-}
-
-wall{
-  layer = 0,
-  x = 40,
-  y = 8,
-  width = 48,
-  height = 48,
-  stops_hero = true,
-  stops_npcs = true,
-  stops_enemies = true,
-  stops_blocks = true,
-  stops_projectiles = true,
-}
-
-wall{
-  layer = 0,
-  x = 64,
-  y = -40,
-  width = 48,
-  height = 48,
-  stops_hero = true,
-  stops_npcs = true,
-  stops_enemies = true,
-  stops_blocks = true,
-  stops_projectiles = true,
-}
-
-wall{
-  layer = 0,
-  x = 184,
-  y = -24,
-  width = 48,
-  height = 48,
-  stops_hero = true,
-  stops_npcs = true,
-  stops_enemies = true,
-  stops_blocks = true,
-  stops_projectiles = true,
-}
-
-wall{
-  layer = 0,
-  x = 208,
-  y = 24,
-  width = 48,
-  height = 48,
-  stops_hero = true,
-  stops_npcs = true,
-  stops_enemies = true,
-  stops_blocks = true,
-  stops_projectiles = true,
-}
-
-wall{
-  layer = 0,
-  x = 160,
-  y = 120,
-  width = 48,
-  height = 48,
-  stops_hero = true,
-  stops_npcs = true,
-  stops_enemies = true,
-  stops_blocks = true,
-  stops_projectiles = true,
-}
-
-wall{
-  layer = 0,
-  x = 208,
-  y = 120,
-  width = 48,
-  height = 48,
-  stops_hero = true,
-  stops_npcs = true,
-  stops_enemies = true,
-  stops_blocks = true,
-  stops_projectiles = true,
-}
-
-wall{
-  layer = 0,
-  x = 184,
-  y = 168,
-  width = 48,
-  height = 48,
-  stops_hero = true,
-  stops_npcs = true,
-  stops_enemies = true,
-  stops_blocks = true,
-  stops_projectiles = true,
-}
-
-wall{
-  layer = 0,
-  x = 160,
-  y = 216,
-  width = 48,
-  height = 48,
-  stops_hero = true,
-  stops_npcs = true,
-  stops_enemies = true,
-  stops_blocks = true,
-  stops_projectiles = true,
-}
-
-wall{
-  layer = 0,
-  x = 136,
-  y = 264,
-  width = 48,
-  height = 48,
-  stops_hero = true,
-  stops_npcs = true,
-  stops_enemies = true,
-  stops_blocks = true,
-  stops_projectiles = true,
-}
-
-wall{
-  layer = 0,
-  x = 112,
-  y = 312,
-  width = 48,
-  height = 48,
-  stops_hero = true,
-  stops_npcs = true,
-  stops_enemies = true,
-  stops_blocks = true,
-  stops_projectiles = true,
-}
-
-wall{
-  layer = 0,
-  x = 208,
-  y = 312,
-  width = 48,
-  height = 48,
-  stops_hero = true,
-  stops_npcs = true,
-  stops_enemies = true,
-  stops_blocks = true,
-  stops_projectiles = true,
-}
-
-wall{
-  layer = 0,
-  x = 184,
-  y = 264,
-  width = 48,
-  height = 48,
-  stops_hero = true,
-  stops_npcs = true,
-  stops_enemies = true,
-  stops_blocks = true,
-  stops_projectiles = true,
-}
-
-wall{
-  layer = 0,
-  x = 256,
-  y = 216,
-  width = 48,
-  height = 48,
-  stops_hero = true,
-  stops_npcs = true,
-  stops_enemies = true,
-  stops_blocks = true,
-  stops_projectiles = true,
-}
-
-wall{
-  layer = 0,
-  x = 280,
-  y = 168,
-  width = 48,
-  height = 48,
-  stops_hero = true,
-  stops_npcs = true,
-  stops_enemies = true,
-  stops_blocks = true,
-  stops_projectiles = true,
-}
-
-wall{
-  layer = 0,
-  x = 344,
-  y = 184,
-  width = 48,
-  height = 48,
-  stops_hero = true,
-  stops_npcs = true,
-  stops_enemies = true,
-  stops_blocks = true,
-  stops_projectiles = true,
-}
-
-wall{
-  layer = 0,
-  x = 328,
-  y = 72,
-  width = 48,
-  height = 48,
-  stops_hero = true,
-  stops_npcs = true,
-  stops_enemies = true,
-  stops_blocks = true,
-  stops_projectiles = true,
-}
-
-wall{
-  layer = 0,
-  x = 424,
-  y = 72,
-  width = 48,
-  height = 48,
-  stops_hero = true,
-  stops_npcs = true,
-  stops_enemies = true,
-  stops_blocks = true,
-  stops_projectiles = true,
-}
-
-wall{
-  layer = 0,
-  x = 448,
-  y = 120,
-  width = 48,
-  height = 48,
-  stops_hero = true,
-  stops_npcs = true,
-  stops_enemies = true,
-  stops_blocks = true,
-  stops_projectiles = true,
-}
-
-wall{
-  layer = 0,
-  x = 64,
-  y = 152,
-  width = 48,
-  height = 48,
-  stops_hero = true,
-  stops_npcs = true,
-  stops_enemies = true,
-  stops_blocks = true,
-  stops_projectiles = true,
-}
-
-wall{
-  layer = 0,
-  x = 40,
-  y = 200,
-  width = 48,
-  height = 48,
-  stops_hero = true,
-  stops_npcs = true,
-  stops_enemies = true,
-  stops_blocks = true,
-  stops_projectiles = true,
-}
-
-wall{
-  layer = 0,
-  x = 16,
-  y = 248,
-  width = 48,
-  height = 48,
-  stops_hero = true,
-  stops_npcs = true,
-  stops_enemies = true,
-  stops_blocks = true,
-  stops_projectiles = true,
-}
-
-wall{
-  layer = 0,
-  x = 40,
-  y = 296,
-  width = 48,
-  height = 48,
-  stops_hero = true,
-  stops_npcs = true,
-  stops_enemies = true,
-  stops_blocks = true,
-  stops_projectiles = true,
-}
-
-wall{
-  layer = 0,
-  x = 16,
-  y = 344,
-  width = 48,
-  height = 48,
-  stops_hero = true,
-  stops_npcs = true,
-  stops_enemies = true,
-  stops_blocks = true,
-  stops_projectiles = true,
-}
-
-wall{
-  layer = 0,
-  x = -8,
-  y = 392,
-  width = 48,
-  height = 48,
-  stops_hero = true,
-  stops_npcs = true,
-  stops_enemies = true,
-  stops_blocks = true,
-  stops_projectiles = true,
-}
-
-wall{
-  layer = 0,
-  x = 16,
-  y = 440,
-  width = 48,
-  height = 48,
-  stops_hero = true,
-  stops_npcs = true,
-  stops_enemies = true,
-  stops_blocks = true,
-  stops_projectiles = true,
-}
-
-wall{
-  layer = 0,
-  x = 64,
-  y = 440,
-  width = 48,
-  height = 48,
-  stops_hero = true,
-  stops_npcs = true,
-  stops_enemies = true,
-  stops_blocks = true,
-  stops_projectiles = true,
-}
-
-wall{
-  layer = 0,
-  x = 88,
-  y = 488,
-  width = 48,
-  height = 48,
-  stops_hero = true,
-  stops_npcs = true,
-  stops_enemies = true,
-  stops_blocks = true,
-  stops_projectiles = true,
-}
-
-wall{
-  layer = 0,
-  x = 256,
-  y = 120,
-  width = 48,
-  height = 48,
-  stops_hero = true,
-  stops_npcs = true,
-  stops_enemies = true,
-  stops_blocks = true,
-  stops_projectiles = true,
 }
 
 custom_entity{
@@ -3975,73 +3787,10 @@ jumper{
 
 tile{
   layer = 1,
-  x = -56,
-  y = 112,
-  width = 144,
-  height = 40,
-  pattern = "tree.green.1",
-}
-
-tile{
-  layer = 1,
-  x = 208,
-  y = 32,
-  width = 336,
-  height = 40,
-  pattern = "tree.green.1",
-}
-
-tile{
-  layer = 1,
-  x = 160,
-  y = 184,
-  width = 48,
-  height = 8,
-  pattern = "grass.tree.roots.2",
-}
-
-tile{
-  layer = 1,
-  x = 160,
-  y = 168,
-  width = 48,
-  height = 16,
-  pattern = "grass.tree.roots.1",
-}
-
-tile{
-  layer = 1,
-  x = 184,
-  y = 176,
-  width = 144,
-  height = 40,
-  pattern = "tree.green.1",
-}
-
-tile{
-  layer = 1,
-  x = 160,
-  y = 128,
-  width = 144,
-  height = 40,
-  pattern = "tree.green.1",
-}
-
-tile{
-  layer = 1,
-  x = 424,
-  y = 80,
-  width = 96,
-  height = 40,
-  pattern = "tree.green.1",
-}
-
-tile{
-  layer = 1,
   x = 448,
   y = 112,
   width = 96,
-  height = 16,
+  height = 8,
   pattern = "tree.green.2",
 }
 
@@ -4056,19 +3805,10 @@ tile{
 
 tile{
   layer = 1,
-  x = 448,
-  y = 128,
-  width = 96,
-  height = 40,
-  pattern = "tree.green.1",
-}
-
-tile{
-  layer = 1,
   x = 344,
   y = 176,
   width = 48,
-  height = 16,
+  height = 8,
   pattern = "tree.green.2",
 }
 
@@ -4079,15 +3819,6 @@ tile{
   width = 8,
   height = 40,
   pattern = "tree.green.3",
-}
-
-tile{
-  layer = 1,
-  x = 344,
-  y = 192,
-  width = 48,
-  height = 40,
-  pattern = "tree.green.1",
 }
 
 tile{
@@ -4113,7 +3844,7 @@ tile{
   x = 424,
   y = 64,
   width = 96,
-  height = 16,
+  height = 8,
   pattern = "tree.green.2",
 }
 
@@ -4122,7 +3853,7 @@ tile{
   x = 328,
   y = 64,
   width = 48,
-  height = 16,
+  height = 8,
   pattern = "tree.green.2",
 }
 
@@ -4137,29 +3868,11 @@ tile{
 
 tile{
   layer = 1,
-  x = 328,
-  y = 80,
-  width = 48,
-  height = 40,
-  pattern = "tree.green.1",
-}
-
-tile{
-  layer = 1,
   x = 376,
   y = 72,
   width = 8,
   height = 40,
   pattern = "tree.green.4",
-}
-
-tile{
-  layer = 1,
-  x = 112,
-  y = 320,
-  width = 144,
-  height = 40,
-  pattern = "tree.green.1",
 }
 
 tile{
@@ -4185,17 +3898,8 @@ tile{
   x = 160,
   y = 208,
   width = 144,
-  height = 16,
+  height = 8,
   pattern = "tree.green.2",
-}
-
-tile{
-  layer = 1,
-  x = 160,
-  y = 224,
-  width = 144,
-  height = 40,
-  pattern = "tree.green.1",
 }
 
 tile{
@@ -4218,15 +3922,6 @@ tile{
 
 tile{
   layer = 1,
-  x = 136,
-  y = 272,
-  width = 96,
-  height = 40,
-  pattern = "tree.green.1",
-}
-
-tile{
-  layer = 1,
   x = 232,
   y = 264,
   width = 8,
@@ -4239,7 +3934,7 @@ tile{
   x = 136,
   y = 256,
   width = 96,
-  height = 16,
+  height = 8,
   pattern = "tree.green.2",
 }
 
@@ -4257,7 +3952,7 @@ tile{
   x = 112,
   y = 304,
   width = 144,
-  height = 16,
+  height = 8,
   pattern = "tree.green.2",
 }
 
@@ -4275,7 +3970,7 @@ tile{
   x = 184,
   y = 160,
   width = 144,
-  height = 16,
+  height = 8,
   pattern = "tree.green.2",
 }
 
@@ -4293,7 +3988,7 @@ tile{
   x = 160,
   y = 112,
   width = 144,
-  height = 16,
+  height = 8,
   pattern = "tree.green.2",
 }
 
@@ -4317,15 +4012,6 @@ tile{
 
 tile{
   layer = 1,
-  x = -32,
-  y = 160,
-  width = 144,
-  height = 40,
-  pattern = "tree.green.1",
-}
-
-tile{
-  layer = 1,
   x = 112,
   y = 152,
   width = 8,
@@ -4338,7 +4024,7 @@ tile{
   x = -32,
   y = 144,
   width = 144,
-  height = 16,
+  height = 8,
   pattern = "tree.green.2",
 }
 
@@ -4347,17 +4033,8 @@ tile{
   x = -8,
   y = 192,
   width = 96,
-  height = 16,
+  height = 8,
   pattern = "tree.green.2",
-}
-
-tile{
-  layer = 1,
-  x = -8,
-  y = 208,
-  width = 96,
-  height = 40,
-  pattern = "tree.green.1",
 }
 
 tile{
@@ -4365,17 +4042,8 @@ tile{
   x = -32,
   y = 240,
   width = 96,
-  height = 16,
+  height = 8,
   pattern = "tree.green.2",
-}
-
-tile{
-  layer = 1,
-  x = -32,
-  y = 256,
-  width = 96,
-  height = 40,
-  pattern = "tree.green.1",
 }
 
 tile{
@@ -4383,17 +4051,8 @@ tile{
   x = -8,
   y = 288,
   width = 96,
-  height = 16,
+  height = 8,
   pattern = "tree.green.2",
-}
-
-tile{
-  layer = 1,
-  x = -8,
-  y = 304,
-  width = 96,
-  height = 40,
-  pattern = "tree.green.1",
 }
 
 tile{
@@ -4428,26 +4087,8 @@ tile{
   x = -32,
   y = 336,
   width = 96,
-  height = 16,
+  height = 8,
   pattern = "tree.green.2",
-}
-
-tile{
-  layer = 1,
-  x = -32,
-  y = 352,
-  width = 96,
-  height = 40,
-  pattern = "tree.green.1",
-}
-
-tile{
-  layer = 1,
-  x = -56,
-  y = 400,
-  width = 96,
-  height = 40,
-  pattern = "tree.green.1",
 }
 
 tile{
@@ -4455,7 +4096,7 @@ tile{
   x = -56,
   y = 384,
   width = 96,
-  height = 16,
+  height = 8,
   pattern = "tree.green.2",
 }
 
@@ -4464,17 +4105,8 @@ tile{
   x = -32,
   y = 432,
   width = 144,
-  height = 16,
+  height = 8,
   pattern = "tree.green.2",
-}
-
-tile{
-  layer = 1,
-  x = -32,
-  y = 448,
-  width = 144,
-  height = 40,
-  pattern = "tree.green.1",
 }
 
 tile{
@@ -4482,17 +4114,8 @@ tile{
   x = -8,
   y = 480,
   width = 144,
-  height = 16,
+  height = 8,
   pattern = "tree.green.2",
-}
-
-tile{
-  layer = 1,
-  x = -8,
-  y = 496,
-  width = 144,
-  height = 40,
-  pattern = "tree.green.1",
 }
 
 tile{
@@ -4542,19 +4165,10 @@ tile{
 
 tile{
   layer = 1,
-  x = 184,
-  y = -16,
-  width = 336,
-  height = 40,
-  pattern = "tree.green.1",
-}
-
-tile{
-  layer = 1,
   x = 208,
   y = 16,
   width = 336,
-  height = 16,
+  height = 8,
   pattern = "tree.green.2",
 }
 
@@ -4569,29 +4183,11 @@ tile{
 
 tile{
   layer = 1,
-  x = -32,
-  y = -32,
-  width = 144,
-  height = 40,
-  pattern = "tree.green.1",
-}
-
-tile{
-  layer = 1,
   x = -8,
   y = 0,
   width = 96,
-  height = 16,
+  height = 8,
   pattern = "tree.green.2",
-}
-
-tile{
-  layer = 1,
-  x = -8,
-  y = 16,
-  width = 96,
-  height = 40,
-  pattern = "tree.green.1",
 }
 
 tile{
@@ -4599,17 +4195,8 @@ tile{
   x = -32,
   y = 48,
   width = 96,
-  height = 16,
+  height = 8,
   pattern = "tree.green.2",
-}
-
-tile{
-  layer = 1,
-  x = -32,
-  y = 64,
-  width = 96,
-  height = 40,
-  pattern = "tree.green.1",
 }
 
 tile{
@@ -4617,7 +4204,7 @@ tile{
   x = -8,
   y = 96,
   width = 96,
-  height = 16,
+  height = 8,
   pattern = "tree.green.2",
 }
 
@@ -4648,14 +4235,35 @@ tile{
   pattern = "tree.green.4",
 }
 
+custom_entity{
+  name = "settings:8-outside",
+  layer = 2,
+  x = -56,
+  y = -51,
+  width = 16,
+  height = 16,
+  direction = 0,
+}
+
 teletransporter{
-  layer = 1,
+  layer = 2,
   x = 80,
   y = -16,
   width = 128,
   height = 16,
   transition = "scrolling",
-  destination_map = "lightworld_c2",
+  destination_map = "Light_World/D4",
+  destination = "_side",
+}
+
+teletransporter{
+  layer = 2,
+  x = 512,
+  y = 0,
+  width = 16,
+  height = 512,
+  transition = "scrolling",
+  destination_map = "Light_World/E6",
   destination = "_side",
 }
 

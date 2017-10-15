@@ -1073,3 +1073,13 @@ tile{
   pattern = "ceiling",
 }
 
+custom_entity{
+  name = "settings:0-inside",
+  layer = 2,
+  x = -56,
+  y = -51,
+  width = 16,
+  height = 16,
+  direction = 0,
+}
+

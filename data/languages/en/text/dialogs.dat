@@ -33,6 +33,7 @@ test
 
 dialog{
   id = "_treasure.rupee.2",
+  disable = "true",
   text = [[
 .
 ]]

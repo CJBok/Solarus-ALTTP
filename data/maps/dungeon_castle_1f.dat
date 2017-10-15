@@ -3854,7 +3854,7 @@ teletransporter{
   y = 992,
   width = 16,
   height = 16,
-  destination_map = "lightworld_c2",
+  destination_map = "Light_World/D4",
   destination = "door_from_castle_f1_entrance",
 }
 
@@ -7590,7 +7590,7 @@ teletransporter{
   y = 1008,
   width = 16,
   height = 16,
-  destination_map = "lightworld_c2",
+  destination_map = "Light_World/D4",
   destination = "door_from_castle_f1_top_left",
 }
 
@@ -7664,7 +7664,7 @@ teletransporter{
   y = 1008,
   width = 16,
   height = 16,
-  destination_map = "lightworld_c2",
+  destination_map = "Light_World/D4",
   destination = "door_from_castle_f1_top_right",
 }
 
@@ -8189,7 +8189,7 @@ separator{
 }
 
 custom_entity{
-  name = "settings:0-day",
+  name = "settings:0-inside",
   layer = 2,
   x = 8,
   y = 13,

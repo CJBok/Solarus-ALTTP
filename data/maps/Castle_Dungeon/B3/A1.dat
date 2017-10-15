@@ -854,7 +854,8 @@ enemy{
   y = 181,
   direction = 2,
   breed = "chain_soldier_gray",
-  treasure_name = "boss_key",
+  treasure_name = "big_key",
+  treasure_savegame_variable = "treasure_Castle_Dungeon_big_key",
 }
 
 stairs{
@@ -957,7 +958,7 @@ door{
   direction = 3,
   sprite = "entities/Doors/Inside/cell_door",
   opening_method = "interaction_if_savegame_variable",
-  opening_condition = "dungeon_Castle_Dungeon_boss_key",
+  opening_condition = "Castle_Dungeon_big_key",
 }
 
 tile{
@@ -1129,5 +1130,15 @@ tile{
   width = 48,
   height = 128,
   pattern = "ceiling",
+}
+
+custom_entity{
+  name = "settings:0-inside",
+  layer = 2,
+  x = -56,
+  y = -51,
+  width = 16,
+  height = 16,
+  direction = 0,
 }
 

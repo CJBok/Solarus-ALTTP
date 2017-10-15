@@ -493,7 +493,7 @@ teletransporter{
   y = 200,
   width = 16,
   height = 16,
-  destination_map = "lightworld_c3",
+  destination_map = "Light_World/E6",
   destination = "door_link_house",
 }
 
@@ -503,16 +503,6 @@ destination{
   x = 160,
   y = 205,
   direction = 1,
-}
-
-custom_entity{
-  name = "settings:0-day",
-  layer = 0,
-  x = 8,
-  y = 13,
-  width = 16,
-  height = 16,
-  direction = 0,
 }
 
 destination{
@@ -554,6 +544,16 @@ destructible{
   sprite = "entities/vase",
   destruction_sound = "stone",
   weight = 1,
+}
+
+custom_entity{
+  name = "settings:0-inside",
+  layer = 0,
+  x = 8,
+  y = 13,
+  width = 16,
+  height = 16,
+  direction = 0,
 }
 
 tile{

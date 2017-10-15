@@ -1,11 +1,11 @@
 properties{
-  x = 512,
-  y = 1024,
+  x = 2048,
+  y = 2560,
   width = 512,
   height = 512,
   min_layer = 0,
   max_layer = 2,
-  world = "light_world",
+  world = "Light World",
   tileset = "light_world",
   music = "same",
 }
@@ -5689,6 +5689,42 @@ tile{
   pattern = "grass.shadow",
 }
 
+tile{
+  layer = 0,
+  x = -40,
+  y = 72,
+  width = 96,
+  height = 48,
+  pattern = "tree.green.1",
+}
+
+tile{
+  layer = 0,
+  x = -40,
+  y = -24,
+  width = 192,
+  height = 48,
+  pattern = "tree.green.1",
+}
+
+tile{
+  layer = 0,
+  x = -16,
+  y = 24,
+  width = 144,
+  height = 48,
+  pattern = "tree.green.1",
+}
+
+tile{
+  layer = 0,
+  x = -16,
+  y = 120,
+  width = 48,
+  height = 48,
+  pattern = "tree.green.1",
+}
+
 dynamic_tile{
   name = "door_proxy",
   layer = 0,
@@ -5704,7 +5740,7 @@ wall{
   layer = 0,
   x = 472,
   y = 360,
-  width = 40,
+  width = 16,
   height = 72,
   stops_hero = true,
   stops_npcs = true,
@@ -5762,7 +5798,7 @@ teletransporter{
   y = 240,
   width = 16,
   height = 16,
-  destination_map = "link_house",
+  destination_map = "Light_World/indoor/house_link",
   destination = "door_links_house_entrance",
 }
 
@@ -6034,58 +6070,6 @@ destructible{
   can_be_cut = true,
 }
 
-wall{
-  layer = 0,
-  x = 16,
-  y = 136,
-  width = 16,
-  height = 32,
-  stops_hero = true,
-  stops_npcs = true,
-  stops_enemies = true,
-  stops_blocks = true,
-  stops_projectiles = true,
-}
-
-wall{
-  layer = 0,
-  x = 40,
-  y = 88,
-  width = 16,
-  height = 32,
-  stops_hero = true,
-  stops_npcs = true,
-  stops_enemies = true,
-  stops_blocks = true,
-  stops_projectiles = true,
-}
-
-wall{
-  layer = 0,
-  x = 112,
-  y = 40,
-  width = 16,
-  height = 32,
-  stops_hero = true,
-  stops_npcs = true,
-  stops_enemies = true,
-  stops_blocks = true,
-  stops_projectiles = true,
-}
-
-wall{
-  layer = 0,
-  x = 136,
-  y = 0,
-  width = 16,
-  height = 24,
-  stops_hero = true,
-  stops_npcs = true,
-  stops_enemies = true,
-  stops_blocks = true,
-  stops_projectiles = true,
-}
-
 teletransporter{
   layer = 0,
   x = -16,
@@ -6093,18 +6077,8 @@ teletransporter{
   width = 16,
   height = 352,
   transition = "scrolling",
-  destination_map = "lightworld_b3",
+  destination_map = "Light_World/D6",
   destination = "_side",
-}
-
-custom_entity{
-  name = "settings:8-night",
-  layer = 0,
-  x = -56,
-  y = -51,
-  width = 16,
-  height = 16,
-  direction = 0,
 }
 
 custom_entity{
@@ -6255,6 +6229,28 @@ destructible{
   can_be_cut = true,
 }
 
+teletransporter{
+  layer = 0,
+  x = 512,
+  y = 0,
+  width = 16,
+  height = 512,
+  transition = "scrolling",
+  destination_map = "Light_World/F6",
+  destination = "_side",
+}
+
+teletransporter{
+  layer = 0,
+  x = 0,
+  y = -16,
+  width = 512,
+  height = 16,
+  transition = "scrolling",
+  destination_map = "Light_World/D4",
+  destination = "_side",
+}
+
 tile{
   layer = 1,
   x = 160,
@@ -6269,26 +6265,8 @@ tile{
   x = -40,
   y = -32,
   width = 192,
-  height = 16,
+  height = 8,
   pattern = "tree.green.2",
-}
-
-tile{
-  layer = 1,
-  x = -40,
-  y = -16,
-  width = 192,
-  height = 40,
-  pattern = "tree.green.1",
-}
-
-tile{
-  layer = 1,
-  x = -16,
-  y = 32,
-  width = 144,
-  height = 40,
-  pattern = "tree.green.1",
 }
 
 tile{
@@ -6305,7 +6283,7 @@ tile{
   x = -16,
   y = 16,
   width = 144,
-  height = 16,
+  height = 8,
   pattern = "tree.green.2",
 }
 
@@ -6339,18 +6317,9 @@ tile{
 tile{
   layer = 1,
   x = -40,
-  y = 80,
-  width = 96,
-  height = 40,
-  pattern = "tree.green.1",
-}
-
-tile{
-  layer = 1,
-  x = -40,
   y = 64,
   width = 96,
-  height = 16,
+  height = 8,
   pattern = "tree.green.2",
 }
 
@@ -6359,17 +6328,8 @@ tile{
   x = -16,
   y = 112,
   width = 48,
-  height = 16,
+  height = 8,
   pattern = "tree.green.2",
-}
-
-tile{
-  layer = 1,
-  x = -16,
-  y = 128,
-  width = 48,
-  height = 40,
-  pattern = "tree.green.1",
 }
 
 tile{
@@ -6579,14 +6539,13 @@ tile{
   pattern = "house.entrance.top",
 }
 
-teletransporter{
-  layer = 1,
-  x = 0,
-  y = -16,
-  width = 512,
+custom_entity{
+  name = "settings:8-outside",
+  layer = 2,
+  x = -56,
+  y = -51,
+  width = 16,
   height = 16,
-  transition = "scrolling",
-  destination_map = "lightworld_c2",
-  destination = "_side",
+  direction = 0,
 }
 

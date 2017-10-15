@@ -1926,7 +1926,7 @@ tile{
 }
 
 custom_entity{
-  name = "settings:0-day",
+  name = "settings:0-inside",
   layer = 2,
   x = 8,
   y = 13,
