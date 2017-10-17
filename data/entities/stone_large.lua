@@ -12,7 +12,7 @@ end
 
 function entity:on_interaction()
 
-  if game:get_ability("lift") <= 2 then
+  if game:get_ability("lift") < 1 then
     return
   end
 
@@ -28,6 +28,7 @@ function entity:on_interaction()
     y = y + 16
   end
 
+  hero:set_invincible(true)
   hero:freeze()
   hero:get_sprite():set_animation("lifting_heavy")
 
@@ -44,6 +45,7 @@ function entity:on_interaction()
     }
     entity:remove()
     hero:unfreeze()
+    hero:set_invincible(false)
     game:simulate_command_pressed("action")
 
     x, y, layer = hero:get_position()
