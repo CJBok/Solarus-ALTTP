@@ -30,6 +30,8 @@ end
 function sol.main:on_key_pressed(key, modifiers)
 
   local game = sol.main.game
+  local map = game:get_map()
+  local hero = game:get_hero()
   local handled = false
   if key == "f5" then
     -- F5: change the video mode.
@@ -49,19 +51,24 @@ function sol.main:on_key_pressed(key, modifiers)
     sol.main.exit()
     handled = true
   elseif key == "q" then
-    if (game:has_item("lamp")) and game:get_item_assigned(1) == nil then
-      game:set_item_assigned(1, game:get_item("lamp"))
-    else
-      game:set_item_assigned(1, nil)
+    local x, y, layer = hero:get_position()
+    local direction = hero:get_direction()
+    if direction == 0 then
+      x = x + 16
+    elseif direction == 1 then
+      y = y - 16
+    elseif direction == 2 then
+      x = x - 16
+    elseif direction == 3 then
+      y = y + 16
     end
+
+    map:create_bomb{
+      x = x,
+      y = y,
+      layer = layer
+    }
     
-    handled = true
-  elseif key == "w" then
-    game:add_light(1)
-    handled = true
-  elseif key == "e" then
-    game:add_light(-1)
-    handled = true
   end
 
   return handled

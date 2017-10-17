@@ -5330,6 +5330,24 @@ teletransporter{
   destination_map = "Light_World/F5",
 }
 
+destructible{
+  layer = 0,
+  x = 408,
+  y = 77,
+  sprite = "entities/Stones/stone_light_small",
+  destruction_sound = "stone",
+  weight = 2,
+}
+
+destructible{
+  layer = 0,
+  x = 424,
+  y = 77,
+  sprite = "entities/Stones/stone_light_small",
+  destruction_sound = "stone",
+  weight = 2,
+}
+
 tile{
   layer = 1,
   x = 152,

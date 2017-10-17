@@ -1,7 +1,5 @@
 dialog{
   id = "_small_key_required",
-  icon = "72",
-  skip = "all",
   text = [[
 Locked!
 ]]

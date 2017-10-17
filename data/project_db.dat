@@ -13,6 +13,7 @@ map{ id = "HiddenPassage_Dungeon/B1/B4", description = "Hidden Passage B1 B4" }
 map{ id = "HiddenPassage_Dungeon/F1/A1", description = "Hidden Passage F1 A1" }
 map{ id = "Light_World/D4", description = "Castle" }
 map{ id = "Light_World/D6", description = "Fairy Pond" }
+map{ id = "Light_World/D7", description = "D7" }
 map{ id = "Light_World/E6", description = "Links House" }
 map{ id = "Light_World/F4", description = "F4" }
 map{ id = "Light_World/F5", description = "F5" }
@@ -63,21 +64,8 @@ sprite{ id = "entities/Electron/electric_pole", description = "Electric  Pole (E
 sprite{ id = "entities/Electron/electric_right", description = "Electric Right (Electric Defence)" }
 sprite{ id = "entities/Electron/electron", description = "Electron (Electric Defense)" }
 sprite{ id = "entities/Quest/ornament", description = "Castle Ornament" }
-sprite{ id = "entities/Stones/stone_lg_dark01", description = "entities/Stones/stone_lg_dark01" }
-sprite{ id = "entities/Stones/stone_lg_dark02", description = "entities/Stones/stone_lg_dark02" }
-sprite{ id = "entities/Stones/stone_lg_dark03", description = "entities/Stones/stone_lg_dark03" }
-sprite{ id = "entities/Stones/stone_lg_dark04", description = "entities/Stones/stone_lg_dark04" }
-sprite{ id = "entities/Stones/stone_lg_dark05", description = "entities/Stones/stone_lg_dark05" }
-sprite{ id = "entities/Stones/stone_lg_dark06", description = "entities/Stones/stone_lg_dark06" }
-sprite{ id = "entities/Stones/stone_lg_dark07", description = "entities/Stones/stone_lg_dark07" }
-sprite{ id = "entities/Stones/stone_lg_dark08", description = "entities/Stones/stone_lg_dark08" }
-sprite{ id = "entities/Stones/stone_lg_light01", description = "entities/Stones/stone_lg_light01" }
-sprite{ id = "entities/Stones/stone_lg_light02", description = "entities/Stones/stone_lg_light02" }
-sprite{ id = "entities/Stones/stone_lg_light03", description = "entities/Stones/stone_lg_light03" }
-sprite{ id = "entities/Stones/stone_lg_light04", description = "entities/Stones/stone_lg_light04" }
-sprite{ id = "entities/Stones/stone_lg_light05", description = "entities/Stones/stone_lg_light05" }
-sprite{ id = "entities/Stones/stone_lg_light06", description = "entities/Stones/stone_lg_light06" }
-sprite{ id = "entities/Stones/stone_lg_light07", description = "entities/Stones/stone_lg_light07" }
+sprite{ id = "entities/Stones/stone_light_large", description = "Stone Light Large" }
+sprite{ id = "entities/Stones/stone_light_small", description = "Stone Light Small" }
 sprite{ id = "entities/arrow", description = "Arrow" }
 sprite{ id = "entities/bed", description = "Hero's bed" }
 sprite{ id = "entities/block", description = "Block" }
@@ -116,8 +104,8 @@ sprite{ id = "entities/star", description = "Star" }
 sprite{ id = "entities/statue", description = "Statue" }
 sprite{ id = "entities/stone_black", description = "Stone (black)" }
 sprite{ id = "entities/stone_black_skull", description = "Stone (black skull)" }
-sprite{ id = "entities/stone_white", description = "Stone (white)" }
 sprite{ id = "entities/stone_white_skull", description = "Stone (white skull)" }
+sprite{ id = "entities/stones/stone_light_small", description = "Stone (white)" }
 sprite{ id = "entities/switch", description = "Switch" }
 sprite{ id = "entities/teletransporter", description = "Teletransporter" }
 sprite{ id = "entities/torch", description = "entities/torch" }
@@ -221,6 +209,7 @@ music{ id = "overworld", description = "Overworld" }
 music{ id = "rabbit", description = "Turned into a rabbit" }
 music{ id = "sanctuary", description = "Sanctuary" }
 music{ id = "soldiers", description = "Soldiers" }
+music{ id = "test", description = "test" }
 music{ id = "title_screen", description = "Title screen" }
 music{ id = "triforce", description = "Triforce" }
 music{ id = "victory", description = "Victory" }
@@ -348,6 +337,7 @@ enemy{ id = "sword_soldier_green", description = "Soldier Sword Green" }
 entity{ id = "door_close_trap", description = "Close Trap Doors" }
 entity{ id = "door_proximity_32", description = "Door Auto Open/Close when Hero in range if 32 pixels" }
 entity{ id = "follow_hero", description = "Follow Hero" }
+entity{ id = "stone_large", description = "Stone Large" }
 entity{ id = "turn_to_hero", description = "Face Hero" }
 
 language{ id = "en", description = "English" }

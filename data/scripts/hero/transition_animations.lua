@@ -5,7 +5,7 @@ local teletransporter_meta=sol.main.get_metatable("teletransporter")
 local destinations_meta=sol.main.get_metatable("destination")
 local map_meta=sol.main.get_metatable("map")
 
-teletransporter_meta:register_event("on_activated", function(teletransporter, test)
+teletransporter_meta:register_event("on_activated", function(teletransporter)
   local game = teletransporter:get_game()
   local ground=game:get_map():get_ground(game:get_hero():get_position())
   game:set_value("tp_ground",ground)

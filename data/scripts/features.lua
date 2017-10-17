@@ -17,5 +17,6 @@ require("scripts/map/light_manager")
 require("scripts/map/wakeup_enemies")
 
 require("scripts/hero/transition_animations")
+require("scripts/hero/events")
 
 return true

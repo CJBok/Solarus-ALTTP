@@ -149,11 +149,24 @@ animation{
   name = "lifting",
   src_image = "hero/lifting.png",
   frame_delay = 100,
+  frame_to_loop_on = 0,
   directions = {
     { x = 0, y = 0, frame_width = 48, frame_height = 24, origin_x = 24, origin_y = 21, num_frames = 5 },
     { x = 0, y = 24, frame_width = 48, frame_height = 24, origin_x = 24, origin_y = 21, num_frames = 5 },
     { x = 0, y = 48, frame_width = 48, frame_height = 24, origin_x = 24, origin_y = 21, num_frames = 5 },
     { x = 0, y = 72, frame_width = 48, frame_height = 24, origin_x = 24, origin_y = 21, num_frames = 5 },
+  },
+}
+animation{
+  name = "lifting_heavy",
+  src_image = "hero/heavy_lifting.png",
+  frame_delay = 300,
+  frame_to_loop_on = 0,
+  directions = {
+    { x = 0, y = 0, frame_width = 48, frame_height = 24, origin_x = 24, origin_y = 21, num_frames = 2 },
+    { x = 0, y = 24, frame_width = 48, frame_height = 24, origin_x = 24, origin_y = 21, num_frames = 2 },
+    { x = 0, y = 48, frame_width = 48, frame_height = 24, origin_x = 24, origin_y = 21, num_frames = 2 },
+    { x = 0, y = 72, frame_width = 48, frame_height = 24, origin_x = 24, origin_y = 21, num_frames = 2 },
   },
 }
 animation{
