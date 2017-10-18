@@ -24,8 +24,8 @@ function initial_game:initialize_new_savegame(game)
   game:set_max_magic(42)
   game:set_magic(0)
 
-  --game:set_ability("sword", 1)
-  --game:set_ability("shield", 1)
+  game:set_ability("sword", 1)
+  game:set_ability("shield", 1)
 
   sol.audio.play_music("beginning")
 end

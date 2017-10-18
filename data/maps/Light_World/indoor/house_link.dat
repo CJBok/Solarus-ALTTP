@@ -556,6 +556,17 @@ custom_entity{
   direction = 0,
 }
 
+custom_entity{
+  layer = 0,
+  x = 152,
+  y = 141,
+  width = 32,
+  height = 32,
+  direction = 0,
+  sprite = "entities/Stones/stone_light_large",
+  model = "stone_large",
+}
+
 tile{
   layer = 1,
   x = 144,
