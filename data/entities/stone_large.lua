@@ -52,8 +52,6 @@ function entity:on_interaction()
     hero:set_invincible(false)
     game:simulate_command_pressed("action")
 
-    
-
     x, y, layer = hero:get_position()
     wall = map:create_wall{
       x = x-8,

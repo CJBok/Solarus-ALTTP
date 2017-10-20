@@ -18,11 +18,12 @@ map{ id = "Light_World/E6", description = "Links House" }
 map{ id = "Light_World/F4", description = "F4" }
 map{ id = "Light_World/F5", description = "F5" }
 map{ id = "Light_World/F6", description = "F6" }
+map{ id = "Light_World/G4", description = "G4" }
+map{ id = "Light_World/G6", description = "G6" }
 map{ id = "Light_World/indoor/house_link", description = "Link's House" }
 map{ id = "dungeon_castle_1f", description = "Castle Dungeon 1F" }
 map{ id = "dungeon_castle_secret_b1", description = "Castle Dungeon Secret B1" }
 
-tileset{ id = "Full Hyrule", description = "Full Hyrule" }
 tileset{ id = "Outside_minimap", description = "Outside_minimap" }
 tileset{ id = "cave", description = "Cave" }
 tileset{ id = "dungeon-minimap", description = "dungeon-minimap" }
@@ -54,6 +55,8 @@ sprite{ id = "enemies/sword_soldier_blue_weapon", description = "Soldier Sword B
 sprite{ id = "enemies/sword_soldier_green", description = "Soldier Sword Green" }
 sprite{ id = "enemies/sword_soldier_green_weapon", description = "Soldier Sword Green Weapon" }
 sprite{ id = "enemies/tentacle", description = "Enemy: Tentacle" }
+sprite{ id = "entities/Containers/chest_large", description = "Chest Large" }
+sprite{ id = "entities/Containers/chest_small", description = "Chest Small" }
 sprite{ id = "entities/Doors/Inside/cell_door", description = "Cell Door" }
 sprite{ id = "entities/Doors/Inside/double_door_key_wood", description = "Double Door Wood Key" }
 sprite{ id = "entities/Doors/Inside/trapdoor_blue", description = "Trapdoor Blue" }
@@ -63,30 +66,25 @@ sprite{ id = "entities/Electron/electric_left", description = "Electric Left (El
 sprite{ id = "entities/Electron/electric_pole", description = "Electric  Pole (Electric Defense)" }
 sprite{ id = "entities/Electron/electric_right", description = "Electric Right (Electric Defence)" }
 sprite{ id = "entities/Electron/electron", description = "Electron (Electric Defense)" }
+sprite{ id = "entities/Items/arrow", description = "Arrow" }
+sprite{ id = "entities/Items/bomb", description = "Bomb" }
+sprite{ id = "entities/Items/boomerang1", description = "Boomerang Blue" }
+sprite{ id = "entities/Items/boomerang2", description = "Boomerang Red" }
 sprite{ id = "entities/Quest/ornament", description = "Castle Ornament" }
+sprite{ id = "entities/Stones/skull_dark", description = "Skull Dark" }
+sprite{ id = "entities/Stones/skull_light", description = "Skull Light" }
+sprite{ id = "entities/Stones/stone_dark_small", description = "Stone Dark Small" }
 sprite{ id = "entities/Stones/stone_light_large", description = "Stone Light Large" }
 sprite{ id = "entities/Stones/stone_light_small", description = "Stone Light Small" }
-sprite{ id = "entities/arrow", description = "Arrow" }
 sprite{ id = "entities/bed", description = "Hero's bed" }
 sprite{ id = "entities/block", description = "Block" }
-sprite{ id = "entities/bomb", description = "Bomb" }
-sprite{ id = "entities/boomerang1", description = "Boomerang 1" }
-sprite{ id = "entities/boomerang2", description = "Boomerang 2" }
 sprite{ id = "entities/bush", description = "Bush (from tileset)" }
 sprite{ id = "entities/bush_green", description = "Bush (green)" }
 sprite{ id = "entities/bush_purple", description = "Bush (purple)" }
 sprite{ id = "entities/bush_yellow", description = "Bush (yellow)" }
-sprite{ id = "entities/chest", description = "Chest" }
 sprite{ id = "entities/crystal", description = "Crystal" }
 sprite{ id = "entities/crystal_block", description = "Crystal block" }
 sprite{ id = "entities/destination", description = "Destination" }
-sprite{ id = "entities/door_big_key", description = "Door (big key)" }
-sprite{ id = "entities/door_normal", description = "Door (normal)" }
-sprite{ id = "entities/door_small_key", description = "Door (small key)" }
-sprite{ id = "entities/door_very_weak_wall", description = "Door (very weak wall)" }
-sprite{ id = "entities/door_weak_block", description = "Door (weak block)" }
-sprite{ id = "entities/door_weak_wall", description = "Door (weak wall)" }
-sprite{ id = "entities/doors", description = "Outside Doors" }
 sprite{ id = "entities/electron/electron", description = "Electron (Electric Defence)" }
 sprite{ id = "entities/explosion", description = "Explosion" }
 sprite{ id = "entities/fire", description = "Fire" }
@@ -94,6 +92,10 @@ sprite{ id = "entities/grass", description = "Grass" }
 sprite{ id = "entities/hint_stone", description = "entities/hint_stone" }
 sprite{ id = "entities/hookshot", description = "Hookshot" }
 sprite{ id = "entities/items", description = "Items" }
+sprite{ id = "entities/items/arrow", description = "Arrow" }
+sprite{ id = "entities/items/bomb", description = "Bomb" }
+sprite{ id = "entities/items/boomerang1", description = "Boomerang 1" }
+sprite{ id = "entities/items/boomerang2", description = "Boomerang 2" }
 sprite{ id = "entities/rain", description = "Rain" }
 sprite{ id = "entities/rupee_icon", description = "Rupee icon" }
 sprite{ id = "entities/shadow", description = "Shadow" }
@@ -102,9 +104,9 @@ sprite{ id = "entities/snores", description = "snoring" }
 sprite{ id = "entities/solid_switch", description = "Solid switch" }
 sprite{ id = "entities/star", description = "Star" }
 sprite{ id = "entities/statue", description = "Statue" }
-sprite{ id = "entities/stone_black", description = "Stone (black)" }
-sprite{ id = "entities/stone_black_skull", description = "Stone (black skull)" }
-sprite{ id = "entities/stone_white_skull", description = "Stone (white skull)" }
+sprite{ id = "entities/stones/skull_dark", description = "Stone (black skull)" }
+sprite{ id = "entities/stones/skull_light", description = "Stone (white skull)" }
+sprite{ id = "entities/stones/stone_dark_small", description = "Stone (black)" }
 sprite{ id = "entities/stones/stone_light_small", description = "Stone (white)" }
 sprite{ id = "entities/switch", description = "Switch" }
 sprite{ id = "entities/teletransporter", description = "Teletransporter" }

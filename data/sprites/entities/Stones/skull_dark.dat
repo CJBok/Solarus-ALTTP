@@ -2,7 +2,7 @@ animation{
   name = "on_ground",
   src_image = "entities/Stones/stones.png",
   directions = {
-    { x = 0, y = 160, frame_width = 32, frame_height = 32, origin_x = 8, origin_y = 13 },
+    { x = 144, y = 0, frame_width = 16, frame_height = 24, origin_x = 8, origin_y = 13 },
   },
 }
 animation{
@@ -10,14 +10,14 @@ animation{
   src_image = "entities/stone.png",
   frame_delay = 100,
   directions = {
-    { x = 0, y = 208, frame_width = 48, frame_height = 48, origin_x = 24, origin_y = 33, num_frames = 8 },
+    { x = 0, y = 120, frame_width = 32, frame_height = 32, origin_x = 16, origin_y = 29, num_frames = 8 },
   },
 }
 animation{
   name = "stopped",
   src_image = "entities/stone.png",
   directions = {
-    { x = 0, y = 160, frame_width = 32, frame_height = 32, origin_x = 16, origin_y = 28 },
+    { x = 144, y = 0, frame_width = 16, frame_height = 24, origin_x = 8, origin_y = 13 },
   },
 }
 animation{
@@ -26,6 +26,6 @@ animation{
   frame_delay = 100,
   frame_to_loop_on = 0,
   directions = {
-    { x = 0, y = 160, frame_width = 32, frame_height = 40, origin_x = 16, origin_y = 28, num_frames = 3 },
+    { x = 144, y = 0, frame_width = 16, frame_height = 24, origin_x = 8, origin_y = 13, num_frames = 3 },
   },
 }
