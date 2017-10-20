@@ -1,0 +1,7 @@
+animation{
+  name = "map",
+  src_image = "zlayouts/lightworld.png",
+  directions = {
+    { x = 2560, y = 1024, frame_width = 512, frame_height = 512, origin_x = 8, origin_y = 13 },
+  },
+}

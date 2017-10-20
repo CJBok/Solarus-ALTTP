@@ -12,6 +12,15 @@ properties{
 
 tile{
   layer = 0,
+  x = 128,
+  y = 496,
+  width = 112,
+  height = 16,
+  pattern = "dirt.soil",
+}
+
+tile{
+  layer = 0,
   x = 488,
   y = 152,
   width = 16,
@@ -5311,6 +5320,150 @@ tile{
   pattern = "tree.green.1",
 }
 
+tile{
+  layer = 0,
+  x = 144,
+  y = 480,
+  width = 80,
+  height = 8,
+  pattern = "grass.soil.2",
+}
+
+tile{
+  layer = 0,
+  x = 224,
+  y = 488,
+  width = 8,
+  height = 8,
+  pattern = "grass.soil.diag.3",
+}
+
+tile{
+  layer = 0,
+  x = 232,
+  y = 496,
+  width = 8,
+  height = 8,
+  pattern = "grass.soil.diag.3",
+}
+
+tile{
+  layer = 0,
+  x = 240,
+  y = 504,
+  width = 8,
+  height = 8,
+  pattern = "grass.soil.diag.3",
+}
+
+tile{
+  layer = 0,
+  x = 136,
+  y = 488,
+  width = 8,
+  height = 8,
+  pattern = "grass.soil.diag.4",
+}
+
+tile{
+  layer = 0,
+  x = 128,
+  y = 496,
+  width = 8,
+  height = 8,
+  pattern = "grass.soil.diag.4",
+}
+
+tile{
+  layer = 0,
+  x = 120,
+  y = 504,
+  width = 8,
+  height = 8,
+  pattern = "grass.soil.diag.4",
+}
+
+tile{
+  layer = 0,
+  x = 112,
+  y = 504,
+  width = 8,
+  height = 8,
+  pattern = "grass.soil.diag.4b",
+}
+
+tile{
+  layer = 0,
+  x = 120,
+  y = 496,
+  width = 8,
+  height = 8,
+  pattern = "grass.soil.diag.4b",
+}
+
+tile{
+  layer = 0,
+  x = 128,
+  y = 488,
+  width = 8,
+  height = 8,
+  pattern = "grass.soil.diag.4b",
+}
+
+tile{
+  layer = 0,
+  x = 136,
+  y = 480,
+  width = 8,
+  height = 8,
+  pattern = "grass.soil.diag.4b",
+}
+
+tile{
+  layer = 0,
+  x = 224,
+  y = 480,
+  width = 8,
+  height = 8,
+  pattern = "grass.soil.diag.3b",
+}
+
+tile{
+  layer = 0,
+  x = 232,
+  y = 488,
+  width = 8,
+  height = 8,
+  pattern = "grass.soil.diag.3b",
+}
+
+tile{
+  layer = 0,
+  x = 240,
+  y = 496,
+  width = 8,
+  height = 8,
+  pattern = "grass.soil.diag.3b",
+}
+
+tile{
+  layer = 0,
+  x = 248,
+  y = 504,
+  width = 8,
+  height = 8,
+  pattern = "grass.soil.diag.3b",
+}
+
+tile{
+  layer = 0,
+  x = 144,
+  y = 488,
+  width = 80,
+  height = 8,
+  pattern = "16",
+}
+
 npc{
   layer = 0,
   x = 408,
@@ -5328,6 +5481,7 @@ teletransporter{
   height = 16,
   transition = "scrolling",
   destination_map = "Light_World/F5",
+  destination = "_side",
 }
 
 destructible{
@@ -5346,6 +5500,17 @@ destructible{
   sprite = "entities/Stones/stone_light_small",
   destruction_sound = "stone",
   weight = 2,
+}
+
+teletransporter{
+  layer = 0,
+  x = 64,
+  y = -16,
+  width = 368,
+  height = 16,
+  transition = "scrolling",
+  destination_map = "Light_World/F3",
+  destination = "_side",
 }
 
 tile{

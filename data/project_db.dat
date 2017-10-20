@@ -15,11 +15,13 @@ map{ id = "Light_World/D4", description = "Castle" }
 map{ id = "Light_World/D6", description = "Fairy Pond" }
 map{ id = "Light_World/D7", description = "D7" }
 map{ id = "Light_World/E6", description = "Links House" }
+map{ id = "Light_World/F3", description = "F3" }
 map{ id = "Light_World/F4", description = "F4" }
 map{ id = "Light_World/F5", description = "F5" }
 map{ id = "Light_World/F6", description = "F6" }
 map{ id = "Light_World/G4", description = "G4" }
 map{ id = "Light_World/G6", description = "G6" }
+map{ id = "Light_World/H6", description = "H6" }
 map{ id = "Light_World/indoor/house_link", description = "Link's House" }
 map{ id = "dungeon_castle_1f", description = "Castle Dungeon 1F" }
 map{ id = "dungeon_castle_secret_b1", description = "Castle Dungeon Secret B1" }
@@ -184,6 +186,8 @@ sprite{ id = "npc/woman_yellow", description = "Yellow woman" }
 sprite{ id = "npc/young_girl_red", description = "Red young girl" }
 sprite{ id = "npc/zelda", description = "Zelda" }
 sprite{ id = "tiles/floor", description = "floor" }
+sprite{ id = "zlayouts/lightworld1024", description = "1024" }
+sprite{ id = "zlayouts/lightworld512", description = "512" }
 
 music{ id = "agahnim", description = "Agahnim theme" }
 music{ id = "beginning", description = "Beginning" }

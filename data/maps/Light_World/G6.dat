@@ -3844,6 +3844,28 @@ tile{
   pattern = "water.wave_small",
 }
 
+teletransporter{
+  layer = 0,
+  x = 96,
+  y = -16,
+  width = 80,
+  height = 16,
+  transition = "scrolling",
+  destination_map = "Light_World/G4",
+  destination = "_side",
+}
+
+teletransporter{
+  layer = 0,
+  x = -16,
+  y = 96,
+  width = 16,
+  height = 128,
+  transition = "scrolling",
+  destination_map = "Light_World/F6",
+  destination = "_side",
+}
+
 tile{
   layer = 1,
   x = 168,

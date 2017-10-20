@@ -5279,6 +5279,17 @@ teletransporter{
   destination = "_side",
 }
 
+teletransporter{
+  layer = 0,
+  x = 512,
+  y = 96,
+  width = 16,
+  height = 128,
+  transition = "scrolling",
+  destination_map = "Light_World/G6",
+  destination = "_side",
+}
+
 tile{
   layer = 1,
   x = 208,

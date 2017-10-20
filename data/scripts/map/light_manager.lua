@@ -4,7 +4,6 @@ require("scripts/multi_events")
 local map_meta=sol.main.get_metatable("map")
 local game_meta=sol.main.get_metatable("game")
 
--- Dark overlay for each hero direction.
 local dark_surfaces = {
   [0] = sol.surface.create("entities/dark0.png"),
   [1] = sol.surface.create("entities/dark1.png"),
@@ -82,8 +81,8 @@ end)
 
 game_meta:register_event("on_map_changed", function(game)
 
-  game:set_weather("raining")
-  game:set_time_of_day("night")
+  --game:set_weather("raining")
+  --game:set_time_of_day("night")
 
   local map = game:get_map()
   for ent in map:get_entities("settings") do
