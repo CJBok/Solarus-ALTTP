@@ -14,8 +14,8 @@ function initial_game:initialize_new_savegame(game)
   --game:set_starting_location("lightworld_c3", "link_house")
   --game:set_starting_location("dungeon_castle_1f")
 
-  --game:set_starting_location("Light_World/indoor/house_link", "start")
-  game:set_starting_location("Light_World/F6")
+  game:set_starting_location("Light_World/indoor/house_link", "start")
+  --game:set_starting_location("Light_World/F6")
 
   game:set_max_life(6)
   game:set_life(game:get_max_life())
@@ -24,8 +24,8 @@ function initial_game:initialize_new_savegame(game)
   game:set_max_magic(42)
   game:set_magic(0)
 
-  game:set_ability("sword", 1)
-  game:set_ability("shield", 1)
+  --game:set_ability("sword", 1)
+  --game:set_ability("shield", 1)
 
   sol.audio.play_music("beginning")
 end

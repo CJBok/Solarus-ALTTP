@@ -2359,6 +2359,16 @@ tile_pattern{
 }
 
 tile_pattern{
+  id = "295",
+  ground = "traversable",
+  default_layer = 0,
+  x = 344,
+  y = 104,
+  width = 8,
+  height = 8,
+}
+
+tile_pattern{
   id = "296",
   ground = "traversable",
   default_layer = 0,
@@ -2378,6 +2388,27 @@ tile_pattern{
   width = 8,
   height = 8,
   repeat_mode = "none",
+}
+
+tile_pattern{
+  id = "298",
+  ground = "wall",
+  default_layer = 1,
+  x = 432,
+  y = 48,
+  width = 32,
+  height = 8,
+  repeat_mode = "none",
+}
+
+tile_pattern{
+  id = "299",
+  ground = "wall",
+  default_layer = 1,
+  x = 400,
+  y = 136,
+  width = 8,
+  height = 16,
 }
 
 tile_pattern{
@@ -2403,12 +2434,218 @@ tile_pattern{
 }
 
 tile_pattern{
+  id = "300",
+  ground = "wall",
+  default_layer = 0,
+  x = 328,
+  y = 128,
+  width = 8,
+  height = 8,
+  repeat_mode = "vertical",
+}
+
+tile_pattern{
+  id = "301",
+  ground = "wall",
+  default_layer = 0,
+  x = 344,
+  y = 128,
+  width = 8,
+  height = 8,
+  repeat_mode = "vertical",
+}
+
+tile_pattern{
+  id = "302",
+  ground = "ladder",
+  default_layer = 0,
+  x = 336,
+  y = 128,
+  width = 8,
+  height = 8,
+}
+
+tile_pattern{
+  id = "303",
+  ground = "wall",
+  default_layer = 0,
+  x = 544,
+  y = 0,
+  width = 8,
+  height = 8,
+  repeat_mode = "none",
+}
+
+tile_pattern{
+  id = "304",
+  ground = "wall",
+  default_layer = 0,
+  x = 568,
+  y = 0,
+  width = 8,
+  height = 8,
+  repeat_mode = "none",
+}
+
+tile_pattern{
+  id = "305",
+  ground = "wall",
+  default_layer = 0,
+  x = 552,
+  y = 0,
+  width = 16,
+  height = 8,
+  repeat_mode = "horizontal",
+}
+
+tile_pattern{
+  id = "306",
+  ground = "wall",
+  default_layer = 0,
+  x = 568,
+  y = 8,
+  width = 8,
+  height = 8,
+  repeat_mode = "vertical",
+}
+
+tile_pattern{
+  id = "307",
+  ground = "wall",
+  default_layer = 0,
+  x = 544,
+  y = 8,
+  width = 8,
+  height = 8,
+  repeat_mode = "vertical",
+}
+
+tile_pattern{
+  id = "308",
+  ground = "wall",
+  default_layer = 0,
+  x = 544,
+  y = 16,
+  width = 8,
+  height = 8,
+  repeat_mode = "none",
+}
+
+tile_pattern{
+  id = "309",
+  ground = "wall",
+  default_layer = 0,
+  x = 568,
+  y = 16,
+  width = 8,
+  height = 8,
+  repeat_mode = "none",
+}
+
+tile_pattern{
   id = "31",
   ground = "wall",
   default_layer = 0,
   x = 624,
   y = 320,
   width = 32,
+  height = 16,
+  repeat_mode = "none",
+}
+
+tile_pattern{
+  id = "310",
+  ground = "hole",
+  default_layer = 0,
+  x = 552,
+  y = 8,
+  width = 8,
+  height = 8,
+}
+
+tile_pattern{
+  id = "311",
+  ground = "wall",
+  default_layer = 0,
+  x = 552,
+  y = 16,
+  width = 16,
+  height = 8,
+  repeat_mode = "horizontal",
+}
+
+tile_pattern{
+  id = "312",
+  ground = "wall",
+  default_layer = 0,
+  x = 336,
+  y = 64,
+  width = 8,
+  height = 16,
+  repeat_mode = "none",
+}
+
+tile_pattern{
+  id = "313",
+  ground = "wall",
+  default_layer = 0,
+  x = 344,
+  y = 64,
+  width = 8,
+  height = 16,
+  repeat_mode = "none",
+}
+
+tile_pattern{
+  id = "314",
+  ground = "wall",
+  default_layer = 0,
+  x = 384,
+  y = 48,
+  width = 16,
+  height = 16,
+  repeat_mode = "horizontal",
+}
+
+tile_pattern{
+  id = "315",
+  ground = "traversable",
+  default_layer = 0,
+  x = 544,
+  y = 24,
+  width = 16,
+  height = 16,
+}
+
+tile_pattern{
+  id = "316",
+  ground = "traversable",
+  default_layer = 0,
+  x = 560,
+  y = 24,
+  width = 16,
+  height = 16,
+  repeat_mode = "none",
+}
+
+tile_pattern{
+  id = "317",
+  ground = "traversable",
+  default_layer = 0,
+  x = 576,
+  y = 24,
+  width = 16,
+  height = 16,
+  repeat_mode = "none",
+}
+
+tile_pattern{
+  id = "318",
+  ground = "traversable",
+  default_layer = 0,
+  x = 592,
+  y = 24,
+  width = 16,
   height = 16,
   repeat_mode = "none",
 }
@@ -9011,7 +9248,7 @@ tile_pattern{
 
 tile_pattern{
   id = "house.roof.circle",
-  ground = "traversable",
+  ground = "wall",
   default_layer = 1,
   x = 272,
   y = 24,
@@ -9132,8 +9369,8 @@ tile_pattern{
 
 tile_pattern{
   id = "house.roof_blue.1",
-  ground = "traversable",
-  default_layer = 1,
+  ground = "wall",
+  default_layer = 0,
   x = 320,
   y = 0,
   width = 8,
@@ -9154,8 +9391,8 @@ tile_pattern{
 
 tile_pattern{
   id = "house.roof_blue.3",
-  ground = "traversable",
-  default_layer = 1,
+  ground = "wall",
+  default_layer = 0,
   x = 296,
   y = 8,
   width = 8,
@@ -9165,8 +9402,8 @@ tile_pattern{
 
 tile_pattern{
   id = "house.roof_blue.4",
-  ground = "traversable",
-  default_layer = 1,
+  ground = "wall",
+  default_layer = 0,
   x = 344,
   y = 8,
   width = 8,
@@ -9176,8 +9413,8 @@ tile_pattern{
 
 tile_pattern{
   id = "house.roof_blue.corner.1",
-  ground = "traversable",
-  default_layer = 1,
+  ground = "wall",
+  default_layer = 0,
   x = 296,
   y = 0,
   width = 24,
@@ -9187,8 +9424,8 @@ tile_pattern{
 
 tile_pattern{
   id = "house.roof_blue.corner.2",
-  ground = "traversable",
-  default_layer = 1,
+  ground = "wall",
+  default_layer = 0,
   x = 328,
   y = 0,
   width = 24,
@@ -9198,8 +9435,8 @@ tile_pattern{
 
 tile_pattern{
   id = "house.roof_blue.corner.3",
-  ground = "traversable",
-  default_layer = 1,
+  ground = "wall",
+  default_layer = 0,
   x = 296,
   y = 16,
   width = 8,
@@ -9220,8 +9457,8 @@ tile_pattern{
 
 tile_pattern{
   id = "house.roof_blue.corner.4",
-  ground = "traversable",
-  default_layer = 1,
+  ground = "wall",
+  default_layer = 0,
   x = 344,
   y = 16,
   width = 8,
@@ -9585,7 +9822,7 @@ tile_pattern{
 
 tile_pattern{
   id = "house.roof_red",
-  ground = "traversable",
+  ground = "wall",
   default_layer = 1,
   x = 248,
   y = 8,
@@ -9595,8 +9832,8 @@ tile_pattern{
 
 tile_pattern{
   id = "house.roof_red.1",
-  ground = "traversable",
-  default_layer = 1,
+  ground = "wall",
+  default_layer = 0,
   x = 264,
   y = 0,
   width = 8,
@@ -9606,8 +9843,8 @@ tile_pattern{
 
 tile_pattern{
   id = "house.roof_red.2",
-  ground = "traversable",
-  default_layer = 1,
+  ground = "wall",
+  default_layer = 0,
   x = 248,
   y = 40,
   width = 8,
@@ -9617,8 +9854,8 @@ tile_pattern{
 
 tile_pattern{
   id = "house.roof_red.3",
-  ground = "traversable",
-  default_layer = 1,
+  ground = "wall",
+  default_layer = 0,
   x = 240,
   y = 8,
   width = 8,
@@ -9628,8 +9865,8 @@ tile_pattern{
 
 tile_pattern{
   id = "house.roof_red.4",
-  ground = "traversable",
-  default_layer = 1,
+  ground = "wall",
+  default_layer = 0,
   x = 288,
   y = 8,
   width = 8,
@@ -9639,8 +9876,8 @@ tile_pattern{
 
 tile_pattern{
   id = "house.roof_red.corner.1",
-  ground = "traversable",
-  default_layer = 1,
+  ground = "wall",
+  default_layer = 0,
   x = 240,
   y = 0,
   width = 24,
@@ -9650,8 +9887,8 @@ tile_pattern{
 
 tile_pattern{
   id = "house.roof_red.corner.2",
-  ground = "traversable",
-  default_layer = 1,
+  ground = "wall",
+  default_layer = 0,
   x = 272,
   y = 0,
   width = 24,
@@ -9661,8 +9898,8 @@ tile_pattern{
 
 tile_pattern{
   id = "house.roof_red.corner.3",
-  ground = "traversable",
-  default_layer = 1,
+  ground = "wall",
+  default_layer = 0,
   x = 240,
   y = 16,
   width = 8,
@@ -9672,7 +9909,7 @@ tile_pattern{
 
 tile_pattern{
   id = "house.roof_red.corner.3b",
-  ground = "traversable",
+  ground = "wall",
   default_layer = 1,
   x = 248,
   y = 16,
@@ -9683,8 +9920,8 @@ tile_pattern{
 
 tile_pattern{
   id = "house.roof_red.corner.4",
-  ground = "traversable",
-  default_layer = 1,
+  ground = "wall",
+  default_layer = 0,
   x = 288,
   y = 16,
   width = 8,
@@ -9694,7 +9931,7 @@ tile_pattern{
 
 tile_pattern{
   id = "house.roof_red.corner.4b",
-  ground = "traversable",
+  ground = "wall",
   default_layer = 1,
   x = 280,
   y = 16,
@@ -9705,7 +9942,7 @@ tile_pattern{
 
 tile_pattern{
   id = "house.roof_red.top",
-  ground = "traversable",
+  ground = "wall",
   default_layer = 1,
   x = 264,
   y = 8,
@@ -9715,7 +9952,7 @@ tile_pattern{
 
 tile_pattern{
   id = "house.roof_red.top.2",
-  ground = "traversable",
+  ground = "wall",
   default_layer = 1,
   x = 264,
   y = 16,
@@ -9726,7 +9963,7 @@ tile_pattern{
 
 tile_pattern{
   id = "house.roof_red.top.3",
-  ground = "traversable",
+  ground = "wall",
   default_layer = 1,
   x = 256,
   y = 8,
@@ -9737,7 +9974,7 @@ tile_pattern{
 
 tile_pattern{
   id = "house.roof_red.top.4",
-  ground = "traversable",
+  ground = "wall",
   default_layer = 1,
   x = 272,
   y = 8,
@@ -9748,7 +9985,7 @@ tile_pattern{
 
 tile_pattern{
   id = "house.roof_red.top.corner.3",
-  ground = "traversable",
+  ground = "wall",
   default_layer = 1,
   x = 256,
   y = 16,
@@ -9759,7 +9996,7 @@ tile_pattern{
 
 tile_pattern{
   id = "house.roof_red.top.corner.4",
-  ground = "traversable",
+  ground = "wall",
   default_layer = 1,
   x = 272,
   y = 16,
@@ -9770,7 +10007,7 @@ tile_pattern{
 
 tile_pattern{
   id = "house.roof_wood",
-  ground = "traversable",
+  ground = "wall",
   default_layer = 1,
   x = 320,
   y = 32,
@@ -9780,8 +10017,8 @@ tile_pattern{
 
 tile_pattern{
   id = "house.roof_wood.1",
-  ground = "traversable",
-  default_layer = 1,
+  ground = "wall",
+  default_layer = 0,
   x = 320,
   y = 24,
   width = 8,
@@ -9791,7 +10028,7 @@ tile_pattern{
 
 tile_pattern{
   id = "house.roof_wood.2",
-  ground = "traversable",
+  ground = "wall",
   default_layer = 1,
   x = 320,
   y = 40,
@@ -9802,8 +10039,8 @@ tile_pattern{
 
 tile_pattern{
   id = "house.roof_wood.3",
-  ground = "traversable",
-  default_layer = 1,
+  ground = "wall",
+  default_layer = 0,
   x = 312,
   y = 32,
   width = 8,
@@ -9813,8 +10050,8 @@ tile_pattern{
 
 tile_pattern{
   id = "house.roof_wood.4",
-  ground = "traversable",
-  default_layer = 1,
+  ground = "wall",
+  default_layer = 0,
   x = 328,
   y = 32,
   width = 8,
@@ -9835,8 +10072,8 @@ tile_pattern{
 
 tile_pattern{
   id = "house.roof_wood.corner.1",
-  ground = "traversable",
-  default_layer = 1,
+  ground = "wall",
+  default_layer = 0,
   x = 312,
   y = 24,
   width = 8,
@@ -9846,8 +10083,8 @@ tile_pattern{
 
 tile_pattern{
   id = "house.roof_wood.corner.2",
-  ground = "traversable",
-  default_layer = 1,
+  ground = "wall",
+  default_layer = 0,
   x = 328,
   y = 24,
   width = 8,
@@ -9857,8 +10094,8 @@ tile_pattern{
 
 tile_pattern{
   id = "house.roof_wood.corner.3",
-  ground = "traversable",
-  default_layer = 1,
+  ground = "wall",
+  default_layer = 0,
   x = 312,
   y = 40,
   width = 8,
@@ -9868,8 +10105,8 @@ tile_pattern{
 
 tile_pattern{
   id = "house.roof_wood.corner.4",
-  ground = "traversable",
-  default_layer = 1,
+  ground = "wall",
+  default_layer = 0,
   x = 328,
   y = 40,
   width = 8,
